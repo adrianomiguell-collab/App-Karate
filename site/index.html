@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atarashii App - MVP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <img class="brand-mark" src="../assets/brand/atarashii-logo.png" alt="Logo Atarashii Karate-do Shotokan" />
+        <div class="brand-copy">
+          <p class="eyebrow">Guia de estudo</p>
+          <h1>Atarashii App</h1>
+        </div>
+        <button class="icon-button" id="progressButton" type="button" title="Abrir progresso" aria-label="Abrir progresso">%</button>
+      </header>
+
+      <main id="app" class="content" aria-live="polite"></main>
+
+      <nav class="tabbar" aria-label="Navegacao principal">
+        <button class="tab is-active" data-route="home" type="button">Home</button>
+        <button class="tab" data-route="aprender" type="button">Aprender</button>
+        <button class="tab" data-route="treinar" type="button">Treinar</button>
+        <button class="tab" data-route="consultar" type="button">Consultar</button>
+        <button class="tab" data-route="revisar" type="button">Revisar</button>
+      </nav>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
