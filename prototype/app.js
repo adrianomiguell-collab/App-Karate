@@ -1,5 +1,6 @@
-const state = {
+﻿const state = {
   route: "home",
+  detailReturnRoute: "home",
   data: null,
   filter: "todos",
   search: "",
@@ -83,6 +84,9 @@ function setRoute(route) {
 }
 
 function openDetail(kind, id) {
+  if (!state.route.startsWith("detail:")) {
+    state.detailReturnRoute = state.route;
+  }
   state.route = `detail:${kind}:${id}`;
   tabs.forEach((tab) => tab.classList.remove("is-active"));
   render();
@@ -204,7 +208,7 @@ function cardTemplate(item) {
     <button class="card" data-open="${item.kind}:${item.id}" type="button">
       <h3>${htmlEscape(title)}</h3>
       <p>${htmlEscape(summary)}</p>
-      <p class="muted">${htmlEscape(item.kind)} · ${done}</p>
+      <p class="muted">${htmlEscape(item.kind)} Â· ${done}</p>
     </button>
   `;
 }
@@ -442,8 +446,9 @@ document.addEventListener("click", (event) => {
     state.search = document.querySelector("#searchInput")?.value || "";
     render();
   } else if (action === "back") {
-    history.length > 1 ? history.back() : setRoute("home");
-    if (state.route.startsWith("detail:")) setRoute("home");
+    state.route = state.detailReturnRoute || "home";
+    tabs.forEach((tab) => tab.classList.toggle("is-active", tab.dataset.route === state.route));
+    render();
   } else if (action.startsWith("study:")) {
     markStudied(action.split(":")[1]);
   } else if (action === "start-quiz") {
@@ -474,3 +479,5 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
+
