@@ -107,18 +107,61 @@ Cuidados:
 - limitar respostas a conteudos validados;
 - avaliar custo e limite de APIs gratuitas.
 
-## Fase 6 - Area Do Instrutor
+## Fase 6 - Area Da Associacao
 
-Objetivo: dar ferramentas para senseis e academias.
+Objetivo: manter o app publico para qualquer praticante de Karate Shotokan e criar uma area privada exclusiva para alunos da Associacao Atarashii.
 
-Escopo:
+Posicionamento:
 
-- cadastro de turma;
-- acompanhamento de alunos;
-- recomendacao de conteudo;
-- criacao de quizzes;
-- preparacao para exame;
+- conteudo educativo publico: qualquer praticante pode acessar Aprender, Treinar, Consultar, Revisar, Katas, Kihon, Glossario e Regras;
+- area do aluno: acesso restrito aos alunos da associacao, estimado inicialmente entre 30 e 50 alunos;
+- area do Sensei/Admin: acesso restrito para gerenciamento interno da associacao.
+
+Escopo Inicial Da Area Do Aluno:
+
+- login do aluno;
+- perfil pessoal;
+- faixa atual;
+- historico de graduacao;
+- frequencia e numero de faltas;
+- feedbacks do Sensei;
+- objetivos para a proxima faixa;
+- observacoes de treino;
+- comunicados da associacao.
+
+Escopo Inicial Da Area Do Sensei/Admin:
+
+- cadastro e edicao de alunos;
+- lista de alunos ativos;
+- registro de presenca;
+- controle de faltas;
+- registro de feedback individual;
+- atualizacao de faixa;
+- historico do aluno;
 - comunicados simples.
+
+Requisitos Tecnicos:
+
+- autenticacao com e-mail/senha, magic link ou login social;
+- banco de dados para alunos, faixas, presencas, feedbacks, turmas e usuarios;
+- regras de permissao para que cada aluno veja apenas seus proprios dados;
+- permissao especial para Sensei/Admin;
+- estrutura preparada para Android e iOS via Expo/React Native.
+
+Custo Inicial:
+
+- para 30 a 50 alunos, a area privada deve ser viavel inicialmente em plano gratuito de ferramentas como Supabase ou Firebase;
+- evitar SMS pago, uploads pesados e uso intenso de IA nesta fase;
+- validar limites gratuitos antes da implementacao.
+
+Prioridade Dentro Da Fase:
+
+1. login;
+2. perfil do aluno;
+3. faixa atual;
+4. frequencia/faltas;
+5. feedbacks do Sensei;
+6. painel simples do Sensei/Admin.
 
 ## Fase 7 - Plataforma Completa
 
@@ -181,4 +224,5 @@ Tudo que for criado agora deve respeitar esta ordem:
 3. apoiar estudo;
 4. medir aprendizado;
 5. preparar evolucao.
+
 
