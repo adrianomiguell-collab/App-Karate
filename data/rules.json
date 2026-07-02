@@ -1,0 +1,116 @@
+[
+  {
+    "id": "regras-kumite-duracao",
+    "title": "Duracao da disputa de Kumite",
+    "modality": "Kumite",
+    "category": "duracao",
+    "description": "A cronometragem inicia quando o arbitro da o sinal para comecar e para quando o arbitro anuncia Yame, quando ha sinal de pontuacao ou quando o tempo se esgota.",
+    "points": null,
+    "penaltyLevel": null,
+    "sourcePages": [25]
+  },
+  {
+    "id": "regras-kumite-kiken",
+    "title": "Kiken",
+    "modality": "Kumite",
+    "category": "desqualificacao",
+    "description": "Kiken e a decisao aplicada quando atleta ou equipe nao se apresenta, abandona, nao pode continuar ou e retirado por ordem medica.",
+    "points": null,
+    "penaltyLevel": "desqualificacao da categoria",
+    "sourcePages": [25]
+  },
+  {
+    "id": "regras-kumite-inicio-fim",
+    "title": "Inicio, suspensao e fim de encontros",
+    "modality": "Kumite",
+    "category": "procedimento",
+    "description": "Os atletas devem saudar-se adequadamente no inicio e no final. O arbitro interrompe com Yame e pode ordenar retorno a posicao original com Moto No Ichi.",
+    "points": null,
+    "penaltyLevel": null,
+    "sourcePages": [25]
+  },
+  {
+    "id": "regras-kumite-pontuacao",
+    "title": "Pontuacao no Kumite",
+    "modality": "Kumite",
+    "category": "pontuacao",
+    "description": "A tecnica deve ter boa forma, atitude esportiva, aplicacao vigorosa, Zanshin, bom tempo e distancia correta.",
+    "points": null,
+    "penaltyLevel": null,
+    "assetUrl": "assets/rules/kumite-pontuacao-avisos.png",
+    "sourcePages": [26]
+  },
+  {
+    "id": "yuko",
+    "title": "Yuko",
+    "modality": "Kumite",
+    "category": "pontuacao",
+    "description": "Concedido para Tsuki ou Uchi em area de pontuacao.",
+    "points": 1,
+    "penaltyLevel": null,
+    "assetUrl": "assets/rules/kumite-pontuacao-avisos.png",
+    "sourcePages": [26, 27]
+  },
+  {
+    "id": "waza-ari",
+    "title": "Waza-Ari",
+    "modality": "Kumite",
+    "category": "pontuacao",
+    "description": "Concedido para chutes Chudan.",
+    "points": 2,
+    "penaltyLevel": null,
+    "assetUrl": "assets/rules/kumite-pontuacao-avisos.png",
+    "sourcePages": [26, 27]
+  },
+  {
+    "id": "ippon",
+    "title": "Ippon",
+    "modality": "Kumite",
+    "category": "pontuacao",
+    "description": "Concedido para chutes Jodan ou tecnica de mao contra oponente com parte do corpo alem dos pes em contato com o tatami, conforme excecoes da regra.",
+    "points": 3,
+    "penaltyLevel": null,
+    "assetUrl": "assets/rules/kumite-pontuacao-avisos.png",
+    "sourcePages": [26, 27]
+  },
+  {
+    "id": "regras-kata-geral",
+    "title": "Principios do Kata competitivo",
+    "modality": "Kata",
+    "category": "avaliacao",
+    "description": "O kata nao deve ser danca ou performance teatral. Deve aderir aos valores tradicionais e demonstrar realismo de luta, concentracao, potencia, velocidade, ritmo e equilibrio.",
+    "points": null,
+    "penaltyLevel": null,
+    "sourcePages": [30]
+  },
+  {
+    "id": "regras-kata-equipe",
+    "title": "Kata em equipe",
+    "modality": "Kata",
+    "category": "competicao",
+    "description": "Equipes de Kata consistem em 3 ou 4 atletas, dos quais 3 competem em cada rodada. Nas disputas por medalhas, tambem realizam Bunkai.",
+    "points": null,
+    "penaltyLevel": null,
+    "sourcePages": [31]
+  },
+  {
+    "id": "regras-kata-faltas",
+    "title": "Faltas no Kata",
+    "modality": "Kata",
+    "category": "faltas",
+    "description": "A apostila lista faltas como anunciar o kata antes da saudacao, pequena perda de equilibrio, movimento incorreto ou incompleto, movimentos assincronos, sinais sonoros, teatralidades e kiai incorreto.",
+    "points": null,
+    "penaltyLevel": "falta",
+    "sourcePages": [32]
+  },
+  {
+    "id": "regras-kata-desclassificacao",
+    "title": "Desclassificacao no Kata",
+    "modality": "Kata",
+    "category": "desclassificacao",
+    "description": "Podem causar desclassificacao: nao anunciar o kata, executar kata diferente, nao saudar, nao iniciar voltado aos juizes, pausa distinta, alterar movimentos, queda, faixa cair, exceder tempo total e ma conduta.",
+    "points": null,
+    "penaltyLevel": "desclassificacao",
+    "sourcePages": [32]
+  }
+]

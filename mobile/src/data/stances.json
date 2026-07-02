@@ -1,0 +1,17 @@
+[
+  { "id": "heisoku-dachi", "name": "Heisoku Dachi", "slug": "heisoku-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-01.png", "level": "iniciante" },
+  { "id": "musubi-dachi", "name": "Musubi Dachi", "slug": "musubi-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-01.png", "level": "iniciante" },
+  { "id": "heiko-dachi", "name": "Heiko Dachi", "slug": "heiko-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-01.png", "level": "iniciante" },
+  { "id": "hachiji-dachi", "name": "Hachiji Dachi", "slug": "hachiji-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-01.png", "level": "iniciante" },
+  { "id": "kosa-dachi", "name": "Kosa Dachi", "slug": "kosa-dachi", "description": "Base citada na apostila em vista lateral e frontal.", "imageUrl": "assets/bases/bases-01.png", "level": "iniciante" },
+  { "id": "kake-dachi", "name": "Kake Dachi", "slug": "kake-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "kiba-dachi", "name": "Kiba Dachi", "slug": "kiba-dachi", "description": "Posicao de cavaleiro.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "shiko-dachi", "name": "Shiko Dachi", "slug": "shiko-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "kokutsu-dachi", "name": "Kokutsu Dachi", "slug": "kokutsu-dachi", "description": "Base citada na apostila em vista lateral e frontal.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "neko-ashi-dachi", "name": "Neko Ashi Dachi", "slug": "neko-ashi-dachi", "description": "Base do gato.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "zenkutsu-dachi", "name": "Zenkutsu Dachi", "slug": "zenkutsu-dachi", "description": "Base de frente ou avanco, conforme quiz da apostila.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "fudo-dachi", "name": "Fudo Dachi", "slug": "fudo-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "sanchin-dachi", "name": "Sanchin Dachi", "slug": "sanchin-dachi", "description": "Base citada na apostila.", "imageUrl": "assets/bases/bases-02.png", "level": "iniciante" },
+  { "id": "teiji-dachi", "name": "Teiji Dachi", "slug": "teiji-dachi", "description": "Base citada na apostila em vista frontal e diagonal.", "imageUrl": "assets/bases/bases-03.png", "level": "iniciante" },
+  { "id": "renoji-dachi", "name": "Renoji Dachi", "slug": "renoji-dachi", "description": "Base citada na apostila em vista diagonal.", "imageUrl": "assets/bases/bases-03.png", "level": "iniciante" }
+]

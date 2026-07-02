@@ -1,0 +1,258 @@
+﻿[
+    {
+        "id":  "oi-zuki",
+        "name":  "Oi-Zuki",
+        "slug":  "oi-zuki",
+        "type":  "soco",
+        "description":  "Soco direto executado com o punho da perna da frente.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "gyaku-zuki",
+        "name":  "Gyaku-Zuki",
+        "slug":  "gyaku-zuki",
+        "type":  "soco",
+        "description":  "Soco reverso executado com o punho da perna de tras.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "mae-geri",
+        "name":  "Mae-Geri",
+        "slug":  "mae-geri",
+        "type":  "chute",
+        "description":  "Chute frontal direcionado a regioes como abdomen ou rosto.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "yoko-geri",
+        "name":  "Yoko-Geri",
+        "slug":  "yoko-geri",
+        "type":  "chute",
+        "description":  "Chute lateral usado para atingir o flanco do oponente.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "mawashi-geri",
+        "name":  "Mawashi-Geri",
+        "slug":  "mawashi-geri",
+        "type":  "chute",
+        "description":  "Chute circular direcionado a cabeca ou torso.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "ushiro-geri",
+        "name":  "Ushiro-Geri",
+        "slug":  "ushiro-geri",
+        "type":  "chute",
+        "description":  "Chute para tras usado quando o oponente esta atras.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "age-uke",
+        "name":  "Age-Uke",
+        "slug":  "age-uke",
+        "type":  "defesa",
+        "description":  "Bloqueio ascendente usado contra golpes direcionados a cabeca.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "soto-uke",
+        "name":  "Soto-Uke",
+        "slug":  "soto-uke",
+        "type":  "defesa",
+        "description":  "Bloqueio usado para desviar golpes vindos de fora para dentro.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "uchi-uke",
+        "name":  "Uchi-Uke",
+        "slug":  "uchi-uke",
+        "type":  "defesa",
+        "description":  "Bloqueio usado para defender golpes vindos de dentro para fora.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "gedan-barai",
+        "name":  "Gedan-Barai",
+        "slug":  "gedan-barai",
+        "type":  "defesa",
+        "description":  "Bloqueio baixo usado para defender chutes ou golpes na regiao inferior.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "shuto-uke",
+        "name":  "Shuto-Uke",
+        "slug":  "shuto-uke",
+        "type":  "defesa",
+        "description":  "Bloqueio com a mao em faca, frequente em katas.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "empi-uchi",
+        "name":  "Empi-Uchi",
+        "slug":  "empi-uchi",
+        "type":  "golpe",
+        "description":  "Golpe de cotovelo usado em curta distancia.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "kizami-zuki",
+        "name":  "Kizami-Zuki",
+        "slug":  "kizami-zuki",
+        "type":  "soco",
+        "description":  "Soco rapido e curto executado com a mao da perna da frente.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "tate-zuki",
+        "name":  "Tate-Zuki",
+        "slug":  "tate-zuki",
+        "type":  "soco",
+        "description":  "Soco executado com o punho na posicao vertical.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "uraken-uchi",
+        "name":  "Uraken-Uchi",
+        "slug":  "uraken-uchi",
+        "type":  "golpe",
+        "description":  "Golpe rapido executado com o dorso da mao.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "nukite",
+        "name":  "Nukite",
+        "slug":  "nukite",
+        "type":  "golpe",
+        "description":  "Golpe com a ponta dos dedos, usado com precisao e controle.",
+        "level":  "iniciante",
+        "safetyNote":  "Pratique com orientacao do sensei.",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    }
+]

@@ -1,0 +1,122 @@
+﻿[
+    {
+        "id":  "heian-shodan",
+        "name":  "Heian Shodan",
+        "slug":  "heian-shodan",
+        "meaning":  "Paz e tranquilidade nivel 1",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  21,
+        "idealTime":  "30 a 40 segundos",
+        "kiai":  "Movimentos 9 e 17",
+        "description":  "Primeiro kata da serie Heian, geralmente apresentado nas faixas iniciais.",
+        "diagramUrl":  "assets/katas/heian-shodan-nidan.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "heian-nidan",
+        "name":  "Heian Nidan",
+        "slug":  "heian-nidan",
+        "meaning":  "Paz e tranquilidade nivel 2",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  26,
+        "idealTime":  "aproximadamente 40 segundos",
+        "kiai":  "Movimentos 11 e 26",
+        "description":  "Segundo kata da serie Heian.",
+        "diagramUrl":  "assets/katas/heian-shodan-nidan.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "heian-sandan",
+        "name":  "Heian Sandan",
+        "slug":  "heian-sandan",
+        "meaning":  "Paz e tranquilidade nivel 3",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  20,
+        "idealTime":  "aproximadamente 40 segundos",
+        "kiai":  "Movimentos 10 e 20",
+        "description":  "Terceiro kata da serie Heian.",
+        "diagramUrl":  "assets/katas/heian-sandan-yondan-godan-bassai-dai.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "heian-yondan",
+        "name":  "Heian Yondan",
+        "slug":  "heian-yondan",
+        "meaning":  "Paz e tranquilidade nivel 4",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  27,
+        "idealTime":  "aproximadamente 50 segundos",
+        "kiai":  "Movimentos 13 e 25",
+        "description":  "Quarto kata da serie Heian.",
+        "diagramUrl":  "assets/katas/heian-sandan-yondan-godan-bassai-dai.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "heian-godan",
+        "name":  "Heian Godan",
+        "slug":  "heian-godan",
+        "meaning":  "Paz e tranquilidade nivel 5",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  23,
+        "idealTime":  "aproximadamente 50 segundos",
+        "kiai":  "Movimentos 12 e 19",
+        "description":  "Quinto kata da serie Heian.",
+        "diagramUrl":  "assets/katas/heian-sandan-yondan-godan-bassai-dai.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    },
+    {
+        "id":  "tekki-shodan",
+        "name":  "Tekki Shodan",
+        "slug":  "tekki-shodan",
+        "meaning":  "Cavaleiro de ferro nivel 1",
+        "classification":  "basico",
+        "level":  "iniciante",
+        "kyodos":  29,
+        "idealTime":  "40 a 50 segundos",
+        "kiai":  "Movimentos 15 e 29",
+        "description":  "Primeiro kata da serie Tekki, associado a postura Kiba-Dachi.",
+        "diagramUrl":  "assets/katas/tekki-shodan-nidan-sandan.png",
+        "videoUrl":  null,
+        "videoProvider":  null,
+        "associationVideoUrl":  null,
+        "instructorNotes":  null,
+        "practiceChecklist":  [
+
+                              ]
+    }
+]

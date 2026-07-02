@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Atarashii App",
+    "slug": "atarashii-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/brand/atarashii-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/brand/atarashii-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#222831"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.org.atarashii.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+      "foregroundImage": "./src/assets/brand/atarashii-icon.png",
+        "backgroundColor": "#222831"
+      },
+      "package": "br.org.atarashii.app"
+    },
+    "web": {
+      "favicon": "./src/assets/brand/atarashii-logo.png"
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}

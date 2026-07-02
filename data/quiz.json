@@ -1,0 +1,402 @@
+[
+  {
+    "id": "q001",
+    "category": "Historia e Origens",
+    "question": "O significado literal de 'Karate' e:",
+    "options": ["Arte das armas", "Maos vazias", "Caminho da espada", "Maos fechadas"],
+    "correctOption": 1,
+    "explanation": "A apostila apresenta Karate como 'maos vazias'."
+  },
+  {
+    "id": "q002",
+    "category": "Historia e Origens",
+    "question": "A integracao de tecnicas chinesas (Kenpo) com o Te de Okinawa deu origem ao Karate por meio de:",
+    "options": ["Isolamento cultural", "Trocas comerciais do Reino de Ryukyu", "Influencia europeia", "Proibicao de artes marciais no Japao continental"],
+    "correctOption": 1,
+    "explanation": "A apostila relaciona essa origem as trocas culturais do Reino de Ryukyu."
+  },
+  {
+    "id": "q003",
+    "category": "Historia e Origens",
+    "question": "Qual evento intensificou o desenvolvimento do combate desarmado em Okinawa?",
+    "options": ["Invasao do cla Satsuma (1609)", "Restauracao Meiji (1868)", "Segunda Guerra Mundial", "Revolucao Cultural"],
+    "correctOption": 0,
+    "explanation": "A apostila cita a invasao do cla Satsuma em 1609."
+  },
+  {
+    "id": "q004",
+    "category": "Historia e Origens",
+    "question": "A adaptacao de ferramentas agricolas como armas originou a pratica chamada:",
+    "options": ["Aikido", "Kobudo", "Iaijutsu", "Kendo"],
+    "correctOption": 1,
+    "explanation": "A apostila associa essa adaptacao ao Kobudo."
+  },
+  {
+    "id": "q005",
+    "category": "Sistematizacao e Mestres",
+    "question": "Quais mestres foram fundamentais para a organizacao do Karate em Okinawa?",
+    "options": ["Sokon Matsumura, Anko Itosu e Kanryo Higaonna", "Jigoro Kano, Ueshiba Morihei e Funakoshi", "Yoshitaka Funakoshi, Nakayama e Oshima", "Sasaki, Motobu e Kano"],
+    "correctOption": 0,
+    "explanation": "Esses tres mestres sao citados na apostila como fundamentais."
+  },
+  {
+    "id": "q006",
+    "category": "Sistematizacao e Mestres",
+    "question": "As vertentes regionais que originaram estilos modernos sao:",
+    "options": ["Shuri-te, Naha-te e Tomari-te", "Goju, Shito e Wado", "Shotokan, Kyokushin e Shorin", "Aiki, Judo e Kendo"],
+    "correctOption": 0,
+    "explanation": "A apostila cita Shuri-te, Naha-te e Tomari-te."
+  },
+  {
+    "id": "q007",
+    "category": "Katas Shotokan",
+    "question": "A serie Heian deriva-se de qual kata avancado?",
+    "options": ["Bassai Dai", "Kanku Dai", "Sochin", "Unsu"],
+    "correctOption": 1,
+    "explanation": "A apostila informa que os Heians sao derivacoes de Kanku Dai."
+  },
+  {
+    "id": "q008",
+    "category": "Funakoshi e Shotokan",
+    "question": "Quem e considerado o pai do Karate moderno e fundador do Shotokan?",
+    "options": ["Kanryo Higaonna", "Gichin Funakoshi", "Choki Motobu", "Sokon Matsumura"],
+    "correctOption": 1,
+    "explanation": "A apostila apresenta Gichin Funakoshi dessa forma."
+  },
+  {
+    "id": "q009",
+    "category": "Funakoshi e Shotokan",
+    "question": "A mudanca dos ideogramas de 'mao chinesa' para 'maos vazias' enfatizou:",
+    "options": ["O aspecto militar", "O aspecto filosofico (Budo)", "A competicao esportiva", "A influencia europeia"],
+    "correctOption": 1,
+    "explanation": "A apostila associa a mudanca ao aspecto filosofico da arte."
+  },
+  {
+    "id": "q010",
+    "category": "Funakoshi e Shotokan",
+    "question": "O termo 'Shotokan' significa:",
+    "options": ["Casa do Tigre", "Casa de Shoto (pseudonimo de Funakoshi)", "Escola do Grou", "Sala de Treino"],
+    "correctOption": 1,
+    "explanation": "Shoto era o pseudonimo usado por Funakoshi."
+  },
+  {
+    "id": "q011",
+    "category": "Karate no Brasil",
+    "question": "O primeiro dojo de Karate no Brasil (1956) foi instalado por:",
+    "options": ["Seichi Akamine", "Mitsuke Harada", "Koji Takamatsu", "Yoshihide Shinzato"],
+    "correctOption": 1,
+    "explanation": "A apostila cita o sensei Mitsuke Harada."
+  },
+  {
+    "id": "q012",
+    "category": "Expansao Mundial",
+    "question": "A rapida difusao mundial do Karate no pos-guerra contou com influencia de:",
+    "options": ["Militares americanos no Japao", "Escolas europeias medievais", "Adocao pelo COI em 1936", "Exclusao de universidades"],
+    "correctOption": 0,
+    "explanation": "A apostila cita a presenca de militares americanos no Japao."
+  },
+  {
+    "id": "q013",
+    "category": "Expansao Mundial",
+    "question": "Quais estilos se consolidaram internacionalmente nesse periodo?",
+    "options": ["Shotokan, Goju-ryu, Shito-ryu e Wado-ryu", "Kyokushin, Kenpo, Aikido e Ninjutsu", "Uechi-ryu, Budokan, Iaido e Jujutsu", "Shorin-ryu, Goju-ryu, Kendo e Judo"],
+    "correctOption": 0,
+    "explanation": "A apostila cita esses quatro estilos."
+  },
+  {
+    "id": "q014",
+    "category": "Esporte e WKF",
+    "question": "O 1o Campeonato Mundial de Karate ocorreu em 1970 em:",
+    "options": ["Osaka", "Toquio", "Kyoto", "Nagoia"],
+    "correctOption": 1,
+    "explanation": "A apostila informa Toquio, Japao."
+  },
+  {
+    "id": "q015",
+    "category": "Esporte e WKF",
+    "question": "A federacao mundial atualmente reconhecida pelo COI e a:",
+    "options": ["WUKO", "WKF (FMK)", "IJF", "WUKF"],
+    "correctOption": 1,
+    "explanation": "A apostila cita a FMK/WKF."
+  },
+  {
+    "id": "q016",
+    "category": "Esporte e WKF",
+    "question": "A insercao do Karate no programa dos Jogos Olimpicos de Toquio ocorreu em:",
+    "options": ["2012", "2014", "2016", "2018"],
+    "correctOption": 2,
+    "explanation": "A apostila informa 2016."
+  },
+  {
+    "id": "q017",
+    "category": "Esporte e WKF",
+    "question": "O objetivo central da WKF inclui:",
+    "options": ["Segmentar estilos regionais", "Unificar organizacoes e estabelecer regras tecnicas globais", "Promover apenas kata", "Eliminar o kumite"],
+    "correctOption": 1,
+    "explanation": "A apostila cita a unificacao e estabelecimento de regras tecnicas."
+  },
+  {
+    "id": "q018",
+    "category": "Fundamentos",
+    "question": "'Kihon' significa:",
+    "options": ["Combate", "Fundamentos", "Forma", "Respiracao"],
+    "correctOption": 1,
+    "explanation": "A apostila define Kihon como fundacao/fundamento."
+  },
+  {
+    "id": "q019",
+    "category": "Fundamentos",
+    "question": "'Kata' representa:",
+    "options": ["Luta real sem controle", "Sequencia coreografada de tecnicas", "Aquecimento livre", "Exercicio respiratorio"],
+    "correctOption": 1,
+    "explanation": "A apostila apresenta kata como forma ou modelo, uma sequencia organizada."
+  },
+  {
+    "id": "q020",
+    "category": "Fundamentos",
+    "question": "'Kumite' significa:",
+    "options": ["Maos dadas / combate", "Chute circular", "Posicao natural", "Saudacao"],
+    "correctOption": 0,
+    "explanation": "A apostila traduz Kumite como encontro das maos/combate."
+  },
+  {
+    "id": "q021",
+    "category": "Fundamentos",
+    "question": "O 'Kiai' e:",
+    "options": ["Um bloqueio baixo", "Um grito de energia emitido em momentos especificos", "Uma postura de joelhos", "Uma queda controlada"],
+    "correctOption": 1,
+    "explanation": "A apostila define Kiai como grito de forca/energia."
+  },
+  {
+    "id": "q022",
+    "category": "Katas Shotokan",
+    "question": "Quantos katas tradicionais compoem a base do Shotokan conforme a apostila?",
+    "options": ["26", "20", "30", "15"],
+    "correctOption": 0,
+    "explanation": "A apostila cita 26 katas Shotokan."
+  },
+  {
+    "id": "q023",
+    "category": "Katas Shotokan",
+    "question": "Em qual kata o primeiro movimento 'olhar para o ceu' da nome a forma?",
+    "options": ["Bassai Dai", "Kanku Dai", "Jitte", "Sochin"],
+    "correctOption": 1,
+    "explanation": "A apostila associa essa caracteristica a Kanku."
+  },
+  {
+    "id": "q024",
+    "category": "Katas Shotokan",
+    "question": "Qual e o kata considerado um dos mais longos do Shotokan, com cerca de 65 kyodos?",
+    "options": ["Empi", "Kanku Dai", "Wankan", "Hangetsu"],
+    "correctOption": 1,
+    "explanation": "A apostila informa Kanku Dai com 65 movimentos."
+  },
+  {
+    "id": "q025",
+    "category": "Katas Shotokan",
+    "question": "O kata mais curto do Shotokan, com apenas um Kiai, e:",
+    "options": ["Wankan", "Tekki Shodan", "Jiin", "Meikyo"],
+    "correctOption": 0,
+    "explanation": "A apostila descreve Wankan como o kata mais curto."
+  },
+  {
+    "id": "q026",
+    "category": "Regras de Kumite",
+    "question": "No Kumite, Yuko vale:",
+    "options": ["3 pontos", "2 pontos", "1 ponto", "0 ponto"],
+    "correctOption": 2,
+    "explanation": "Yuko vale 1 ponto."
+  },
+  {
+    "id": "q027",
+    "category": "Regras de Kumite",
+    "question": "Waza-Ari e concedido para:",
+    "options": ["Chutes Jodan", "Chutes Chudan", "Tecnicas de mao com quedas", "Qualquer soco"],
+    "correctOption": 1,
+    "explanation": "A apostila informa Waza-Ari para chutes Chudan."
+  },
+  {
+    "id": "q028",
+    "category": "Regras de Kumite",
+    "question": "Ippon e atribuido para:",
+    "options": ["Chutes Jodan ou tecnica de mao contra oponente em contato com o tatame", "Dois socos consecutivos", "Qualquer projecao", "Chute Chudan"],
+    "correctOption": 0,
+    "explanation": "A apostila descreve Ippon nesses casos."
+  },
+  {
+    "id": "q029",
+    "category": "Regras de Kumite",
+    "question": "Quando um atleta abre vantagem de oito pontos, o arbitro declara:",
+    "options": ["Hikiwake", "Aka/Ao No Kachi", "Moto No Ichi", "Ippon Ga Agari"],
+    "correctOption": 1,
+    "explanation": "Apostila: o vencedor e declarado com Ao/Aka No Kachi."
+  },
+  {
+    "id": "q030",
+    "category": "Regras de Kumite",
+    "question": "Em Kumite, as areas de pontuacao abrangem:",
+    "options": ["Apenas cintura para baixo", "Acima da pelvis ate a clavicula (Chudan) e acima da clavicula (Jodan)", "Apenas cabeca", "Todo o corpo"],
+    "correctOption": 1,
+    "explanation": "A apostila define as areas Chudan e Jodan dessa forma."
+  },
+  {
+    "id": "q031",
+    "category": "Regras de Kumite",
+    "question": "Criterios como boa forma, atitude esportiva e Zanshin sao requisitos para:",
+    "options": ["Validade de pontuacao no Kumite", "Pontuacao de Kata", "Promocao de graduacao", "Aprovacao medica"],
+    "correctOption": 0,
+    "explanation": "A apostila apresenta esses criterios para validar pontuacao."
+  },
+  {
+    "id": "q032",
+    "category": "Regras de Kata",
+    "question": "O kata competitivo deve:",
+    "options": ["Ser teatral para impressionar", "Aderir a valores tradicionais com realismo de luta", "Permitir instrucoes sonoras da equipe", "Dispensar saudacao"],
+    "correctOption": 1,
+    "explanation": "A apostila afirma que Kata nao e danca ou performance teatral."
+  },
+  {
+    "id": "q033",
+    "category": "Regras de Kata",
+    "question": "Em equipe, nas disputas por medalhas, alem do kata realiza-se:",
+    "options": ["Randori", "Bunkai", "Kumite livre", "Shiai de kata"],
+    "correctOption": 1,
+    "explanation": "A apostila cita a demonstracao de Bunkai."
+  },
+  {
+    "id": "q034",
+    "category": "Regras de Kata",
+    "question": "Uma falta grave citada e:",
+    "options": ["Respiracao controlada", "Kiai curto e simultaneo", "Teatralidades como bater os pes ou no karategi", "Equilibrio e ritmo"],
+    "correctOption": 2,
+    "explanation": "A apostila cita teatralidades como falta muito grave."
+  },
+  {
+    "id": "q035",
+    "category": "Regras de Kata",
+    "question": "No julgamento manual de kata sem eletronico, usa-se:",
+    "options": ["Bandeiras vermelha e azul", "Apitos apenas", "Cartoes amarelos", "Somente cronometro"],
+    "correctOption": 0,
+    "explanation": "A apostila cita bandeiras vermelha e azul."
+  },
+  {
+    "id": "q036",
+    "category": "Conduta",
+    "question": "Uma das cinco regras do Dojo Kun e:",
+    "options": ["Vencer sempre", "Respeito acima de tudo", "Atacar primeiro", "Evitar o treino"],
+    "correctOption": 1,
+    "explanation": "A apostila inclui 'Respeito acima de tudo'."
+  },
+  {
+    "id": "q037",
+    "category": "Conduta",
+    "question": "No Niju Kun, um principio e:",
+    "options": ["O Karate limita-se a academia", "Pense em vencer a qualquer custo", "O Karate inicia e termina com saudacao", "Evite pratica continua"],
+    "correctOption": 2,
+    "explanation": "A primeira regra citada e iniciar e terminar com saudacao."
+  },
+  {
+    "id": "q038",
+    "category": "Conduta",
+    "question": "Ritsurei refere-se a:",
+    "options": ["Cumprimento em pe", "Cumprimento ajoelhado", "Grito de forca", "Meditacao"],
+    "correctOption": 0,
+    "explanation": "A apostila define Ritsurei como cumprimento em pe."
+  },
+  {
+    "id": "q039",
+    "category": "Conduta",
+    "question": "OSS/OSU esta associado a:",
+    "options": ["Desistencia", "Perseveranca sob pressao", "Apenas agradecimento", "Silencio absoluto"],
+    "correctOption": 1,
+    "explanation": "A apostila resume OSS como perseveranca sob pressao."
+  },
+  {
+    "id": "q040",
+    "category": "Conduta",
+    "question": "Mokuso significa:",
+    "options": ["Grito de forca", "Pensar em silencio", "Combate livre", "Posicao cavaleiro"],
+    "correctOption": 1,
+    "explanation": "A apostila traduz Mokuso como pensar em silencio."
+  },
+  {
+    "id": "q041",
+    "category": "Tecnicas Basicas",
+    "question": "Oi-Zuki e:",
+    "options": ["Soco direto com a mao da perna da frente", "Soco reverso com a mao da perna de tras", "Chute frontal", "Bloqueio ascendente"],
+    "correctOption": 0,
+    "explanation": "A apostila descreve Oi-Zuki dessa forma."
+  },
+  {
+    "id": "q042",
+    "category": "Tecnicas Basicas",
+    "question": "Gyaku-Zuki e:",
+    "options": ["Soco com a perna da frente", "Soco com a mao da perna de tras", "Chute lateral", "Bloqueio baixo"],
+    "correctOption": 1,
+    "explanation": "A apostila descreve Gyaku-Zuki como soco reverso."
+  },
+  {
+    "id": "q043",
+    "category": "Tecnicas Basicas",
+    "question": "Mae-Geri corresponde a:",
+    "options": ["Chute frontal", "Chute circular", "Chute lateral", "Chute para tras"],
+    "correctOption": 0,
+    "explanation": "Mae-Geri e chute frontal."
+  },
+  {
+    "id": "q044",
+    "category": "Tecnicas Basicas",
+    "question": "Age-Uke e um bloqueio:",
+    "options": ["Baixo", "Ascendente para defender a cabeca", "Externo", "Interno"],
+    "correctOption": 1,
+    "explanation": "A apostila descreve Age-Uke como bloqueio ascendente."
+  },
+  {
+    "id": "q045",
+    "category": "Uniforme e Graduacao",
+    "question": "O karate-gui e tradicionalmente branco para simbolizar:",
+    "options": ["Forca e velocidade", "Paz e pureza", "Tradicao chinesa", "Hierarquia"],
+    "correctOption": 1,
+    "explanation": "A apostila cita paz e pureza."
+  },
+  {
+    "id": "q046",
+    "category": "Uniforme e Graduacao",
+    "question": "No sistema citado, a faixa marrom corresponde a:",
+    "options": ["8o Kyu", "5o Kyu", "2o Kyu", "1o Kyu"],
+    "correctOption": 3,
+    "explanation": "A apostila afirma que a faixa marrom e do 1o Kyu."
+  },
+  {
+    "id": "q047",
+    "category": "Bases e Termos",
+    "question": "Kiba-Dachi significa:",
+    "options": ["Posicao natural", "Posicao cavaleiro", "Posicao gato", "Posicao frente"],
+    "correctOption": 1,
+    "explanation": "A apostila/glossario define Kiba-Dachi como posicao de cavaleiro."
+  },
+  {
+    "id": "q048",
+    "category": "Bases e Termos",
+    "question": "Zenkutsu-Dachi e uma base:",
+    "options": ["De costas", "De frente (avanco)", "De joelhos", "De gato"],
+    "correctOption": 1,
+    "explanation": "A resposta do quiz da apostila indica base de frente/avanco."
+  },
+  {
+    "id": "q049",
+    "category": "Bases e Termos",
+    "question": "Neko Ashi-Dachi e a:",
+    "options": ["Base do gato", "Base do cavalo", "Base diagonal", "Base do arco"],
+    "correctOption": 0,
+    "explanation": "Neko Ashi-Dachi e apresentada como base do gato."
+  },
+  {
+    "id": "q050",
+    "category": "Bases e Termos",
+    "question": "Jodan, Chudan e Gedan referem-se a:",
+    "options": ["Estilos de kata", "Niveis de altura (alto, medio, baixo)", "Tipos de chutes", "Tipos de faixas"],
+    "correctOption": 1,
+    "explanation": "A apostila categoriza Jodan, Chudan e Gedan como niveis de altura."
+  }
+]
