@@ -1,4 +1,4 @@
-# Atarashii App
+﻿# Atarashii App
 
 Projeto de aplicativo educativo e consultivo sobre Karate Shotokan da Associacao Atarashii Karate-do Shotokan.
 
@@ -14,6 +14,7 @@ Compatibilidade obrigatoria do app real: Android e iOS.
 - [Mapa de Telas](docs/MAPA_DE_TELAS.md)
 - [Arquitetura do Produto](docs/ARQUITETURA_DO_PRODUTO.md)
 - [Backlog Tecnico do MVP](docs/BACKLOG_TECNICO_MVP.md)
+- [Evolucao de Midia em Treino](docs/EVOLUCAO_MIDIA_TREINO.md)
 - [Dados do MVP](data/README.md)
 
 ## Prototipo
@@ -41,3 +42,4 @@ Criar um guia de estudo e consulta para iniciantes, com:
 - regras essenciais;
 - quiz;
 - progresso simples.
+

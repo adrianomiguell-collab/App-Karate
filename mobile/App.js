@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+﻿import React, { useMemo, useState } from "react";
 import {
   Image,
   Linking,
@@ -23,6 +23,7 @@ import techniques from "./src/data/techniques.json";
 const logo = require("./src/assets/brand/atarashii-logo.png");
 
 const assetMap = {
+  "assets/training/mae_geri.png": require("./src/assets/training/mae_geri.png"),
   "assets/bases/bases-01.png": require("./src/assets/bases/bases-01.png"),
   "assets/bases/bases-02.png": require("./src/assets/bases/bases-02.png"),
   "assets/bases/bases-03.png": require("./src/assets/bases/bases-03.png"),
@@ -284,7 +285,7 @@ export default function App() {
         </TouchableOpacity>
         <View style={styles.detailCard}>
           <Text style={styles.sectionTitle}>{detail.displayTitle}</Text>
-          <Text style={styles.muted}>{detail.kind} {detail.category ? `· ${detail.category}` : ""}</Text>
+          <Text style={styles.muted}>{detail.kind} {detail.category ? `Â· ${detail.category}` : ""}</Text>
           <Text style={styles.bodyText}>{detail.body || detail.description || detail.meaning}</Text>
           {detail.kyodos ? <Text style={styles.bodyText}>Movimentos: {detail.kyodos}</Text> : null}
           {detail.idealTime ? <Text style={styles.bodyText}>Tempo ideal: {detail.idealTime}</Text> : null}
@@ -356,7 +357,7 @@ function ItemCard({ item, studied, onPress }) {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress}>
       <Text style={styles.cardTitle}>{item.displayTitle}</Text>
-      <Text style={styles.muted}>{item.kind} {studied ? "· estudado" : ""}</Text>
+      <Text style={styles.muted}>{item.kind} {studied ? "Â· estudado" : ""}</Text>
       <Text style={styles.cardSummary}>{item.displaySummary}</Text>
     </TouchableOpacity>
   );
@@ -601,3 +602,4 @@ const styles = StyleSheet.create({
     color: "#b32222"
   }
 });
+

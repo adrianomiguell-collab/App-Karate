@@ -1,4 +1,4 @@
-# Roadmap - App Karate Shotokan
+﻿# Roadmap - App Karate Shotokan
 
 ## Fase 1 - MVP Iniciante
 
@@ -64,6 +64,7 @@ Escopo:
 - area dedicada de Katas;
 - area dedicada de Kihon;
 - suporte a links ou incorporacao de videos oficiais da Associacao Atarashii, quando permitido;
+- suporte a GIFs demonstrativos para tecnicas, defesas, ataques, chutes e bases;
 - filtros por nivel;
 - favoritos;
 - possivel substituicao gradual das imagens da apostila por materiais proprios.
@@ -180,3 +181,4 @@ Tudo que for criado agora deve respeitar esta ordem:
 3. apoiar estudo;
 4. medir aprendizado;
 5. preparar evolucao.
+
