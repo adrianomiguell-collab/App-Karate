@@ -58,6 +58,7 @@ O produto deve ser preparado para evoluir e atender:
 6. A experiencia deve ser util para iniciantes, mas preparada para todos os niveis.
 7. Recursos de IA devem ser limitados a conteudo validado sempre que possivel.
 8. Toda decisao tecnica deve preservar compatibilidade com Android e iOS.
+9. A distribuicao inicial deve priorizar baixo custo: Android via Google Play quando o MVP estiver maduro e iOS via Web App/PWA, deixando App Store para uma fase posterior validada.
 
 ## Estrutura Recomendada Do App
 

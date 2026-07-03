@@ -1,4 +1,23 @@
-﻿# Roadmap - App Karate Shotokan
+# Roadmap - App Karate Shotokan
+
+## Estrategia De Distribuicao
+
+Diretriz: validar e evoluir o produto evitando custo recorrente desnecessario no inicio.
+
+Caminho recomendado:
+
+- manter o Web App/PWA como canal principal de validacao e acesso via link;
+- publicar a versao Android na Google Play quando o MVP estiver maduro, aproveitando o custo menor de publicacao;
+- atender usuarios iOS inicialmente com Web App/PWA instalado na tela inicial;
+- considerar publicacao na App Store apenas quando o produto justificar o custo anual do Apple Developer Program;
+- manter a arquitetura preparada para Android e iOS, mesmo que a distribuicao inicial seja Google Play + PWA.
+
+Motivo:
+
+- Google Play tem custo inicial menor e sem recorrencia anual obrigatoria;
+- App Store exige custo anual para manter novos downloads disponiveis;
+- PWA permite testar o produto com usuarios reais sem custo de loja;
+- a estrategia preserva a evolucao futura para app nativo completo em Android e iOS.
 
 ## Fase 1 - MVP Iniciante
 
@@ -224,5 +243,3 @@ Tudo que for criado agora deve respeitar esta ordem:
 3. apoiar estudo;
 4. medir aprendizado;
 5. preparar evolucao.
-
-
