@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f7f4ef;
   --surface: #fffdf9;
   --surface-strong: #ffffff;
@@ -87,7 +87,7 @@ input {
   border-top: 1px solid var(--line);
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   left: 0;
   position: fixed;
   right: 0;
@@ -320,6 +320,24 @@ input {
   width: 100%;
 }
 
+.video-player {
+  background: #111827;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 14px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-player iframe {
+  border: 0;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
 .progress-track {
   background: #e5ded2;
   border-radius: 999px;
@@ -421,3 +439,4 @@ input {
     width: 70px;
   }
 }
+

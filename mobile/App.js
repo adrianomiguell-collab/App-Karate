@@ -38,6 +38,7 @@ const tabs = [
   { id: "home", label: "Home" },
   { id: "aprender", label: "Aprender" },
   { id: "treinar", label: "Treinar" },
+  { id: "katas", label: "Kata" },
   { id: "consultar", label: "Consultar" },
   { id: "revisar", label: "Revisar" }
 ];
@@ -105,7 +106,8 @@ export default function App() {
 
         <View style={styles.grid}>
           <ModuleCard title="Aprender" text="Historia, fundamentos, conduta e graduacao." onPress={() => go("aprender")} />
-          <ModuleCard title="Treinar" text="Tecnicas basicas, bases e katas iniciais." onPress={() => go("treinar")} />
+          <ModuleCard title="Treinar" text="Kihon, tecnicas basicas e bases principais." onPress={() => go("treinar")} />
+          <ModuleCard title="Kata" text="Katas iniciais, embusen e videos oficiais." onPress={() => go("katas")} />
           <ModuleCard title="Consultar" text="Glossario, regras, pontuacao e termos." onPress={() => go("consultar")} />
           <ModuleCard title="Revisar" text="Quiz da apostila e revisao de conhecimento." onPress={() => go("revisar")} />
         </View>
@@ -143,12 +145,19 @@ export default function App() {
   function renderTrain() {
     return renderList(
       "Treinar",
-      "Kihon, bases e katas iniciais com suporte para videos futuros.",
+      "Kihon, tecnicas basicas e bases principais.",
       [
         ...techniques.map((item) => normalizeItem(item, "tecnica")),
-        ...stances.map((item) => normalizeItem(item, "base")),
-        ...katas.map((item) => normalizeItem(item, "kata"))
+        ...stances.map((item) => normalizeItem(item, "base"))
       ]
+    );
+  }
+
+  function renderKatas() {
+    return renderList(
+      "Kata",
+      "Katas iniciais com ficha tecnica, embusen e videos oficiais quando disponiveis.",
+      katas.map((item) => normalizeItem(item, "kata"))
     );
   }
 
@@ -309,6 +318,7 @@ export default function App() {
     if (route === "home") return renderHome();
     if (route === "aprender") return renderLearn();
     if (route === "treinar") return renderTrain();
+    if (route === "katas") return renderKatas();
     if (route === "consultar") return renderConsult();
     if (route === "revisar" || route === "quiz" || route === "resultado") return renderReview();
     if (route === "busca") return renderSearch();
@@ -602,4 +612,9 @@ const styles = StyleSheet.create({
     color: "#b32222"
   }
 });
+
+
+
+
+
 

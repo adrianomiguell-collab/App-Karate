@@ -141,7 +141,11 @@ function homeView() {
       </button>
       <button class="card module-card" data-action="go:treinar" type="button">
         <h3>Treinar</h3>
-        <p>Tecnicas basicas, bases e katas iniciais.</p>
+        <p>Kihon, tecnicas basicas e bases principais.</p>
+      </button>
+      <button class="card module-card" data-action="go:katas" type="button">
+        <h3>Kata</h3>
+        <p>Katas iniciais, embusen e videos oficiais.</p>
       </button>
       <button class="card module-card" data-action="go:consultar" type="button">
         <h3>Consultar</h3>
@@ -158,7 +162,8 @@ function homeView() {
 function sectionView(area) {
   const titles = {
     aprender: ["Aprender", "Conteudos historicos, conceituais e formativos."],
-    treinar: ["Treinar", "Conteudos praticos para consulta antes ou depois do treino."],
+    treinar: ["Treinar", "Kihon, tecnicas basicas e bases para consulta antes ou depois do treino."],
+    katas: ["Kata", "Katas iniciais com ficha tecnica, embusen e videos oficiais quando disponiveis."],
     consultar: ["Consultar", "Referencia rapida de termos, regras e comandos."],
   };
   const [title, subtitle] = titles[area];
@@ -172,8 +177,11 @@ function sectionView(area) {
     items = [
       ...state.data.techniques.map((item) => ({ ...item, kind: "tecnica" })),
       ...state.data.stances.map((item) => ({ ...item, kind: "base" })),
-      ...state.data.katas.map((item) => ({ ...item, kind: "kata" })),
     ];
+  }
+
+  if (area === "katas") {
+    items = state.data.katas.map((item) => ({ ...item, kind: "kata" }));
   }
 
   if (area === "consultar") {
@@ -226,6 +234,40 @@ function findItem(kind, id) {
   return map[kind]?.find((item) => item.id === id);
 }
 
+function youtubeEmbedUrl(url) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname.includes("youtu.be")) {
+      const id = parsed.pathname.split("/").filter(Boolean)[0];
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+    if (parsed.hostname.includes("youtube.com")) {
+      if (parsed.pathname.startsWith("/embed/")) return url;
+      if (parsed.pathname.startsWith("/shorts/")) {
+        const id = parsed.pathname.split("/").filter(Boolean)[1];
+        return id ? `https://www.youtube.com/embed/${id}` : null;
+      }
+      const id = parsed.searchParams.get("v");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+function videoTemplate(video, title) {
+  const embedUrl = youtubeEmbedUrl(video);
+  if (!embedUrl) {
+    return `<p><a class="text-link" href="${htmlEscape(video)}" target="_blank" rel="noreferrer">Abrir video oficial</a></p>`;
+  }
+  return `
+    <div class="video-player">
+      <iframe src="${htmlEscape(embedUrl)}" title="Video oficial - ${htmlEscape(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p><a class="text-link" href="${htmlEscape(video)}" target="_blank" rel="noreferrer">Abrir no YouTube</a></p>
+  `;
+}
 function detailView(kind, id) {
   const item = findItem(kind, id);
   if (!item) return `<p class="empty">Item nao encontrado.</p>`;
@@ -392,6 +434,7 @@ function render() {
     home: homeView,
     aprender: () => sectionView("aprender"),
     treinar: () => sectionView("treinar"),
+    katas: () => sectionView("katas"),
     consultar: () => sectionView("consultar"),
     revisar: reviewView,
     busca: searchView,
@@ -479,5 +522,10 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
+
+
+
+
 
 
