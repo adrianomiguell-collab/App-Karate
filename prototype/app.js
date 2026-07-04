@@ -16,17 +16,25 @@ const dataFiles = {
   contents: "../data/content-items.json",
   techniques: "../data/techniques.json",
   stances: "../data/stances.json",
-  katas: "../data/katas.json",
+  katas: "../data/katas-shotokan-complete.json",
   glossary: "../data/glossary.json",
   rules: "../data/rules.json",
   quiz: "../data/quiz.json",
 };
 
+function normalizeProgress(progress) {
+  return {
+    studied: Array.isArray(progress?.studied) ? progress.studied : [],
+    favorites: Array.isArray(progress?.favorites) ? progress.favorites : [],
+    quiz: progress?.quiz || null,
+  };
+}
+
 function getProgress() {
   try {
-    return JSON.parse(localStorage.getItem(storeKey)) || { studied: [], quiz: null };
+    return normalizeProgress(JSON.parse(localStorage.getItem(storeKey)));
   } catch {
-    return { studied: [], quiz: null };
+    return normalizeProgress(null);
   }
 }
 
@@ -47,6 +55,21 @@ function isStudied(id) {
   return getProgress().studied.includes(id);
 }
 
+function toggleFavorite(id) {
+  const progress = getProgress();
+  if (progress.favorites.includes(id)) {
+    progress.favorites = progress.favorites.filter((favoriteId) => favoriteId !== id);
+  } else {
+    progress.favorites.push(id);
+  }
+  setProgress(progress);
+  render();
+}
+
+function isFavorite(id) {
+  return getProgress().favorites.includes(id);
+}
+
 async function loadData() {
   const entries = await Promise.all(
     Object.entries(dataFiles).map(async ([key, path]) => {
@@ -55,6 +78,7 @@ async function loadData() {
     }),
   );
   state.data = Object.fromEntries(entries);
+  state.data.katas = Array.isArray(state.data.katas) ? state.data.katas : state.data.katas.katas;
 }
 
 function allStudyItems() {
@@ -63,7 +87,7 @@ function allStudyItems() {
     ...d.contents.map((item) => ({ ...item, kind: "conteudo", name: item.title })),
     ...d.techniques.map((item) => ({ ...item, kind: "tecnica" })),
     ...d.stances.map((item) => ({ ...item, kind: "base" })),
-    ...d.katas.map((item) => ({ ...item, kind: "kata" })),
+    ...d.katas.map((item) => ({ ...item, kind: "kata", name: item.nome || item.name, summary: item.significado || item.summary })),
     ...d.glossary.map((item) => ({ ...item, kind: "termo", name: item.term })),
     ...d.rules.map((item) => ({ ...item, kind: "regra", name: item.title })),
   ];
@@ -181,7 +205,7 @@ function sectionView(area) {
   }
 
   if (area === "katas") {
-    items = state.data.katas.map((item) => ({ ...item, kind: "kata" }));
+    items = state.data.katas.map((item) => ({ ...item, kind: "kata", name: item.nome || item.name, summary: item.significado || item.summary, category: item.classificacao?.nivel || item.category, level: item.classificacao?.faixa_sugerida || item.level }));
   }
 
   if (area === "consultar") {
@@ -210,13 +234,13 @@ function sectionView(area) {
 
 function cardTemplate(item) {
   const done = isStudied(item.id) ? "Estudado" : "Abrir";
-  const title = item.name || item.title;
-  const summary = item.summary || item.description || item.meaning || item.classification || "";
+  const title = item.name || item.title || item.nome;
+  const summary = item.summary || item.description || item.meaning || item.significado || item.classification || item.classificacao?.faixa_sugerida || "";
   return `
     <button class="card" data-open="${item.kind}:${item.id}" type="button">
       <h3>${htmlEscape(title)}</h3>
       <p>${htmlEscape(summary)}</p>
-      <p class="muted">${htmlEscape(item.kind)} Â· ${done}</p>
+      <p class="muted">${htmlEscape(item.kind)} &middot; ${done}</p>
     </button>
   `;
 }
@@ -268,11 +292,101 @@ function videoTemplate(video, title) {
     <p><a class="text-link" href="${htmlEscape(video)}" target="_blank" rel="noreferrer">Abrir no YouTube</a></p>
   `;
 }
+function asArray(value) {
+  if (!value) return [];
+  return Array.isArray(value) ? value.filter(Boolean) : [value];
+}
+
+function listTemplate(items) {
+  const values = asArray(items);
+  return values.length ? `<ul>${values.map((entry) => `<li>${htmlEscape(entry)}</li>`).join("")}</ul>` : `<p class="muted">Pendente de cadastro.</p>`;
+}
+
+function fieldTemplate(label, value) {
+  if (!value || (Array.isArray(value) && !value.length)) return "";
+  return `<div class="info-card"><strong>${htmlEscape(label)}</strong><span>${htmlEscape(Array.isArray(value) ? value.join(", ") : value)}</span></div>`;
+}
+
+function detailSection(title, content) {
+  if (!content) return "";
+  return `<section class="detail-section"><h3>${htmlEscape(title)}</h3>${content}</section>`;
+}
+
+function kataVideoUrl(item) {
+  return item.video?.youtube_video_url || item.associationVideoUrl || item.videoUrl || "";
+}
+
+function kataDetailView(item) {
+  const title = item.nome || item.name;
+  const technical = item.informacoes_tecnicas || {};
+  const classification = item.classificacao || {};
+  const objectives = item.objetivos || {};
+  const bunkai = item.bunkai || {};
+  const video = kataVideoUrl(item);
+  const index = state.data.katas.findIndex((kata) => kata.id === item.id);
+  const previous = index > 0 ? state.data.katas[index - 1] : null;
+  const next = index >= 0 && index < state.data.katas.length - 1 ? state.data.katas[index + 1] : null;
+  const studied = isStudied(item.id);
+  const favorite = isFavorite(item.id);
+  const kataProgress = studied ? 100 : 0;
+  const techniqueGroups = Object.entries(item.tecnicas || {})
+    .filter(([, values]) => asArray(values).length)
+    .map(([group, values]) => `<div class="technique-group"><strong>${htmlEscape(group.replaceAll("_", " "))}</strong>${listTemplate(values)}</div>`)
+    .join("");
+
+  return `
+    <article class="detail kata-detail">
+      ${button("Voltar", "back")}
+      <header class="kata-hero">
+        <p class="eyebrow">Kata Shotokan</p>
+        <h2>${htmlEscape(title)}</h2>
+        ${item.nome_japones ? `<p class="kata-japanese">${htmlEscape(item.nome_japones)}</p>` : ""}
+        <p class="kata-summary"><strong>Significado:</strong> ${htmlEscape(item.significado || "Pendente de cadastro.")}</p>
+        ${item.pronuncia ? `<p class="muted"><strong>Pronuncia:</strong> ${htmlEscape(item.pronuncia)}</p>` : ""}
+        <div class="meta">
+          ${[classification.nivel, classification.faixa_sugerida, technical.quantidade_aproximada_movimentos ? `${technical.quantidade_aproximada_movimentos} movimentos` : null, technical.tempo_medio_execucao, technical.grau_dificuldade_1a5 ? `Dificuldade ${technical.grau_dificuldade_1a5}/5` : null].filter(Boolean).map((value) => `<span>${htmlEscape(value)}</span>`).join("")}
+        </div>
+        <div class="progress-track" aria-label="Progresso deste kata"><div class="progress-fill" style="width: ${kataProgress}%"></div></div>
+        <p class="muted">${studied ? "Kata marcado como estudado." : "Kata ainda nao marcado como estudado."}</p>
+      </header>
+
+      ${video ? videoTemplate(video, title) : `<div class="video-pending">${htmlEscape(item.video?.video_tipo || "Video oficial pendente de cadastro.")}</div>`}
+
+      <div class="detail-actions">
+        ${button(favorite ? "Favorito" : "Favoritar", `favorite:${item.id}`)}
+        ${button(studied ? "Estudado" : "Marcar como estudado", `study:${item.id}`, "primary-button")}
+      </div>
+
+      ${detailSection("Historico", `<p>${htmlEscape(item.historico || "Pendente de cadastro.")}</p>`)}
+      ${detailSection("Origem e criador", `<div class="info-grid">${fieldTemplate("Origem", item.origem)}${fieldTemplate("Criador", item.criador)}</div>`)}
+      ${detailSection("Classificacao", `<div class="info-grid">${fieldTemplate("Nivel", classification.nivel)}${fieldTemplate("Faixa sugerida", classification.faixa_sugerida)}${fieldTemplate("Ordem tradicional", classification.ordem_tradicional_aprendizado)}${fieldTemplate("Sequencia", classification.associacao_que_utiliza_sequencia)}</div>`)}
+      ${detailSection("Informacoes tecnicas", `<div class="info-grid">${fieldTemplate("Movimentos", technical.quantidade_aproximada_movimentos)}${fieldTemplate("Tempo medio", technical.tempo_medio_execucao)}${fieldTemplate("Kiai", technical.quantidade_kiai)}${fieldTemplate("Pontos de Kiai", technical.pontos_kiai)}${fieldTemplate("Direcoes principais", technical.direcoes_principais)}${fieldTemplate("Dificuldade", technical.grau_dificuldade_1a5 ? `${technical.grau_dificuldade_1a5}/5` : "")}</div>`)}
+      ${detailSection("Objetivos", `<div class="info-grid">${fieldTemplate("Objetivo principal", objectives.objetivo_principal)}${fieldTemplate("O aluno desenvolve", objectives.o_que_o_aluno_desenvolve)}${fieldTemplate("Conceitos", objectives.principais_conceitos)}${fieldTemplate("Estrategia", objectives.estrategia_combate_representada)}</div>`)}
+      ${detailSection("Tecnicas", techniqueGroups || `<p class="muted">Tecnicas pendentes de cadastro.</p>`)}
+      ${detailSection("Bases utilizadas", listTemplate(item.bases_utilizadas))}
+      ${detailSection("Embusen", `<p>${htmlEscape(technical.embusen || "Pendente de cadastro.")}</p>`)}
+      ${detailSection("Bunkai", `<div class="info-grid">${fieldTemplate("Aplicacao principal", bunkai.aplicacao_principal)}${fieldTemplate("Conceito", bunkai.conceito)}${fieldTemplate("Distancia", bunkai.distancia)}${fieldTemplate("Tipo de combate", bunkai.tipo_combate)}</div>`)}
+      ${detailSection("Erros comuns", listTemplate(item.principais_erros))}
+      ${detailSection("Checklist", `<ul class="checklist">${asArray(item.checklist_aprendizagem).map((entry) => `<li>${htmlEscape(entry)}</li>`).join("")}</ul>`)}
+      ${detailSection("Curiosidades", listTemplate(item.curiosidades))}
+      ${item.fontes_e_observacoes?.observacao ? detailSection("Observacoes", `<p>${htmlEscape(item.fontes_e_observacoes.observacao)}</p>`) : ""}
+
+      <nav class="kata-nav" aria-label="Navegacao entre katas">
+        ${previous ? `<button class="secondary-button" data-open="kata:${previous.id}" type="button">Kata anterior</button>` : `<span></span>`}
+        ${next ? `<button class="secondary-button" data-open="kata:${next.id}" type="button">Proximo Kata</button>` : `<span></span>`}
+      </nav>
+    </article>
+  `;
+}
 function detailView(kind, id) {
   const item = findItem(kind, id);
   if (!item) return `<p class="empty">Item nao encontrado.</p>`;
 
-  const title = item.title || item.name || item.term;
+  if (kind === "kata" && item.classificacao && item.informacoes_tecnicas) {
+    return kataDetailView(item);
+  }
+
+  const title = item.title || item.name || item.term || item.nome;
   const text = item.body || item.description || item.meaning || "";
   const asset = item.imageUrl || item.diagramUrl || item.assetUrl;
   const video = item.associationVideoUrl || item.videoUrl;
@@ -492,6 +606,8 @@ document.addEventListener("click", (event) => {
     state.route = state.detailReturnRoute || "home";
     tabs.forEach((tab) => tab.classList.toggle("is-active", tab.dataset.route === state.route));
     render();
+  } else if (action.startsWith("favorite:")) {
+    toggleFavorite(action.split(":")[1]);
   } else if (action.startsWith("study:")) {
     markStudied(action.split(":")[1]);
   } else if (action === "start-quiz") {
@@ -522,6 +638,8 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
+
 
 
 

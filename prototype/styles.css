@@ -389,6 +389,100 @@ input {
   font-weight: 700;
 }
 
+
+.kata-detail {
+  display: grid;
+  gap: 16px;
+}
+
+.kata-hero {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.kata-japanese {
+  color: var(--muted);
+  font-size: 18px;
+  margin: -4px 0 10px;
+}
+
+.kata-summary {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.video-pending {
+  background: #f4f0e8;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  line-height: 1.45;
+  padding: 14px;
+}
+
+.detail-actions,
+.kata-nav {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.detail-section {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.detail-section h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.info-card {
+  background: #f8f5ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+}
+
+.info-card strong,
+.technique-group strong {
+  color: var(--ink);
+  text-transform: capitalize;
+}
+
+.info-card span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.technique-group {
+  background: #f8f5ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.detail-section ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.detail-section li {
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.checklist li {
+  list-style: square;
+}
 @media (min-width: 760px) {
   .app-shell {
     padding-bottom: 0;
@@ -439,4 +533,5 @@ input {
     width: 70px;
   }
 }
+
 
