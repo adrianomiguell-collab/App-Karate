@@ -236,10 +236,10 @@
         "Apostila, paginas 5 e 6."
       ],
       "video": {
-        "youtube_video_url": "",
+        "youtube_video_url": "https://www.youtube.com/watch?v=Xdx1igUvmlU",
         "youtube_channel": "",
         "youtube_channel_url": "",
-        "video_tipo": "Video oficial pendente de cadastro.",
+        "video_tipo": "Video de referencia para teste do player embutido.",
         "official_video": "Nao"
       },
       "fontes_e_observacoes": {
