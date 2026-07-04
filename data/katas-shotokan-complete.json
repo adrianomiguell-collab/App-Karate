@@ -1,0 +1,3268 @@
+{
+  "metadata": {
+    "nome_base": "Base Oficial de Dados dos Katas - Atarashii App",
+    "idioma": "pt-BR",
+    "fonte_principal": "apostila karate.pdf",
+    "total_katas": 27,
+    "inclui_taikyoku_shodan": true,
+    "status": "Base estruturada para revisao e futura integracao no app"
+  },
+  "katas": [
+    {
+      "id": "taikyoku-shodan",
+      "slug": "taikyoku-shodan",
+      "nome": "Taikyoku Shodan",
+      "nome_japones": "太極初段",
+      "significado": "Primeira forma do grande principio",
+      "pronuncia": "tai-kyo-ku sho-dan",
+      "origem": "Kata introdutorio opcional em algumas escolas Shotokan; nao consta na lista dos 26 katas da apostila.",
+      "criador": "Atribuicao varia por fonte Shotokan; validar com a associacao.",
+      "historico": "Opcional em algumas associacoes; nao aparece na lista dos 26 katas da apostila.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Branca / introdutoria, opcional conforme associacao",
+        "ordem_tradicional_aprendizado": 0,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": "20 aproximados",
+        "tempo_medio_execucao": "30 a 40 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Pendente de validacao pela associacao"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 1
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Opcional em algumas associacoes; nao aparece na lista dos 26 katas da apostila."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Opcional em algumas associacoes; nao aparece na lista dos 26 katas da apostila.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "heian-shodan",
+      "slug": "heian-shodan",
+      "nome": "Heian Shodan",
+      "nome_japones": "平安初段",
+      "significado": "Paz e tranquilidade nivel 1",
+      "pronuncia": "hei-an sho-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 5 e 6.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Branca",
+        "ordem_tradicional_aprendizado": 1,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 21,
+        "tempo_medio_execucao": "30 a 40 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 9: Zenkutsu-Dachi Age-Uke",
+          "Movimento 17: Zenkutsu-Dachi Oi-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 1
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 5 e 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 5 e 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "heian-nidan",
+      "slug": "heian-nidan",
+      "nome": "Heian Nidan",
+      "nome_japones": "平安二段",
+      "significado": "Paz e tranquilidade nivel 2",
+      "pronuncia": "hei-an ni-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 5 e 6. Grafia da apostila: Hein Nidan.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Amarela",
+        "ordem_tradicional_aprendizado": 2,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 26,
+        "tempo_medio_execucao": "Aproximadamente 40 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 11: Zenkutsu-Dachi Chudan Nukite",
+          "Movimento 26: Zenkutsu-Dachi Jodan Age-Uke"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 2
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 5 e 6. Grafia da apostila: Hein Nidan."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 5 e 6. Grafia da apostila: Hein Nidan.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "heian-sandan",
+      "slug": "heian-sandan",
+      "nome": "Heian Sandan",
+      "nome_japones": "平安三段",
+      "significado": "Paz e tranquilidade nivel 3",
+      "pronuncia": "hei-an san-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 5 e 6.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Vermelha",
+        "ordem_tradicional_aprendizado": 3,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 20,
+        "tempo_medio_execucao": "Aproximadamente 40 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 10: Zenkutsu-Dachi Oi-Zuki",
+          "Movimento 20: Kiba-Dachi Empi-Uchi e Jodan Tate-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 2
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [
+          "Empi-Uchi"
+        ],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 5 e 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 5 e 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "heian-yondan",
+      "slug": "heian-yondan",
+      "nome": "Heian Yondan",
+      "nome_japones": "平安四段",
+      "significado": "Paz e tranquilidade nivel 4",
+      "pronuncia": "hei-an yon-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 5 e 6.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Laranja",
+        "ordem_tradicional_aprendizado": 4,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 27,
+        "tempo_medio_execucao": "Aproximadamente 50 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 13: Kosa-Dachi Uraken-Uchi",
+          "Movimento 25: Hiza-Geri"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 3
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [
+          "Mae-Geri/Yoko-Geri conforme kata"
+        ],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [
+          "Hiza-Geri"
+        ],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 5 e 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 5 e 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "heian-godan",
+      "slug": "heian-godan",
+      "nome": "Heian Godan",
+      "nome_japones": "平安五段",
+      "significado": "Paz e tranquilidade nivel 5",
+      "pronuncia": "hei-an go-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 5 e 6.",
+      "classificacao": {
+        "nivel": "Fundamentos (Kyu)",
+        "faixa_sugerida": "Verde",
+        "ordem_tradicional_aprendizado": 5,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 23,
+        "tempo_medio_execucao": "Aproximadamente 50 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 12: Zenkutsu-Dachi Oi-Zuki",
+          "Movimento 19: no salto"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 3
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 5 e 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 5 e 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "tekki-shodan",
+      "slug": "tekki-shodan",
+      "nome": "Tekki Shodan",
+      "nome_japones": "鉄騎初段",
+      "significado": "Cavaleiro de ferro nivel 1",
+      "pronuncia": "tek-ki sho-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 6.",
+      "classificacao": {
+        "nivel": "Intermediarios",
+        "faixa_sugerida": "Marrom inicial",
+        "ordem_tradicional_aprendizado": 6,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 29,
+        "tempo_medio_execucao": "40 a 50 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 15: Chudan Morote-Zuki",
+          "Movimento 29: Chudan Morote-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 3
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver estabilidade lateral, Kiba-Dachi e combate em curta distancia.",
+        "o_que_o_aluno_desenvolve": [
+          "Base lateral",
+          "Centro de gravidade",
+          "Golpes curtos",
+          "Kime"
+        ],
+        "principais_conceitos": [
+          "Kiba-Dachi",
+          "Combate lateral",
+          "Curta distancia"
+        ],
+        "estrategia_combate_representada": "Combate lateral em curta distancia contra ataques proximos."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Kiba-Dachi"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa e contra-ataque em curta distancia lateral.",
+        "conceito": "Controlar o centro e responder para ambos os lados.",
+        "distancia": "Curta distancia",
+        "tipo_combate": "Combate lateral e controle corporal"
+      },
+      "principais_erros": [
+        "Kiba-Dachi alto ou estreito",
+        "Inclinar o tronco",
+        "Executar tecnicas so com os bracos",
+        "Perder pressao para o centro",
+        "Kiai sem kime"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "bassai-dai",
+      "slug": "bassai-dai",
+      "nome": "Bassai Dai",
+      "nome_japones": "抜塞大",
+      "significado": "Romper a fortaleza",
+      "pronuncia": "bas-sai dai",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 7.",
+      "classificacao": {
+        "nivel": "Intermediarios",
+        "faixa_sugerida": "Marrom",
+        "ordem_tradicional_aprendizado": 7,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 42,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 19: Yoko-Geri Kekomi",
+          "Movimento 42: Chudan Shuto-Uke"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [
+          "Mae-Geri/Yoko-Geri conforme kata"
+        ],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 7."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 7.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "kanku-dai",
+      "slug": "kanku-dai",
+      "nome": "Kanku Dai",
+      "nome_japones": "観空大",
+      "significado": "Contemplar o ceu",
+      "pronuncia": "kan-ku dai",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 7.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Marrom avancada / preta inicial",
+        "ordem_tradicional_aprendizado": 8,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 65,
+        "tempo_medio_execucao": "Aproximadamente 90 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 15: Zenkutsu-Dachi Osae-Uke Nukite",
+          "Movimento 64: Nidan-Geri"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [
+          "Mae-Geri/Yoko-Geri conforme kata"
+        ],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 7."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 7.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "empi",
+      "slug": "empi",
+      "nome": "Empi",
+      "nome_japones": "燕飛",
+      "significado": "Voo da andorinha",
+      "pronuncia": "em-pi",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 8. Variante grafica: Enpi.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Preta inicial",
+        "ordem_tradicional_aprendizado": 9,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 37,
+        "tempo_medio_execucao": "Aproximadamente 50 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 15: Ashi-Dachi Empi-Uchi",
+          "Movimento 36: durante o salto, caindo em Kokutsu Shuto-Uke"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [
+          "Empi-Uchi"
+        ],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 8. Variante grafica: Enpi."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 8. Variante grafica: Enpi.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "jion",
+      "slug": "jion",
+      "nome": "Jion",
+      "nome_japones": "慈恩",
+      "significado": "Amor e gratidao",
+      "pronuncia": "ji-on",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 9.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Preta inicial",
+        "ordem_tradicional_aprendizado": 10,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 47,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 17: Zenkutsu-Dachi Oi-Zuki",
+          "Movimento 47: Kiba-Dachi Yumi-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 9."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 9.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "hangetsu",
+      "slug": "hangetsu",
+      "nome": "Hangetsu",
+      "nome_japones": "半月",
+      "significado": "Meia-lua",
+      "pronuncia": "han-get-su",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 8.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 11,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 41,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 11",
+          "Movimento 40"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 8."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 8.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "jitte",
+      "slug": "jitte",
+      "nome": "Jitte",
+      "nome_japones": "十手",
+      "significado": "Dez maos",
+      "pronuncia": "jit-te",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 8.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 12,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 24,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 13",
+          "Movimento 24"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 8."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 8.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "gankaku",
+      "slug": "gankaku",
+      "nome": "Gankaku",
+      "nome_japones": "岩鶴",
+      "significado": "Grou sobre a rocha",
+      "pronuncia": "gan-ka-ku",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 8 e 9.",
+      "classificacao": {
+        "nivel": "Avancados",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 13,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 42,
+        "tempo_medio_execucao": "50 a 70 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 28",
+          "Movimento 42"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 8 e 9."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 8 e 9.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "tekki-nidan",
+      "slug": "tekki-nidan",
+      "nome": "Tekki Nidan",
+      "nome_japones": "鉄騎二段",
+      "significado": "Cavaleiro de ferro nivel 2",
+      "pronuncia": "tek-ki ni-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 6.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 14,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 24,
+        "tempo_medio_execucao": "Aproximadamente 35 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 16: Ura-Zuki",
+          "Movimento 24: Ura-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver estabilidade lateral, Kiba-Dachi e combate em curta distancia.",
+        "o_que_o_aluno_desenvolve": [
+          "Base lateral",
+          "Centro de gravidade",
+          "Golpes curtos",
+          "Kime"
+        ],
+        "principais_conceitos": [
+          "Kiba-Dachi",
+          "Combate lateral",
+          "Curta distancia"
+        ],
+        "estrategia_combate_representada": "Combate lateral em curta distancia contra ataques proximos."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Kiba-Dachi"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa e contra-ataque em curta distancia lateral.",
+        "conceito": "Controlar o centro e responder para ambos os lados.",
+        "distancia": "Curta distancia",
+        "tipo_combate": "Combate lateral e controle corporal"
+      },
+      "principais_erros": [
+        "Kiba-Dachi alto ou estreito",
+        "Inclinar o tronco",
+        "Executar tecnicas so com os bracos",
+        "Perder pressao para o centro",
+        "Kiai sem kime"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 6."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 6.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "tekki-sandan",
+      "slug": "tekki-sandan",
+      "nome": "Tekki Sandan",
+      "nome_japones": "鉄騎三段",
+      "significado": "Cavaleiro de ferro nivel 3",
+      "pronuncia": "tek-ki san-dan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 6. Grafia da apostila: Teki Sandan.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 15,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 36,
+        "tempo_medio_execucao": "Aproximadamente 40 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 16: Ura-Zuki",
+          "Movimento 36: Ura-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver estabilidade lateral, Kiba-Dachi e combate em curta distancia.",
+        "o_que_o_aluno_desenvolve": [
+          "Base lateral",
+          "Centro de gravidade",
+          "Golpes curtos",
+          "Kime"
+        ],
+        "principais_conceitos": [
+          "Kiba-Dachi",
+          "Combate lateral",
+          "Curta distancia"
+        ],
+        "estrategia_combate_representada": "Combate lateral em curta distancia contra ataques proximos."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [
+          "Empi-Uchi"
+        ],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Kiba-Dachi"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa e contra-ataque em curta distancia lateral.",
+        "conceito": "Controlar o centro e responder para ambos os lados.",
+        "distancia": "Curta distancia",
+        "tipo_combate": "Combate lateral e controle corporal"
+      },
+      "principais_erros": [
+        "Kiba-Dachi alto ou estreito",
+        "Inclinar o tronco",
+        "Executar tecnicas so com os bracos",
+        "Perder pressao para o centro",
+        "Kiai sem kime"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 6. Grafia da apostila: Teki Sandan."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 6. Grafia da apostila: Teki Sandan.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "bassai-sho",
+      "slug": "bassai-sho",
+      "nome": "Bassai Sho",
+      "nome_japones": "抜塞小",
+      "significado": "Romper a fortaleza - forma menor",
+      "pronuncia": "bas-sai sho",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 7.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 16,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 27,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 17: Yoko-Geri Kekomi",
+          "Movimento 22: Zenkutsu Oi-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [
+          "Mae-Geri/Yoko-Geri conforme kata"
+        ],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 7."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 7.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "kanku-sho",
+      "slug": "kanku-sho",
+      "nome": "Kanku Sho",
+      "nome_japones": "観空小",
+      "significado": "Contemplar o ceu - forma menor",
+      "pronuncia": "kan-ku sho",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 7.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 17,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 48,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 6: Zenkutsu-Dachi Oi-Zuki",
+          "Movimento 48: Zenkutsu-Dachi Oi-Zuki"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [
+          "Mae-Geri/Yoko-Geri conforme kata"
+        ],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 7."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 7.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "nijushiho",
+      "slug": "nijushiho",
+      "nome": "Nijushiho",
+      "nome_japones": "二十四歩",
+      "significado": "Vinte e quatro passos",
+      "pronuncia": "ni-ju-shi-ho",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 10.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 18,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 34,
+        "tempo_medio_execucao": "Aproximadamente 90 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 18",
+          "Movimento 33"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 10."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 10.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "chinte",
+      "slug": "chinte",
+      "nome": "Chinte",
+      "nome_japones": "珍手",
+      "significado": "Maos estranhas / tecnicas estranhas",
+      "pronuncia": "chin-te",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 9. Pontos de kiai nao informados.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 19,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 33,
+        "tempo_medio_execucao": "60 a 90 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Pendente na apostila"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 9. Pontos de kiai nao informados."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 9. Pontos de kiai nao informados.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "sochin",
+      "slug": "sochin",
+      "nome": "Sochin",
+      "nome_japones": "壮鎮",
+      "significado": "Espirito inabalavel",
+      "pronuncia": "so-chin",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 9 e 10.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 20,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 40,
+        "tempo_medio_execucao": "Aproximadamente 60 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 28",
+          "Movimento 40"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 9 e 10."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 9 e 10.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "meikyo",
+      "slug": "meikyo",
+      "nome": "Meikyo",
+      "nome_japones": "明鏡",
+      "significado": "Espelho limpo / espelho da alma",
+      "pronuncia": "mei-kyo",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 10 e 11.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 21,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 34,
+        "tempo_medio_execucao": "Aproximadamente 45 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 24: Mikazuki-Geri",
+          "Movimento 32: Empi-Uchi durante o salto"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 10 e 11."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 10 e 11.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "wankan",
+      "slug": "wankan",
+      "nome": "Wankan",
+      "nome_japones": "王冠",
+      "significado": "Coroa real",
+      "pronuncia": "wan-kan",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 11.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 22,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 24,
+        "tempo_medio_execucao": "30 a 45 segundos",
+        "quantidade_kiai": 1,
+        "pontos_kiai": [
+          "Movimento 24"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 11."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 11.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "unsu",
+      "slug": "unsu",
+      "nome": "Unsu",
+      "nome_japones": "雲手",
+      "significado": "Maos de nuvem",
+      "pronuncia": "un-su",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, paginas 9 e 10.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta avancada",
+        "ordem_tradicional_aprendizado": 23,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 48,
+        "tempo_medio_execucao": "60 a 90 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 28",
+          "Movimento 32"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, paginas 9 e 10."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, paginas 9 e 10.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "gojushiho-dai",
+      "slug": "gojushiho-dai",
+      "nome": "Gojushiho Dai",
+      "nome_japones": "五十四歩大",
+      "significado": "Cinquenta e quatro passos - forma longa",
+      "pronuncia": "go-ju-shi-ho dai",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta avancada",
+        "ordem_tradicional_aprendizado": 24,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 67,
+        "tempo_medio_execucao": "60 a 70 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 59",
+          "Movimento 67"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 10. Validar ordem/nome com a associacao."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "gojushiho-sho",
+      "slug": "gojushiho-sho",
+      "nome": "Gojushiho Sho",
+      "nome_japones": "五十四歩小",
+      "significado": "Cinquenta e quatro passos - forma curta",
+      "pronuncia": "go-ju-shi-ho sho",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta avancada",
+        "ordem_tradicional_aprendizado": 25,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 65,
+        "tempo_medio_execucao": "60 a 70 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 59",
+          "Movimento 65"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 5
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 10. Validar ordem/nome com a associacao."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    },
+    {
+      "id": "jiin",
+      "slug": "jiin",
+      "nome": "Jiin",
+      "nome_japones": "慈陰",
+      "significado": "Amor e protecao",
+      "pronuncia": "ji-in",
+      "origem": "Origem tradicional Shotokan/Okinawa; detalhes historicos variam por linhagem.",
+      "criador": "Nao confirmado pela apostila, salvo observacoes historicas especificas.",
+      "historico": "Apostila, pagina 11.",
+      "classificacao": {
+        "nivel": "Superiores (Faixa Preta)",
+        "faixa_sugerida": "Preta",
+        "ordem_tradicional_aprendizado": 26,
+        "associacao_que_utiliza_sequencia": "Sequencia pedagogica Shotokan usada como referencia por linhagens JKA, ISKF e SKIF; validar ordem final com a Associacao Atarashii."
+      },
+      "informacoes_tecnicas": {
+        "quantidade_aproximada_movimentos": 35,
+        "tempo_medio_execucao": "50 a 65 segundos",
+        "quantidade_kiai": 2,
+        "pontos_kiai": [
+          "Movimento 11",
+          "Movimento 35"
+        ],
+        "embusen": "Pendente de diagrama especifico validado pela associacao.",
+        "direcoes_principais": [
+          "Frente",
+          "Laterais",
+          "Retornos no embusen"
+        ],
+        "grau_dificuldade_1a5": 4
+      },
+      "objetivos": {
+        "objetivo_principal": "Desenvolver forma, embusen, ritmo, kime e aplicacao pratica das tecnicas do kata.",
+        "o_que_o_aluno_desenvolve": [
+          "Postura",
+          "Ritmo",
+          "Memoria motora",
+          "Respiracao",
+          "Kime",
+          "Zanshin"
+        ],
+        "principais_conceitos": [
+          "Embusen",
+          "Bunkai",
+          "Defesa e contra-ataque",
+          "Mudanca de direcao"
+        ],
+        "estrategia_combate_representada": "Resposta contra um ou mais oponentes imaginarios com defesa, reposicionamento e contra-ataque."
+      },
+      "tecnicas": {
+        "socos": [
+          "Oi-Zuki",
+          "Gyaku-Zuki conforme kata"
+        ],
+        "defesas": [
+          "Gedan-Barai",
+          "Age-Uke",
+          "Uchi-Uke",
+          "Shuto-Uke conforme kata"
+        ],
+        "chutes": [],
+        "golpes_de_mao_aberta": [
+          "Shuto-Uke",
+          "Nukite conforme kata"
+        ],
+        "cotovelo": [],
+        "joelho": [],
+        "outras_tecnicas": [
+          "Mudancas de direcao",
+          "Controle de ritmo",
+          "Kiai",
+          "Zanshin"
+        ]
+      },
+      "bases_utilizadas": [
+        "Zenkutsu-Dachi",
+        "Kokutsu-Dachi",
+        "Kiba-Dachi",
+        "Bases especificas conforme kata"
+      ],
+      "bunkai": {
+        "aplicacao_principal": "Defesa contra ataque direto seguida de contra-ataque.",
+        "conceito": "Bloquear, reposicionar e responder mantendo postura e distancia.",
+        "distancia": "Media distancia",
+        "tipo_combate": "Combate contra um ou mais oponentes imaginarios"
+      },
+      "principais_erros": [
+        "Perder o embusen",
+        "Bases altas ou instaveis",
+        "Ritmo monotono",
+        "Kiai fora do ponto correto",
+        "Falta de zanshin",
+        "Tecnicas sem uso do quadril"
+      ],
+      "checklist_aprendizagem": [
+        "Conhece o embusen",
+        "Executa todas as bases corretamente",
+        "Utiliza os kiai nos pontos previstos",
+        "Mantem ritmo",
+        "Mantem postura",
+        "Mantem zanshin",
+        "Executa com potencia",
+        "Executa sem consultar material"
+      ],
+      "curiosidades": [
+        "Apostila, pagina 11."
+      ],
+      "video": {
+        "youtube_video_url": "",
+        "youtube_channel": "",
+        "youtube_channel_url": "",
+        "video_tipo": "Video oficial pendente de cadastro.",
+        "official_video": "Nao"
+      },
+      "fontes_e_observacoes": {
+        "fonte_principal": "apostila karate.pdf",
+        "observacao_divergencia": "Apostila, pagina 11.",
+        "status_validacao": "Pendente de revisao final da Associacao Atarashii"
+      }
+    }
+  ]
+}
