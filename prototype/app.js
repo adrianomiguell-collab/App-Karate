@@ -8,6 +8,14 @@
   quizAnswers: [],
 };
 
+const contactInfo = {
+  place: "Academia Bee Strong",
+  address: "R. Alm. Luís Penido Burnier, 211 - Jardim Sandra, São Paulo - SP",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=R.%20Alm.%20Lu%C3%ADs%20Penido%20Burnier%2C%20211%20-%20Jardim%20Sandra%2C%20S%C3%A3o%20Paulo%20-%20SP",
+  instagram: "@associacao_atarashii_karate",
+  instagramUrl: "https://www.instagram.com/associacao_atarashii_karate/",
+  whatsappNumber: "",
+};
 const storeKey = "karate-shotokan-progress";
 const app = document.querySelector("#app");
 const tabs = [...document.querySelectorAll(".tab")];
@@ -185,6 +193,10 @@ function homeView() {
       <button class="card module-card" data-action="go:revisar" type="button">
         <h3>Revisar</h3>
         <p>${lastQuiz}</p>
+      </button>
+      <button class="card module-card" data-action="go:contato" type="button">
+        <h3>Contato</h3>
+        <p>Endereco, mapa e redes da associacao.</p>
       </button>
     </section>
   `;
@@ -457,6 +469,38 @@ function searchView() {
   `;
 }
 
+function contactView() {
+  const whatsappUrl = contactInfo.whatsappNumber ? `https://wa.me/${contactInfo.whatsappNumber}` : "";
+  return `
+    <section class="detail contact-view">
+      <p class="eyebrow">Contato</p>
+      <h2>Associacao Atarashii Karate-do Shotokan</h2>
+      <div class="contact-list">
+        <div class="info-card">
+          <strong>Local de treino</strong>
+          <span>${htmlEscape(contactInfo.place)}</span>
+        </div>
+        <div class="info-card">
+          <strong>Endereco</strong>
+          <span>${htmlEscape(contactInfo.address)}</span>
+        </div>
+        <div class="info-card">
+          <strong>Instagram</strong>
+          <span>${htmlEscape(contactInfo.instagram)}</span>
+        </div>
+        <div class="info-card">
+          <strong>WhatsApp</strong>
+          <span>${contactInfo.whatsappNumber ? "Abrir conversa pelo WhatsApp." : "Numero pendente de cadastro."}</span>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a class="primary-button contact-link" href="${htmlEscape(contactInfo.mapsUrl)}" target="_blank" rel="noreferrer">Abrir no mapa</a>
+        <a class="secondary-button contact-link" href="${htmlEscape(contactInfo.instagramUrl)}" target="_blank" rel="noreferrer">Abrir Instagram</a>
+        ${whatsappUrl ? `<a class="primary-button contact-link" href="${htmlEscape(whatsappUrl)}" target="_blank" rel="noreferrer">Chamar no WhatsApp</a>` : `<button class="secondary-button" type="button" disabled>WhatsApp pendente</button>`}
+      </div>
+    </section>
+  `;
+}
 function reviewView() {
   const progress = getProgress();
   const last = progress.quiz ? `Ultimo resultado: ${progress.quiz.score}/${progress.quiz.total}` : "Voce ainda nao respondeu o quiz.";
@@ -558,6 +602,7 @@ function render() {
     katas: () => sectionView("katas"),
     consultar: () => sectionView("consultar"),
     revisar: reviewView,
+    contato: contactView,
     busca: searchView,
     quiz: quizView,
     resultado: resultView,
@@ -645,6 +690,8 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
+
 
 
 

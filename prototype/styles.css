@@ -87,7 +87,7 @@ input {
   border-top: 1px solid var(--line);
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   left: 0;
   position: fixed;
   right: 0;
@@ -98,8 +98,9 @@ input {
   background: transparent;
   border: 0;
   color: var(--muted);
+  font-size: 12px;
   min-height: 62px;
-  padding: 8px 4px;
+  padding: 8px 2px;
 }
 
 .tab.is-active {
@@ -483,6 +484,33 @@ input {
 .checklist li {
   list-style: square;
 }
+
+.contact-view h2 {
+  margin-top: 8px;
+}
+
+.contact-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.contact-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-link {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 @media (min-width: 760px) {
   .app-shell {
     padding-bottom: 0;
@@ -533,5 +561,9 @@ input {
     width: 70px;
   }
 }
+
+
+
+
 
 
