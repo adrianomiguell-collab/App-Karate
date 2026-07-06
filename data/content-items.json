@@ -6,10 +6,22 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "O Karate e uma arte marcial japonesa conhecida como caminho das maos vazias, com origem em Okinawa.",
-    "body": "O Karate e apresentado na apostila como mais do que um sistema de luta: e um caminho de vida, ou Karate-do, voltado ao aperfeicoamento do corpo, da mente e do carater. Sua pratica desenvolve disciplina, respeito, autocontrole, humildade e perseveranca.",
-    "sourcePages": [2],
-    "relatedIds": ["okinawa-ryukyu", "gichin-funakoshi", "shotokan"]
+    "summary": "O Karate-do e uma arte marcial de origem okinawana que une defesa pessoal, disciplina e formacao do carater.",
+    "body": "Karate significa, de forma simples, \"maos vazias\". No contexto do Karate-do, porem, o termo vai alem da ausencia de armas: representa um caminho de treinamento em que o praticante usa o proprio corpo, a atencao e a disciplina para evoluir tecnicamente e tambem como pessoa.\n\nA arte se desenvolveu em Okinawa, em contato com praticas locais de luta e influencias chinesas. Com o tempo, deixou de ser apenas um metodo de defesa pessoal transmitido de forma restrita e passou a ser ensinado de maneira mais organizada em escolas, dojos e universidades.\n\nPara o iniciante, o ponto mais importante e entender que Karate nao e apenas bater ou vencer. A pratica envolve respeito, autocontrole, repeticao, postura, respiracao, concentracao e responsabilidade. O objetivo e formar um corpo mais preparado e uma mente mais equilibrada.",
+    "sourcePages": [
+      2
+    ],
+    "relatedIds": [
+      "okinawa-ryukyu",
+      "gichin-funakoshi",
+      "shotokan"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "okinawa-ryukyu",
@@ -18,10 +30,21 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "O Karate se formou a partir do contato entre praticas locais de Okinawa e influencias chinesas.",
-    "body": "A apostila situa a origem do Karate na ilha de Okinawa, antigo Reino de Ryukyu. As trocas culturais com China, Japao e outros paises asiaticos favoreceram o contato com artes marciais chinesas, especialmente o Kenpo, que foram incorporadas as formas locais de combate chamadas Te.",
-    "sourcePages": [2],
-    "relatedIds": ["historia-karate", "kobudo"]
+    "summary": "O Karate nasceu em Okinawa, antigo Reino de Ryukyu, em um ambiente de trocas culturais com China, Japao e Sudeste Asiatico.",
+    "body": "Okinawa fazia parte do antigo Reino de Ryukyu, localizado em uma regiao estrategica entre Japao, China, Taiwan e Sudeste Asiatico. Essa posicao favoreceu comercio, diplomacia e intensa troca cultural, inclusive no campo das artes marciais.\n\nAntes do nome Karate se consolidar, existiam praticas locais conhecidas genericamente como Te, ou \"mao\". Em diferentes regioes surgiram linhas como Shuri-te, Naha-te e Tomari-te, associadas a cidades e ambientes sociais distintos. Essas praticas receberam influencias de metodos chineses de combate, mas foram adaptadas a realidade okinawana.\n\nPara estudar Shotokan hoje, conhecer Okinawa ajuda a entender por que muitos katas, tecnicas e principios carregam uma mistura de defesa pessoal, tradicao familiar, disciplina corporal e influencia cultural asiatico-oriental.",
+    "sourcePages": [
+      2
+    ],
+    "relatedIds": [
+      "historia-karate",
+      "kobudo"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "kobudo",
@@ -30,10 +53,20 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "A restricao ao porte de armas ajudou a fortalecer o combate desarmado e o uso de ferramentas adaptadas.",
-    "body": "Segundo a apostila, a proibicao do porte de armas, intensificada apos a invasao do cla Satsuma em 1609, contribuiu para o desenvolvimento do combate desarmado. Ferramentas agricolas tambem foram adaptadas como armas, dando origem ao Kobudo.",
-    "sourcePages": [2],
-    "relatedIds": ["okinawa-ryukyu"]
+    "summary": "O Kobudo preserva o uso de instrumentos tradicionais de Okinawa como armas, em paralelo ao desenvolvimento do combate desarmado.",
+    "body": "A apostila relaciona o fortalecimento do combate desarmado as restricoes ao porte de armas em Okinawa, especialmente no periodo de dominio do cla Satsuma. Essa explicacao e muito comum na tradicao oral do Karate, embora pesquisas historicas modernas indiquem que o processo foi mais complexo do que uma unica proibicao.\n\nO Kobudo de Okinawa preserva o treinamento com armas tradicionais como bo, sai, tonfa, kama, nunchaku e eku. Muitas delas sao associadas a ferramentas de trabalho ou objetos de uso cotidiano, transformados em instrumentos de defesa e treinamento.\n\nPara o aluno iniciante de Shotokan, o Kobudo nao costuma ser o foco principal, mas ajuda a compreender a cultura marcial de Okinawa. Ele mostra que Karate e Kobudo fazem parte de um mesmo ambiente historico: um conjunto de praticas voltadas a defesa, disciplina, precisao, distancia e controle do corpo.",
+    "sourcePages": [
+      2
+    ],
+    "relatedIds": [
+      "okinawa-ryukyu"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "mestres-precursores",
@@ -42,10 +75,21 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Sokon Matsumura, Anko Itosu e Kanryo Higaonna aparecem como nomes importantes na sistematizacao do Karate.",
-    "body": "Durante os seculos XIX e XX, a apostila destaca mestres como Sokon Matsumura, Anko Itosu e Kanryo Higaonna como fundamentais para organizar metodos de ensino, desenvolver katas e estruturar vertentes regionais como Shuri-te, Naha-te e Tomari-te.",
-    "sourcePages": [2],
-    "relatedIds": ["historia-karate", "gichin-funakoshi"]
+    "summary": "Mestres como Sokon Matsumura, Anko Itosu e Kanryo Higaonna ajudaram a organizar as bases do Karate moderno.",
+    "body": "O Karate moderno nao surgiu de uma unica pessoa. Ele foi construido por varias geracoes de mestres de Okinawa, que preservaram, adaptaram e organizaram tecnicas, katas e formas de ensino.\n\nSokon Matsumura e lembrado como uma figura importante ligada a tradicao de Shuri. Anko Itosu teve papel decisivo na popularizacao do Karate no ambiente escolar, tornando o ensino mais sistematico e seguro para grupos de alunos. Kanryo Higaonna e associado a tradicao de Naha-te, que influenciou estilos como Goju-ryu.\n\nPara o praticante de Shotokan, esses nomes explicam por que o Karate tem tantas linhagens e estilos. Cada mestre enfatizou aspectos diferentes: postura, respiracao, kata, aplicacao, educacao, defesa pessoal ou formacao moral. O Shotokan herdou parte desse patrimonio e o organizou em uma metodologia propria.",
+    "sourcePages": [
+      2
+    ],
+    "relatedIds": [
+      "historia-karate",
+      "gichin-funakoshi"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "gichin-funakoshi",
@@ -54,10 +98,21 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Funakoshi e apresentado como fundador do Shotokan e pai do Karate moderno.",
-    "body": "A apostila apresenta Gichin Funakoshi como mestre essencial na introducao do Karate no Japao continental, especialmente em Toquio. Ele adaptou o Karate aos valores do Budo japones e e conhecido como fundador do Shotokan Karate-do.",
-    "sourcePages": [3],
-    "relatedIds": ["shotokan", "karate-no-brasil"]
+    "summary": "Gichin Funakoshi foi o principal responsavel por apresentar o Karate de Okinawa ao Japao continental e consolidar o Shotokan.",
+    "body": "Gichin Funakoshi nasceu em Okinawa em 1868 e treinou com mestres como Anko Itosu e Anko Asato. Ele ficou conhecido como uma das figuras centrais na introducao do Karate no Japao continental, especialmente a partir das demonstracoes realizadas nas primeiras decadas do seculo XX.\n\nFunakoshi ajudou a transformar o Karate em Karate-do: nao apenas uma tecnica de luta, mas um caminho de aperfeicoamento. Ele aproximou a pratica dos valores do Budo japones, organizou principios eticos e defendeu que o verdadeiro objetivo do Karate esta ligado a formacao do carater.\n\nO nome Shotokan nasceu do apelido literario de Funakoshi, Shoto, associado a ideia de pinheiros ao vento, e de kan, que significa casa ou sala. Seus alunos usaram esse nome para identificar o local de treino. Com o tempo, Shotokan passou a designar o estilo ligado a sua escola.",
+    "sourcePages": [
+      3
+    ],
+    "relatedIds": [
+      "shotokan",
+      "karate-no-brasil"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "karate-no-brasil",
@@ -66,10 +121,21 @@
     "category": "historia",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "A apostila cita a chegada do Karate ao Brasil com imigrantes japoneses e o primeiro dojo em Sao Paulo.",
-    "body": "Conforme a apostila, o Karate chegou ao Brasil com a imigracao japonesa no inicio do seculo XX. Em 1956, o sensei Mitsuke Harada instalou o primeiro dojo em Sao Paulo, seguido por outros mestres de diferentes estilos.",
-    "sourcePages": [3],
-    "relatedIds": ["gichin-funakoshi", "shotokan"]
+    "summary": "O Karate chegou ao Brasil com a comunidade japonesa e se expandiu por diferentes mestres, estilos e associacoes.",
+    "body": "No Brasil, o Karate se desenvolveu principalmente a partir da presenca da comunidade japonesa e da chegada de mestres que trouxeram diferentes estilos e formas de ensino. A apostila destaca o papel de Mitsuke Harada e a abertura de dojo em Sao Paulo na decada de 1950.\n\nA expansao brasileira aconteceu por meio de academias, clubes, federacoes, associacoes e projetos educacionais. Com o tempo, o Karate passou a reunir tanto praticantes interessados na tradicao marcial quanto atletas voltados a competicao.\n\nPara o aluno da associacao, esse contexto mostra que o Karate praticado hoje no Brasil e parte de uma historia viva. Cada dojo preserva uma linhagem, mas tambem adapta a pratica a sua comunidade, seus professores e seus objetivos pedagogicos.",
+    "sourcePages": [
+      3
+    ],
+    "relatedIds": [
+      "gichin-funakoshi",
+      "shotokan"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "shotokan",
@@ -78,10 +144,23 @@
     "category": "fundamentos",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Shotokan e descrito como um estilo de bases fortes, centro de gravidade baixo e tecnicas potentes.",
-    "body": "A apostila descreve o Shotokan como um estilo surgido dos ensinamentos de Gichin Funakoshi e Yoshitaka Funakoshi. O estilo e caracterizado por bases fortes, golpes no corpo inteiro, giros sobre o calcanhar em posicoes baixas e grande valorizacao da tecnica.",
-    "sourcePages": [13],
-    "relatedIds": ["gichin-funakoshi", "kihon", "kata", "kumite"]
+    "summary": "O Shotokan e um estilo de Karate-do marcado por bases fortes, tecnicas diretas, disciplina e busca de eficiencia.",
+    "body": "Shotokan e uma das escolas mais conhecidas do Karate-do. Ela se desenvolveu a partir dos ensinamentos de Gichin Funakoshi e tambem recebeu forte influencia tecnica de seu filho Yoshitaka, conhecido por aprofundar bases longas, movimentos potentes, uso do quadril e dinamica mais marcada.\n\nO estilo costuma valorizar bases firmes, deslocamentos definidos, tecnicas lineares, kime, controle do centro do corpo e execucao clara dos fundamentos. No treinamento, isso aparece em socos, defesas, chutes, katas e formas progressivas de kumite.\n\nPara o iniciante, Shotokan pode parecer rigido no comeco, porque exige muita repeticao e cuidado com postura. Essa fase e importante: ela cria equilibrio, coordenacao e consciencia corporal. Com a evolucao, o aluno aprende a transformar forma em fluidez, potencia em controle e tecnica em aplicacao.",
+    "sourcePages": [
+      13
+    ],
+    "relatedIds": [
+      "gichin-funakoshi",
+      "kihon",
+      "kata",
+      "kumite"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "kihon",
@@ -90,10 +169,22 @@
     "category": "fundamentos",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Kihon significa fundamento e representa a pratica repetida das tecnicas basicas.",
-    "body": "Na apostila, Kihon significa fundacao ou fonte. Um kihon pode ser um soco, defesa, postura ou outro fundamento repetido muitas vezes para tornar o movimento natural e eficiente.",
-    "sourcePages": [4],
-    "relatedIds": ["kata", "kumite", "kiai"]
+    "summary": "Kihon e o treinamento dos fundamentos: bases, socos, defesas, chutes, respiracao, postura e atitude.",
+    "body": "Kihon significa fundamentos. No Karate, ele representa a pratica repetida das tecnicas basicas: bases, deslocamentos, socos, defesas, chutes, giros, respiracao, postura e uso correto do quadril.\n\nO objetivo do kihon nao e decorar movimentos isolados, mas construir qualidade. Cada repeticao ensina alinhamento, distancia, equilibrio, ritmo, foco e controle. Por isso, mesmo praticantes avancados continuam treinando fundamentos durante toda a vida.\n\nPara o iniciante, o kihon e a parte que cria seguranca. Antes de pensar em velocidade ou forca, o aluno deve entender posicao dos pes, direcao do olhar, trajetoria da tecnica, retorno da mao, estabilidade da base e finalizacao com kime. Um kata bem executado e um kumite eficiente nascem de um kihon bem construido.",
+    "sourcePages": [
+      4
+    ],
+    "relatedIds": [
+      "kata",
+      "kumite",
+      "kiai"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "kata",
@@ -102,10 +193,23 @@
     "category": "fundamentos",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Kata significa forma ou modelo e representa uma luta simulada contra adversarios imaginarios.",
-    "body": "A apostila define Kata como sequencias coreografadas de tecnicas ofensivas e defensivas. O kata une fundamentos de Kihon e aplicacoes que ajudam o praticante a compreender situacoes de combate.",
-    "sourcePages": [5],
-    "relatedIds": ["kihon", "kumite", "kiai", "heian-shodan"]
+    "summary": "Kata e uma sequencia organizada de tecnicas que preserva principios de combate, ritmo, direcao e postura.",
+    "body": "Kata significa forma ou modelo. No Karate, e uma sequencia predefinida de tecnicas defensivas e ofensivas executadas contra adversarios imaginarios. Cada kata tem direcoes, ritmo, kiai, embusen, mudancas de altura e principios de aplicacao.\n\nO kata funciona como uma biblioteca viva do Karate. Ele preserva combinacoes de defesa, contra-ataque, deslocamento, controle de distancia, mudanca de direcao e uso do corpo inteiro. Quando o aluno estuda bunkai, passa a investigar como aquelas tecnicas podem ser aplicadas em situacoes de combate.\n\nPara o iniciante, o primeiro passo e memorizar a ordem sem pressa. Depois vem postura, base, olhar, respiracao, kime, ritmo e zanshin. Um kata nao deve parecer uma danca vazia: cada movimento precisa ter intencao, direcao e significado marcial.",
+    "sourcePages": [
+      5
+    ],
+    "relatedIds": [
+      "kihon",
+      "kumite",
+      "kiai",
+      "heian-shodan"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "kumite",
@@ -114,10 +218,22 @@
     "category": "fundamentos",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Kumite representa combate ou encontro das maos, com respeito e controle.",
-    "body": "A apostila apresenta Kumite como luta ou combate. Sao citados Jyu Kumite, Shiai Kumite e Kihon Kumite. O texto reforca que o combate deve acontecer com respeito, controle e base tecnica.",
-    "sourcePages": [12],
-    "relatedIds": ["kihon", "kata", "regras-kumite-pontuacao"]
+    "summary": "Kumite e o treinamento com parceiro, em formas progressivas que desenvolvem distancia, tempo, controle e respeito.",
+    "body": "Kumite significa encontro das maos ou combate. Ele e a parte do Karate em que o aluno treina com outra pessoa, aplicando fundamentos aprendidos no kihon e principios presentes nos katas.\n\nNo Shotokan, o kumite costuma evoluir por etapas. O iniciante pode comecar com formas combinadas, como ataques e defesas predefinidos, para aprender distancia, tempo, postura e seguranca. Depois surgem formas mais livres, em que decisao, estrategia, velocidade e leitura do adversario se tornam mais importantes.\n\nO ponto essencial e controle. Kumite nao deve ser briga nem demonstracao de agressividade. Deve desenvolver coragem, calma, respeito, precisao e responsabilidade. Um bom praticante aprende a atacar com decisao, defender com consciencia e preservar a integridade do parceiro.",
+    "sourcePages": [
+      12
+    ],
+    "relatedIds": [
+      "kihon",
+      "kata",
+      "regras-kumite-pontuacao"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "kiai",
@@ -126,10 +242,23 @@
     "category": "fundamentos",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Kiai e o grito de energia emitido em momentos de intensidade.",
-    "body": "A apostila descreve Kiai como energia que nasce do baixo ventre. Pode ser usado no inicio, durante ou no fim de atividades como Kihon, Kata e Kumite, desde que com ritmo e momento adequados.",
-    "sourcePages": [11, 12],
-    "relatedIds": ["kihon", "kata", "kumite"]
+    "summary": "Kiai e a expressao coordenada de energia, respiracao, intencao e foco em um momento decisivo da tecnica.",
+    "body": "Kiai costuma ser percebido pelo iniciante como um grito, mas no Karate ele representa algo mais profundo: a uniao de energia, respiracao, postura mental e decisao no momento da tecnica.\n\nA emissao do kiai ajuda a concentrar o corpo, reforcar o kime, organizar a expiracao e demonstrar espirito combativo. Nos katas, os pontos de kiai geralmente indicam momentos de maior intensidade tecnica ou conclusao de uma sequencia importante.\n\nO kiai nao precisa ser artificial nem exagerado. Ele deve sair com firmeza, no tempo certo, conectado ao movimento e ao baixo ventre. Um kiai bom nao e apenas volume: e presenca, foco e energia bem direcionada.",
+    "sourcePages": [
+      11,
+      12
+    ],
+    "relatedIds": [
+      "kihon",
+      "kata",
+      "kumite"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "dojo-kun",
@@ -138,10 +267,22 @@
     "category": "conduta",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Dojo Kun e um codigo de cinco regras para orientar a pratica do Karate.",
-    "body": "A apostila apresenta o Dojo Kun como codigo de conduta: esforcar-se para formacao do carater, fidelidade ao verdadeiro caminho da razao, criar intuito de esforco, respeito acima de tudo e conter o espirito de agressao.",
-    "sourcePages": [14],
-    "relatedIds": ["niju-kun", "cumprimento", "oss"]
+    "summary": "Dojo Kun e o codigo de conduta recitado em muitos dojos para orientar carater, esforco, respeito e autocontrole.",
+    "body": "Dojo Kun e um conjunto de principios de conduta usado em muitos dojos de Karate. Ele orienta o praticante a buscar aperfeicoamento do carater, fidelidade ao caminho correto, esforco constante, respeito e contencao da agressividade.\n\nEsses principios lembram que o Karate nao termina quando a aula acaba. A atitude treinada no dojo deve aparecer tambem na escola, no trabalho, na familia e nas relacoes do dia a dia. Respeitar colegas, ouvir o instrutor, cuidar do espaco e controlar impulsos fazem parte da pratica.\n\nPara o iniciante, o Dojo Kun funciona como uma bussola. Ele mostra que evoluir no Karate nao e apenas trocar de faixa ou aprender golpes novos. Evoluir tambem e tornar-se mais responsavel, paciente, humilde e perseverante.",
+    "sourcePages": [
+      14
+    ],
+    "relatedIds": [
+      "niju-kun",
+      "cumprimento",
+      "oss"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "niju-kun",
@@ -150,10 +291,22 @@
     "category": "conduta",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Niju Kun sao vinte regras eticas associadas a Gichin Funakoshi.",
-    "body": "A apostila apresenta o Niju Kun como vinte regras que reforcam principios como saudacao, ausencia de atitude ofensiva, importancia do espirito, pratica constante e aplicacao correta.",
-    "sourcePages": [14, 15],
-    "relatedIds": ["dojo-kun", "gichin-funakoshi"]
+    "summary": "Niju Kun reune vinte principios atribuidos a Funakoshi para guiar a pratica e a postura do karateka.",
+    "body": "Niju Kun significa vinte preceitos. Eles sao associados a Gichin Funakoshi e apresentam orientacoes eticas e praticas para quem deseja seguir o Karate-do com seriedade.\n\nEntre as ideias centrais estao: o Karate comeca e termina com respeito; nao existe atitude ofensiva no Karate; o espirito e mais importante do que a tecnica isolada; a pratica deve ser constante; e o aluno deve adaptar a tecnica a situacao, sem agir por impulso.\n\nPara o iniciante, o Niju Kun pode ser entendido como um mapa de comportamento. Ele ensina que tecnica sem carater e incompleta. O praticante deve buscar eficiencia, mas tambem serenidade, prudencia, humildade e capacidade de evitar conflitos quando possivel.",
+    "sourcePages": [
+      14,
+      15
+    ],
+    "relatedIds": [
+      "dojo-kun",
+      "gichin-funakoshi"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "cumprimento",
@@ -162,10 +315,21 @@
     "category": "conduta",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "O cumprimento e uma demonstracao tradicional de cortesia no Karate.",
-    "body": "A apostila descreve o cumprimento como gesto realizado em momentos como entrada e saida do dojo, inicio e fim da aula, do combate, do kata e de exercicios com parceiro. Sao citados Ritsurei e Zarei.",
-    "sourcePages": [15],
-    "relatedIds": ["oss", "mokuso"]
+    "summary": "O cumprimento expressa respeito, atencao e disponibilidade para aprender antes, durante e depois do treino.",
+    "body": "O cumprimento no Karate e uma pratica de cortesia e consciencia. Ele aparece ao entrar e sair do dojo, ao iniciar e encerrar a aula, antes e depois de treinar com um parceiro, no inicio e no fim de katas, exames e combates.\n\nExistem formas como Ritsurei, o cumprimento em pe, e Zarei, o cumprimento ajoelhado. Mais importante do que a forma externa e a atitude interna: parar, alinhar o corpo, olhar com respeito e reconhecer o outro.\n\nPara o iniciante, cumprimentar corretamente ajuda a entrar no clima do treino. E um lembrete de que o dojo nao e um espaco comum de exercicio: e um ambiente de aprendizado, disciplina e cuidado mutuo.",
+    "sourcePages": [
+      15
+    ],
+    "relatedIds": [
+      "oss",
+      "mokuso"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "oss",
@@ -174,10 +338,21 @@
     "category": "conduta",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "OSS expressa respeito, compreensao e perseveranca sob pressao.",
-    "body": "A apostila explica OSS como uma expressao usada para sim, por favor, obrigado, entendi, desculpe-me e cumprimentos. Tambem e apresentada como perseveranca sob pressao.",
-    "sourcePages": [16],
-    "relatedIds": ["cumprimento", "dojo-kun"]
+    "summary": "OSS ou OSU e uma expressao de respeito, prontidao e perseveranca, usada com consciencia dentro do dojo.",
+    "body": "OSS, tambem escrito OSU, e uma expressao muito usada em escolas de Karate. Dependendo do contexto, pode comunicar cumprimento, confirmacao, agradecimento, entendimento, pedido de licenca ou disposicao para continuar treinando.\n\nUma interpretacao comum associa OSU a ideia de pressionar e suportar: perseverar mesmo diante de dificuldade, cansaco ou desconforto. Por isso, a expressao combina com o espirito de treino constante e superacao gradual.\n\nPara o iniciante, e importante usar OSS com respeito e naturalidade. Nao deve virar uma palavra automatica para qualquer situacao. No dojo, ela ganha valor quando vem acompanhada de atencao, postura, humildade e vontade real de aprender.",
+    "sourcePages": [
+      16
+    ],
+    "relatedIds": [
+      "cumprimento",
+      "dojo-kun"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "mokuso",
@@ -186,10 +361,22 @@
     "category": "conduta",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "Mokuso significa pensar em silencio e prepara a mente para a pratica.",
-    "body": "A apostila apresenta Mokuso como momento de silencio e internalizacao usado no inicio e fim do treinamento, ajudando o praticante a acalmar o corpo e focar a mente.",
-    "sourcePages": [17, 18],
-    "relatedIds": ["cumprimento", "oss"]
+    "summary": "Mokuso e o momento de silencio que ajuda o praticante a acalmar a mente e preparar o foco para o treino.",
+    "body": "Mokuso significa meditar ou pensar em silencio. No Karate, costuma acontecer no inicio e no fim da aula, geralmente em seiza ou em postura organizada, com respiracao calma e atencao voltada para o momento presente.\n\nAntes do treino, o mokuso ajuda o aluno a deixar de lado a agitacao externa e entrar no estado mental adequado para aprender. Depois do treino, ajuda a desacelerar, observar o corpo e encerrar a pratica com gratidao e serenidade.\n\nPara o iniciante, mokuso nao precisa ser complicado. Basta silenciar, respirar, corrigir a postura e concentrar-se. Esse pequeno intervalo ensina uma habilidade essencial para o Karate: controlar a propria atencao antes de controlar uma tecnica.",
+    "sourcePages": [
+      17,
+      18
+    ],
+    "relatedIds": [
+      "cumprimento",
+      "oss"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   },
   {
     "id": "karate-gui-graduacao",
@@ -198,9 +385,19 @@
     "category": "graduacao",
     "area": "aprender",
     "level": "iniciante",
-    "summary": "O karate-gui simboliza igualdade, paz e pureza; a graduacao organiza a evolucao do praticante.",
-    "body": "A apostila explica que o karate-gui e branco para simbolizar paz e pureza. Tambem apresenta uma sequencia de graduacoes, destacando que os Kyus sao decrescentes e que a faixa marrom corresponde ao 1o Kyu no sistema citado.",
-    "sourcePages": [21],
-    "relatedIds": ["dojo-kun"]
+    "summary": "O karate-gui e a vestimenta de treino; a graduacao organiza o progresso, mas nao substitui disciplina e maturidade.",
+    "body": "O karate-gui e a roupa tradicional de treino. Sua cor branca costuma simbolizar simplicidade, igualdade, limpeza e disposicao para aprender. No dojo, todos treinam com a mesma base visual, reduzindo vaidade e reforcando a ideia de caminho compartilhado.\n\nA graduacao organiza a evolucao do aluno por meio de kyus e dans. Em geral, os kyus representam etapas antes da faixa preta e costumam caminhar de numeros maiores para menores. O dan representa graus apos a faixa preta. As cores e exigencias podem variar conforme associacao, estilo e regulamento interno.\n\nPara o iniciante, a faixa deve ser vista como consequencia, nao como objetivo isolado. Ela indica uma etapa de aprendizado, mas o mais importante e a qualidade do treino: frequencia, respeito, tecnica, postura, responsabilidade e compreensao dos fundamentos.",
+    "sourcePages": [
+      21
+    ],
+    "relatedIds": [
+      "dojo-kun"
+    ],
+    "researchSources": [
+      "apostila karate.pdf",
+      "Japan Karate Association / historia do Shotokan e Funakoshi",
+      "World Karate Federation / modalidades Kata e Kumite",
+      "referencias historicas sobre Okinawa, Ryukyu, Kihon, Kata, Kumite, Dojo Kun e Niju Kun"
+    ]
   }
 ]

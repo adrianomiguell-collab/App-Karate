@@ -124,6 +124,13 @@ function htmlEscape(value) {
     .replaceAll('"', "&quot;");
 }
 
+function paragraphsTemplate(value) {
+  const paragraphs = String(value || "")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+  return paragraphs.map((paragraph) => `<p>${htmlEscape(paragraph)}</p>`).join("");
+}
 function button(label, action, className = "secondary-button") {
   return `<button class="${className}" data-action="${action}" type="button">${label}</button>`;
 }
@@ -407,7 +414,7 @@ function detailView(kind, id) {
       <h2>${htmlEscape(title)}</h2>
       <div class="meta">${meta.map((value) => `<span>${htmlEscape(value)}</span>`).join("")}</div>
       ${item.summary ? `<p><strong>Resumo:</strong> ${htmlEscape(item.summary)}</p>` : ""}
-      <p>${htmlEscape(text)}</p>
+      ${paragraphsTemplate(text)}
       ${item.meaning && kind === "kata" ? `<p><strong>Significado:</strong> ${htmlEscape(item.meaning)}</p>` : ""}
       ${asset ? `<div class="asset"><img src="../${asset}" alt="${htmlEscape(title)}" /></div>` : ""}
       ${video ? `<p><a class="text-link" href="${htmlEscape(video)}" target="_blank" rel="noreferrer">Abrir video oficial</a></p>` : ""}
@@ -638,6 +645,7 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
 
 
 
