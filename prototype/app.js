@@ -14,7 +14,7 @@ const contactInfo = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=R.%20Alm.%20Lu%C3%ADs%20Penido%20Burnier%2C%20211%20-%20Jardim%20Sandra%2C%20S%C3%A3o%20Paulo%20-%20SP",
   instagram: "@associacao_atarashii_karate",
   instagramUrl: "https://www.instagram.com/associacao_atarashii_karate/",
-  whatsappNumber: "",
+  whatsappNumber: "5511965512234",
 };
 const storeKey = "karate-shotokan-progress";
 const app = document.querySelector("#app");
@@ -690,6 +690,7 @@ loadData()
     app.innerHTML = `<p class="empty">Nao foi possivel carregar os dados. Abra este prototipo por um servidor local.</p>`;
     console.error(error);
   });
+
 
 
 
