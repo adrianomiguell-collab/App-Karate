@@ -331,6 +331,21 @@ function detailSection(title, content) {
   return `<section class="detail-section"><h3>${htmlEscape(title)}</h3>${content}</section>`;
 }
 
+const techniqueVideoMap = {
+  "gyaku-zuki": "assets/techniques/gyaku-zuki.mp4",
+};
+
+function localTechniqueVideo(item, title) {
+  const source = techniqueVideoMap[item.id];
+  if (!source) return "";
+  return `
+    <div class="technique-video">
+      <video src="${htmlEscape(source)}" aria-label="Demonstracao do golpe ${htmlEscape(title)}" autoplay muted loop playsinline controls preload="metadata"></video>
+      <p class="muted">Demonstracao visual sem audio. Observe a rotacao do quadril, o hikite e o kime.</p>
+    </div>
+  `;
+}
+
 function kataVideoUrl(item) {
   return item.video?.youtube_video_url || item.associationVideoUrl || item.videoUrl || "";
 }
@@ -409,6 +424,7 @@ function detailView(kind, id) {
   const text = item.body || item.description || item.meaning || "";
   const asset = item.imageUrl || item.diagramUrl || item.assetUrl;
   const video = item.associationVideoUrl || item.videoUrl;
+  const techniqueVideo = kind === "tecnica" ? localTechniqueVideo(item, title) : "";
   const meta = [
     kind,
     item.category,
@@ -427,6 +443,9 @@ function detailView(kind, id) {
       <div class="meta">${meta.map((value) => `<span>${htmlEscape(value)}</span>`).join("")}</div>
       ${item.summary ? `<p><strong>Resumo:</strong> ${htmlEscape(item.summary)}</p>` : ""}
       ${paragraphsTemplate(text)}
+      ${techniqueVideo}
+      ${item.longDescription ? detailSection("Como executar", `<p>${htmlEscape(item.longDescription)}</p>`) : ""}
+      ${asArray(item.executionSteps).length ? detailSection("Passo a passo", `<ol class="execution-steps">${asArray(item.executionSteps).map((entry) => `<li><strong>${htmlEscape(entry.title || "Etapa")}</strong><span>${htmlEscape(entry.text || entry)}</span></li>`).join("")}</ol>`) : ""}
       ${item.meaning && kind === "kata" ? `<p><strong>Significado:</strong> ${htmlEscape(item.meaning)}</p>` : ""}
       ${asset ? `<div class="asset"><img src="../${asset}" alt="${htmlEscape(title)}" /></div>` : ""}
       ${video ? `<p><a class="text-link" href="${htmlEscape(video)}" target="_blank" rel="noreferrer">Abrir video oficial</a></p>` : ""}

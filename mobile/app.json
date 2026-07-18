@@ -20,7 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
-      "foregroundImage": "./src/assets/brand/atarashii-icon.png",
+        "foregroundImage": "./src/assets/brand/atarashii-icon.png",
         "backgroundColor": "#222831"
       },
       "package": "br.org.atarashii.app"
@@ -29,7 +29,8 @@
       "favicon": "./src/assets/brand/atarashii-logo.png"
     },
     "plugins": [
-      "expo-asset"
+      "expo-asset",
+      "expo-video"
     ]
   }
 }

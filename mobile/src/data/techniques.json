@@ -28,6 +28,33 @@
         "slug":  "gyaku-zuki",
         "type":  "soco",
         "description":  "Soco reverso executado com o punho da perna de tras.",
+        "longDescription":  "A eficiência do Gyaku-Zuki não depende apenas da força do braço, mas da sincronia de todo o corpo.",
+        "executionSteps":  [
+                               {
+                                   "title":  "Posição inicial (guarda)",
+                                   "text":  "Normalmente executado a partir de uma base sólida avançada, como a Zenkutsu-Dachi. O braço da frente faz o papel de guarda ou puxada, enquanto o braço de trás inicia recolhido na linha da costela, com a palma voltada para cima."
+                               },
+                               {
+                                   "title":  "Rotação do quadril",
+                                   "text":  "O movimento começa com o giro explosivo do quadril e do tronco para a frente. Essa rotação transfere a energia gerada pelas pernas e pelo solo diretamente para o soco."
+                               },
+                               {
+                                   "title":  "Trajetória em linha reta",
+                                   "text":  "O braço que golpeia estende-se em linha reta em direção ao centro do alvo. O cotovelo deve permanecer próximo ao corpo durante a extensão para não abrir o golpe nem perder velocidade."
+                               },
+                               {
+                                   "title":  "Hikite (puxada)",
+                                   "text":  "Simultaneamente ao avanço do soco, o braço que estava à frente é puxado fortemente de volta para a costela. Essa ação oposta aumenta a velocidade de rotação do tronco."
+                               },
+                               {
+                                   "title":  "Impacto e rotação do punho",
+                                   "text":  "Nos últimos centímetros antes do impacto, o punho gira em 180°, deixando a palma voltada para baixo. O contato é feito estritamente com o Seiken: as articulações dos dedos indicador e médio."
+                               },
+                               {
+                                   "title":  "Kime (contração final)",
+                                   "text":  "No instante do impacto, ocorre uma contração muscular total e abrupta do abdômen, das pernas e do braço para travar o movimento e descarregar no alvo toda a energia acumulada."
+                               }
+                           ],
         "level":  "iniciante",
         "safetyNote":  "Pratique com orientacao do sensei.",
         "videoUrl":  null,

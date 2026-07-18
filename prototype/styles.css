@@ -321,6 +321,24 @@ input {
   width: 100%;
 }
 
+.technique-video {
+  margin: 16px 0;
+}
+
+.technique-video video {
+  background: #111827;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: block;
+  max-height: 620px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.technique-video .muted {
+  margin: 8px 0 0;
+}
+
 .video-player {
   background: #111827;
   border: 1px solid var(--line);
@@ -479,6 +497,24 @@ input {
 .detail-section li {
   line-height: 1.45;
   margin-bottom: 6px;
+}
+
+.execution-steps {
+  margin: 8px 0 0;
+  padding-left: 24px;
+}
+
+.execution-steps li {
+  margin-bottom: 12px;
+}
+
+.execution-steps strong,
+.execution-steps span {
+  display: block;
+}
+
+.execution-steps span {
+  margin-top: 4px;
 }
 
 .checklist li {

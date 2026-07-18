@@ -1,4 +1,5 @@
-﻿import React, { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
+import { VideoView, useVideoPlayer } from "expo-video";
 import {
   Image,
   Linking,
@@ -22,8 +23,11 @@ import techniques from "./src/data/techniques.json";
 
 const logo = require("./src/assets/brand/atarashii-logo.png");
 
+const techniqueVideoMap = {
+  "gyaku-zuki": require("./src/assets/techniques/gyaku-zuki/gyaku-zuki-prototipo.mp4")
+};
+
 const assetMap = {
-  "assets/training/mae_geri.png": require("./src/assets/training/mae_geri.png"),
   "assets/bases/bases-01.png": require("./src/assets/bases/bases-01.png"),
   "assets/bases/bases-02.png": require("./src/assets/bases/bases-02.png"),
   "assets/bases/bases-03.png": require("./src/assets/bases/bases-03.png"),
@@ -38,7 +42,6 @@ const tabs = [
   { id: "home", label: "Home" },
   { id: "aprender", label: "Aprender" },
   { id: "treinar", label: "Treinar" },
-  { id: "katas", label: "Kata" },
   { id: "consultar", label: "Consultar" },
   { id: "revisar", label: "Revisar" }
 ];
@@ -106,8 +109,7 @@ export default function App() {
 
         <View style={styles.grid}>
           <ModuleCard title="Aprender" text="Historia, fundamentos, conduta e graduacao." onPress={() => go("aprender")} />
-          <ModuleCard title="Treinar" text="Kihon, tecnicas basicas e bases principais." onPress={() => go("treinar")} />
-          <ModuleCard title="Kata" text="Katas iniciais, embusen e videos oficiais." onPress={() => go("katas")} />
+          <ModuleCard title="Treinar" text="Tecnicas basicas, bases e katas iniciais." onPress={() => go("treinar")} />
           <ModuleCard title="Consultar" text="Glossario, regras, pontuacao e termos." onPress={() => go("consultar")} />
           <ModuleCard title="Revisar" text="Quiz da apostila e revisao de conhecimento." onPress={() => go("revisar")} />
         </View>
@@ -145,19 +147,12 @@ export default function App() {
   function renderTrain() {
     return renderList(
       "Treinar",
-      "Kihon, tecnicas basicas e bases principais.",
+      "Kihon, bases e katas iniciais com suporte para videos futuros.",
       [
         ...techniques.map((item) => normalizeItem(item, "tecnica")),
-        ...stances.map((item) => normalizeItem(item, "base"))
+        ...stances.map((item) => normalizeItem(item, "base")),
+        ...katas.map((item) => normalizeItem(item, "kata"))
       ]
-    );
-  }
-
-  function renderKatas() {
-    return renderList(
-      "Kata",
-      "Katas iniciais com ficha tecnica, embusen e videos oficiais quando disponiveis.",
-      katas.map((item) => normalizeItem(item, "kata"))
     );
   }
 
@@ -286,6 +281,7 @@ export default function App() {
     const asset = detail.imageUrl || detail.diagramUrl || detail.assetUrl;
     const video = detail.associationVideoUrl || detail.videoUrl;
     const source = assetMap[asset];
+    const localVideoSource = techniqueVideoMap[detail.id];
 
     return (
       <View>
@@ -294,12 +290,32 @@ export default function App() {
         </TouchableOpacity>
         <View style={styles.detailCard}>
           <Text style={styles.sectionTitle}>{detail.displayTitle}</Text>
-          <Text style={styles.muted}>{detail.kind} {detail.category ? `Â· ${detail.category}` : ""}</Text>
+          <Text style={styles.muted}>{detail.kind} {detail.category ? `· ${detail.category}` : ""}</Text>
           <Text style={styles.bodyText}>{detail.body || detail.description || detail.meaning}</Text>
+          {detail.longDescription ? (
+            <Text style={styles.detailIntro}>{detail.longDescription}</Text>
+          ) : null}
+          {detail.executionSteps?.length ? (
+            <View style={styles.executionSection}>
+              <Text style={styles.executionHeading}>Execução do movimento</Text>
+              {detail.executionSteps.map((step, index) => (
+                <View key={step.title} style={styles.executionStep}>
+                  <View style={styles.stepNumber}>
+                    <Text style={styles.stepNumberText}>{index + 1}</Text>
+                  </View>
+                  <View style={styles.flex}>
+                    <Text style={styles.stepTitle}>{step.title}</Text>
+                    <Text style={styles.stepText}>{step.text}</Text>
+                  </View>
+                </View>
+              ))}
+            </View>
+          ) : null}
           {detail.kyodos ? <Text style={styles.bodyText}>Movimentos: {detail.kyodos}</Text> : null}
           {detail.idealTime ? <Text style={styles.bodyText}>Tempo ideal: {detail.idealTime}</Text> : null}
           {detail.kiai ? <Text style={styles.bodyText}>Kiai: {detail.kiai}</Text> : null}
           {source ? <Image source={source} style={styles.assetImage} resizeMode="contain" /> : null}
+          {localVideoSource ? <TechniqueVideo source={localVideoSource} /> : null}
           {video ? (
             <TouchableOpacity style={styles.secondaryButton} onPress={() => Linking.openURL(video)}>
               <Text style={styles.secondaryText}>Abrir video oficial</Text>
@@ -318,7 +334,6 @@ export default function App() {
     if (route === "home") return renderHome();
     if (route === "aprender") return renderLearn();
     if (route === "treinar") return renderTrain();
-    if (route === "katas") return renderKatas();
     if (route === "consultar") return renderConsult();
     if (route === "revisar" || route === "quiz" || route === "resultado") return renderReview();
     if (route === "busca") return renderSearch();
@@ -354,6 +369,51 @@ export default function App() {
   );
 }
 
+function TechniqueVideo({ source }) {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const player = useVideoPlayer(source, (videoPlayer) => {
+    videoPlayer.loop = true;
+    videoPlayer.muted = true;
+    videoPlayer.play();
+  });
+
+  function togglePlayback() {
+    if (isPlaying) {
+      player.pause();
+    } else {
+      player.play();
+    }
+    setIsPlaying((current) => !current);
+  }
+
+  function replay() {
+    player.currentTime = 0;
+    player.play();
+    setIsPlaying(true);
+  }
+
+  return (
+    <View style={styles.videoSection}>
+      <Text style={styles.videoHeading}>Demonstração do Gyaku-Zuki</Text>
+      <VideoView
+        contentFit="contain"
+        nativeControls={false}
+        player={player}
+        style={styles.techniqueVideo}
+      />
+      <View style={styles.videoControls}>
+        <TouchableOpacity style={styles.videoButton} onPress={togglePlayback}>
+          <Text style={styles.videoButtonText}>{isPlaying ? "Pausar" : "Continuar"}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.videoButton} onPress={replay}>
+          <Text style={styles.videoButtonText}>Repetir</Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.videoCaption}>Vídeo demonstrativo sem áudio, reproduzido em sequência.</Text>
+    </View>
+  );
+}
+
 function ModuleCard({ title, text, onPress }) {
   return (
     <TouchableOpacity style={styles.moduleCard} onPress={onPress}>
@@ -367,7 +427,7 @@ function ItemCard({ item, studied, onPress }) {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress}>
       <Text style={styles.cardTitle}>{item.displayTitle}</Text>
-      <Text style={styles.muted}>{item.kind} {studied ? "Â· estudado" : ""}</Text>
+      <Text style={styles.muted}>{item.kind} {studied ? "· estudado" : ""}</Text>
       <Text style={styles.cardSummary}>{item.displaySummary}</Text>
     </TouchableOpacity>
   );
@@ -553,6 +613,96 @@ const styles = StyleSheet.create({
     marginTop: 14,
     width: "100%"
   },
+  detailIntro: {
+    backgroundColor: "#f4f0e8",
+    borderLeftColor: "#b32222",
+    borderLeftWidth: 4,
+    color: "#20242b",
+    fontSize: 15,
+    lineHeight: 23,
+    marginTop: 16,
+    padding: 12
+  },
+  executionSection: {
+    marginTop: 20
+  },
+  executionHeading: {
+    color: "#20242b",
+    fontSize: 19,
+    fontWeight: "900",
+    marginBottom: 4
+  },
+  executionStep: {
+    alignItems: "flex-start",
+    borderBottomColor: "#e5ded2",
+    borderBottomWidth: 1,
+    flexDirection: "row",
+    gap: 12,
+    paddingVertical: 14
+  },
+  stepNumber: {
+    alignItems: "center",
+    backgroundColor: "#b32222",
+    borderRadius: 15,
+    height: 30,
+    justifyContent: "center",
+    width: 30
+  },
+  stepNumberText: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "900"
+  },
+  stepTitle: {
+    color: "#20242b",
+    fontSize: 15,
+    fontWeight: "900",
+    marginBottom: 4
+  },
+  stepText: {
+    color: "#4b5563",
+    fontSize: 14,
+    lineHeight: 21
+  },
+  videoSection: {
+    marginTop: 20
+  },
+  videoHeading: {
+    color: "#20242b",
+    fontSize: 19,
+    fontWeight: "900",
+    marginBottom: 10
+  },
+  techniqueVideo: {
+    backgroundColor: "#16191d",
+    borderRadius: 10,
+    height: 480,
+    width: "100%"
+  },
+  videoControls: {
+    flexDirection: "row",
+    gap: 10,
+    marginTop: 10
+  },
+  videoButton: {
+    alignItems: "center",
+    backgroundColor: "#ece6db",
+    borderRadius: 8,
+    flex: 1,
+    minHeight: 42,
+    justifyContent: "center",
+    paddingHorizontal: 12
+  },
+  videoButtonText: {
+    color: "#20242b",
+    fontWeight: "800"
+  },
+  videoCaption: {
+    color: "#6b7280",
+    fontSize: 12,
+    lineHeight: 18,
+    marginTop: 8
+  },
   input: {
     backgroundColor: "#fff",
     borderColor: "#ded7cc",
@@ -612,9 +762,3 @@ const styles = StyleSheet.create({
     color: "#b32222"
   }
 });
-
-
-
-
-
-
