@@ -1,0 +1,67 @@
+[
+  {
+    "id": "quiz-kata-iniciante-01",
+    "category": "Katas - Iniciante",
+    "question": "Qual e o significado do kata Heian Shodan?",
+    "options": [
+      "Paz e tranquilidade nivel 1",
+      "Paz e tranquilidade nivel 2",
+      "Paz e tranquilidade nivel 3",
+      "Paz e tranquilidade nivel 4"
+    ],
+    "correctOption": 0,
+    "explanation": "Heian Shodan (平安初段) significa \"Paz e tranquilidade nivel 1\"."
+  },
+  {
+    "id": "quiz-kata-iniciante-02",
+    "category": "Katas - Iniciante",
+    "question": "Qual e o significado do kata Heian Nidan?",
+    "options": [
+      "Paz e tranquilidade nivel 1",
+      "Paz e tranquilidade nivel 3",
+      "Paz e tranquilidade nivel 4",
+      "Paz e tranquilidade nivel 2"
+    ],
+    "correctOption": 3,
+    "explanation": "Heian Nidan (平安二段) significa \"Paz e tranquilidade nivel 2\"."
+  },
+  {
+    "id": "quiz-kata-iniciante-03",
+    "category": "Katas - Iniciante",
+    "question": "Qual e o significado do kata Heian Sandan?",
+    "options": [
+      "Paz e tranquilidade nivel 2",
+      "Paz e tranquilidade nivel 4",
+      "Paz e tranquilidade nivel 3",
+      "Paz e tranquilidade nivel 1"
+    ],
+    "correctOption": 2,
+    "explanation": "Heian Sandan (平安三段) significa \"Paz e tranquilidade nivel 3\"."
+  },
+  {
+    "id": "quiz-kata-iniciante-04",
+    "category": "Katas - Iniciante",
+    "question": "Qual e o significado do kata Heian Yondan?",
+    "options": [
+      "Paz e tranquilidade nivel 3",
+      "Paz e tranquilidade nivel 4",
+      "Paz e tranquilidade nivel 1",
+      "Paz e tranquilidade nivel 2"
+    ],
+    "correctOption": 1,
+    "explanation": "Heian Yondan (平安四段) significa \"Paz e tranquilidade nivel 4\"."
+  },
+  {
+    "id": "quiz-kata-iniciante-05",
+    "category": "Katas - Iniciante",
+    "question": "Qual e o significado do kata Heian Godan?",
+    "options": [
+      "Paz e tranquilidade nivel 5",
+      "Paz e tranquilidade nivel 1",
+      "Paz e tranquilidade nivel 2",
+      "Paz e tranquilidade nivel 3"
+    ],
+    "correctOption": 0,
+    "explanation": "Heian Godan (平安五段) significa \"Paz e tranquilidade nivel 5\"."
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "quiz-kata-avancado-01",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Jitte?",
+    "options": [
+      "Dez maos",
+      "Grou sobre a rocha",
+      "Vinte e quatro passos",
+      "Maos de nuvem"
+    ],
+    "correctOption": 0,
+    "explanation": "Jitte (十手) significa \"Dez maos\"."
+  },
+  {
+    "id": "quiz-kata-avancado-02",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Gankaku?",
+    "options": [
+      "Dez maos",
+      "Vinte e quatro passos",
+      "Maos de nuvem",
+      "Grou sobre a rocha"
+    ],
+    "correctOption": 3,
+    "explanation": "Gankaku (岩鶴) significa \"Grou sobre a rocha\"."
+  },
+  {
+    "id": "quiz-kata-avancado-03",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Chinte?",
+    "options": [
+      "Vinte e quatro passos",
+      "Maos de nuvem",
+      "Maos estranhas / tecnicas estranhas",
+      "Dez maos"
+    ],
+    "correctOption": 2,
+    "explanation": "Chinte (珍手) significa \"Maos estranhas / tecnicas estranhas\"."
+  },
+  {
+    "id": "quiz-kata-avancado-04",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Sochin?",
+    "options": [
+      "Maos de nuvem",
+      "Espirito inabalavel",
+      "Dez maos",
+      "Vinte e quatro passos"
+    ],
+    "correctOption": 1,
+    "explanation": "Sochin (壮鎮) significa \"Espirito inabalavel\"."
+  },
+  {
+    "id": "quiz-kata-avancado-05",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Nijushiho?",
+    "options": [
+      "Vinte e quatro passos",
+      "Dez maos",
+      "Espirito inabalavel",
+      "Maos de nuvem"
+    ],
+    "correctOption": 0,
+    "explanation": "Nijushiho (二十四歩) significa \"Vinte e quatro passos\"."
+  },
+  {
+    "id": "quiz-kata-avancado-06",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Gojushiho Dai?",
+    "options": [
+      "Dez maos",
+      "Espirito inabalavel",
+      "Maos de nuvem",
+      "Cinquenta e quatro passos - forma longa"
+    ],
+    "correctOption": 3,
+    "explanation": "Gojushiho Dai (五十四歩大) significa \"Cinquenta e quatro passos - forma longa\"."
+  },
+  {
+    "id": "quiz-kata-avancado-07",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Gojushiho Sho?",
+    "options": [
+      "Espirito inabalavel",
+      "Maos de nuvem",
+      "Cinquenta e quatro passos - forma curta",
+      "Dez maos"
+    ],
+    "correctOption": 2,
+    "explanation": "Gojushiho Sho (五十四歩小) significa \"Cinquenta e quatro passos - forma curta\"."
+  },
+  {
+    "id": "quiz-kata-avancado-08",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Unsu?",
+    "options": [
+      "Cinquenta e quatro passos - forma curta",
+      "Maos de nuvem",
+      "Dez maos",
+      "Espirito inabalavel"
+    ],
+    "correctOption": 1,
+    "explanation": "Unsu (雲手) significa \"Maos de nuvem\"."
+  },
+  {
+    "id": "quiz-kata-avancado-09",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Meikyo?",
+    "options": [
+      "Espelho limpo / espelho da alma",
+      "Dez maos",
+      "Espirito inabalavel",
+      "Cinquenta e quatro passos - forma curta"
+    ],
+    "correctOption": 0,
+    "explanation": "Meikyo (明鏡) significa \"Espelho limpo / espelho da alma\"."
+  },
+  {
+    "id": "quiz-kata-avancado-10",
+    "category": "Katas - Avancado",
+    "question": "Qual e o significado do kata Wankan?",
+    "options": [
+      "Dez maos",
+      "Espirito inabalavel",
+      "Cinquenta e quatro passos - forma curta",
+      "Coroa real"
+    ],
+    "correctOption": 3,
+    "explanation": "Wankan (王冠) significa \"Coroa real\"."
+  }
+]
