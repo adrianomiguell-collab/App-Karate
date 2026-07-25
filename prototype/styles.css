@@ -580,8 +580,96 @@ button:disabled {
   }
 }
 
+.card.is-locked {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
 
+.lock-icon {
+  font-size: 14px;
+}
 
+.locked-session {
+  text-align: center;
+}
 
+.quiz-gate {
+  margin: 16px 0;
+}
+
+.quiz-gate-done {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.quiz-pass {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.quiz-fail {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.belt-current {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.belt-list {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.belt-row {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.belt-row.is-locked {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.belt-swatch {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  flex-shrink: 0;
+  height: 18px;
+  width: 18px;
+}
+
+.belt-disclaimer {
+  background: #f4f0e8;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 14px;
+}
+
+.belt-disclaimer .contact-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.extra-kata-note {
+  margin-top: 16px;
+}
+
+.text-link-button {
+  background: none;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
 
 
