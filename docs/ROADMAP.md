@@ -6,18 +6,18 @@ Diretriz: validar e evoluir o produto evitando custo recorrente desnecessario no
 
 Caminho recomendado:
 
-- manter o Web App/PWA como canal principal de validacao e acesso via link;
-- publicar a versao Android na Google Play quando o MVP estiver maduro, aproveitando o custo menor de publicacao;
-- atender usuarios iOS inicialmente com Web App/PWA instalado na tela inicial;
-- considerar publicacao na App Store apenas quando o produto justificar o custo anual do Apple Developer Program;
-- manter a arquitetura preparada para Android e iOS, mesmo que a distribuicao inicial seja Google Play + PWA.
+- manter o Web App/PWA como canal unico de acesso e distribuicao do produto;
+- hospedar o app em `/prototype`, acessivel por qualquer navegador, em Android, iOS, desktop ou tablet;
+- atender usuarios de qualquer sistema operacional com Web App/PWA instalado na tela inicial, sem necessidade de loja de aplicativos;
+- nao publicar o produto na Google Play nem na App Store, evitando custo anual do Apple Developer Program e taxas de loja;
+- manter a arquitetura simples e focada em web, sem reservar esforco para uma versao nativa.
 
 Motivo:
 
-- Google Play tem custo inicial menor e sem recorrencia anual obrigatoria;
-- App Store exige custo anual para manter novos downloads disponiveis;
+- o Web App/PWA elimina custo e burocracia de publicacao em lojas;
 - PWA permite testar o produto com usuarios reais sem custo de loja;
-- a estrategia preserva a evolucao futura para app nativo completo em Android e iOS.
+- concentrar o esforco em uma unica base web reduz complexidade de manutencao;
+- a estrategia prioriza evoluir o produto como web app completo, sem migracao futura para app nativo.
 
 ## Fase 1 - MVP Iniciante
 
@@ -25,8 +25,8 @@ Objetivo: lancar uma primeira versao simples, util e focada em alunos iniciantes
 
 Compatibilidade obrigatoria:
 
-- Android;
-- iOS.
+- navegadores desktop;
+- navegadores mobile (Android e iOS), via Web App/PWA.
 
 Escopo:
 
@@ -51,7 +51,7 @@ Resultado esperado:
 - o aluno consegue estudar a base da apostila dentro do app;
 - o conteudo fica mais facil de consultar do que no PDF;
 - o app ja entrega valor sem precisar de IA, videos ou area do instrutor.
-- a base tecnica permite evoluir para publicacao em Android e iOS.
+- a base tecnica permite evoluir o web app com novas fases, sem depender de publicacao em lojas de aplicativos.
 
 ## Fase 2 - Trilhas Por Faixa
 
@@ -165,7 +165,7 @@ Requisitos Tecnicos:
 - banco de dados para alunos, faixas, presencas, feedbacks, turmas e usuarios;
 - regras de permissao para que cada aluno veja apenas seus proprios dados;
 - permissao especial para Sensei/Admin;
-- estrutura preparada para Android e iOS via Expo/React Native.
+- estrutura web responsiva, funcionando bem em desktop e em navegadores mobile via Web App/PWA.
 
 Custo Inicial:
 

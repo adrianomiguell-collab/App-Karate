@@ -42,14 +42,12 @@ Preferencias:
 Midias de treino devem ficar em pastas especificas de treino, nunca soltas na raiz do projeto.
 
 - prototipo web: `assets/training/`
-- app mobile Expo: `mobile/src/assets/training/`
 
 Exemplo atual:
 
 - `assets/training/mae_geri.png`
-- `mobile/src/assets/training/mae_geri.png`
 
-O campo usado nos dados deve ser `imageUrl` para imagem estatica e `gifUrl` para GIF futuro. Para manter compatibilidade entre web e mobile, usar o mesmo caminho logico nos JSONs: `assets/training/mae_geri.png`.
+O campo usado nos dados deve ser `imageUrl` para imagem estatica e `gifUrl` para GIF futuro. Usar o mesmo caminho logico nos JSONs: `assets/training/mae_geri.png`.
 ## Estrutura De Dados Recomendada
 
 ```json

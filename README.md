@@ -4,7 +4,7 @@ Projeto de aplicativo educativo e consultivo sobre Karate Shotokan da Associacao
 
 O foco inicial e criar uma primeira versao simples para alunos iniciantes, usando a apostila como base de conteudo. O produto deve evoluir por fases ate atender alunos de todos os niveis, instrutores e uma futura area de Sensei Online com IA.
 
-Compatibilidade obrigatoria do app real: Android e iOS.
+O Atarashii App e um web app (navegador). Nao ha mais planos de aplicativo nativo Android/iOS.
 
 ## Documentos Do Projeto
 
@@ -17,13 +17,9 @@ Compatibilidade obrigatoria do app real: Android e iOS.
 - [Evolucao de Midia em Treino](docs/EVOLUCAO_MIDIA_TREINO.md)
 - [Dados do MVP](data/README.md)
 
-## Prototipo
+## Web App
 
-- [Prototipo navegavel](prototype/index.html)
-
-## App Mobile
-
-- [Base Expo/React Native](mobile/README.md)
+- [App navegavel](prototype/index.html)
 
 ## Marca
 

@@ -16,24 +16,23 @@ O MVP pode ser simples, mas nao deve:
 - dificultar trilhas por faixa;
 - dificultar Sensei Online com base validada;
 - exigir login antes de ser necessario;
-- impedir uma versao Android e iOS.
+- impedir bom funcionamento em navegadores desktop e mobile.
 
 ## Compatibilidade Obrigatoria
 
-O Atarashii App deve ser compativel com Android e iOS.
+O Atarashii App deve funcionar bem em navegadores desktop e mobile, sem depender de instalacao via loja de aplicativos.
 
 Essa decisao afeta tecnologia, design, navegacao, assets e persistencia de dados.
 
 Diretrizes:
 
-- projetar mobile-first;
-- evitar dependencias exclusivas de navegador desktop;
-- manter componentes e telas preparados para toque;
-- usar assets otimizados para telas pequenas;
-- manter dados em uma camada separada para facilitar uso em app mobile;
-- escolher tecnologia que permita publicar futuramente na Google Play e App Store;
-- garantir que videos externos funcionem bem em Android e iOS;
-- evitar recursos que dependam de APIs instaveis ou nao suportadas nos dois sistemas.
+- projetar mobile-first, mas responsivo para desktop;
+- evitar dependencias exclusivas de recursos nao suportados nos principais navegadores;
+- manter componentes e telas preparados para toque e para mouse/teclado;
+- usar assets otimizados para carregamento web (imagens leves, lazy loading quando fizer sentido);
+- manter dados em uma camada separada (JSON em `/data`) para facilitar evolucao e reuso;
+- garantir que videos externos (YouTube) funcionem bem incorporados na pagina;
+- evitar recursos que dependam de APIs instaveis ou com suporte inconsistente entre navegadores.
 
 ## Camadas Do Produto
 
@@ -186,7 +185,7 @@ Regras:
 
 ### MVP
 
-- App mobile-first com tecnologia compativel com Android e iOS.
+- Web app mobile-first, responsivo, com HTML/CSS/JS puro.
 - Dados em JSON.
 - Assets locais para imagens autorizadas.
 - Progresso local.
@@ -196,10 +195,10 @@ Regras:
 
 Recomendacao tecnica atual:
 
-- usar Expo/React Native para a versao real do MVP, pois permite Android e iOS com uma base de codigo;
-- manter o prototipo web atual apenas como validacao de produto e UX;
-- reaproveitar dados JSON, assets e regras de navegacao no app real;
-- considerar web/PWA apenas como canal complementar, nao como destino principal.
+- manter o web app em `/prototype` (HTML/CSS/JS puro) como o produto real, sem camada nativa;
+- consumir os dados de `data/*.json` e os assets de `assets/` diretamente da raiz do repositorio;
+- evoluir para PWA (manifest, service worker, instalacao na tela inicial) se surgir necessidade de uso offline, sem introduzir React Native/Expo ou builds nativos;
+- evitar qualquer dependencia de build Android/iOS ou publicacao em Google Play/App Store.
 
 ### Evolucao
 
@@ -220,6 +219,6 @@ Recomendacao tecnica atual:
 
 ## Decisao Atual
 
-Manter o prototipo web responsivo como ferramenta de validacao, mas construir o MVP real com foco em Android e iOS.
+O Atarashii App e um web app estatico (HTML/CSS/JS puro), hospedado em `/prototype`, consumindo dados de `data/*.json` e assets de `assets/` na raiz do repositorio. Nao ha e nao esta prevista camada nativa (Android/iOS, React Native/Expo): o produto final e o proprio web app responsivo.
 
-A recomendacao atual e seguir para uma base Expo/React Native, preservando a arquitetura modular para CMS, area de instrutor e Sensei Online.
+A arquitetura modular (Conteudo, Aprendizado, Revisao, Usuario, Instrutor, Sensei Online) continua preservada para permitir evolucao para CMS, area de instrutor e Sensei Online, sempre dentro do modelo web.

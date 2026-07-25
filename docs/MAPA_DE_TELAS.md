@@ -6,7 +6,7 @@ Este documento define as telas do MVP do Atarashii App, sua hierarquia, fluxos p
 
 O foco do MVP e atender alunos iniciantes com uma experiencia simples, consultiva e facil de estudar.
 
-As telas devem ser desenhadas mobile-first para Android e iOS.
+As telas devem ser desenhadas mobile-first, pensando no acesso via navegador em celulares, tablets e desktop, ja que o produto e um web app (sem versao nativa para Android ou iOS).
 
 ## Arquitetura De Navegacao
 
@@ -976,7 +976,7 @@ Home
 - Termos japoneses devem ter explicacao curta.
 - O app deve evitar prometer ensino tecnico sem sensei presencial.
 - O visual deve ser limpo, disciplinado e acolhedor.
-- A experiencia deve funcionar bem em Android e iOS.
+- A experiencia deve funcionar bem em navegadores mobile (Android e iOS) e desktop, sem depender de um app nativo instalado.
 - Areas de toque devem ser confortaveis para uso mobile.
 - Layouts nao devem depender de hover ou interacoes exclusivas de desktop.
 

@@ -6,7 +6,7 @@ O produto sera um aplicativo educativo e consultivo sobre Karate Shotokan, criad
 
 Nome definido do produto: Atarashii App.
 
-Compatibilidade obrigatoria do app real: Android e iOS.
+O produto e um web app: acessivel direto pelo navegador (desktop e mobile), sem instalacao nem versao nativa para Android ou iOS.
 
 A primeira versao deve ser simples, clara e focada em iniciantes. O app deve ajudar o aluno a estudar, revisar e consultar conteudos essenciais sem precisar navegar por um PDF longo.
 
@@ -57,8 +57,8 @@ O produto deve ser preparado para evoluir e atender:
 5. O app complementa o dojo, nao substitui o treino presencial.
 6. A experiencia deve ser util para iniciantes, mas preparada para todos os niveis.
 7. Recursos de IA devem ser limitados a conteudo validado sempre que possivel.
-8. Toda decisao tecnica deve preservar compatibilidade com Android e iOS.
-9. A distribuicao inicial deve priorizar baixo custo: Android via Google Play quando o MVP estiver maduro e iOS via Web App/PWA, deixando App Store para uma fase posterior validada.
+8. Toda decisao tecnica deve preservar a experiencia responsiva no navegador, funcionando bem em desktop e em mobile web.
+9. A distribuicao e feita como web app, sem custo de lojas de aplicativo: acesso direto pelo navegador, sem necessidade de publicacao em Google Play ou App Store.
 
 ## Estrutura Recomendada Do App
 

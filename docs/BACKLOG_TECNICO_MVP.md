@@ -8,7 +8,7 @@ Organizar o trabalho tecnico necessario para sair do prototipo navegavel e chega
 
 - MVP simples para iniciantes.
 - Estrutura preparada para Katas, Kihon, videos, trilhas, Sensei Online e area do instrutor.
-- Compatibilidade obrigatoria com Android e iOS.
+- Compatibilidade obrigatoria com os principais navegadores desktop e mobile.
 - Sem login obrigatorio no MVP.
 - Sem IA no MVP.
 - Dados separados por dominio.
@@ -20,30 +20,30 @@ Organizar o trabalho tecnico necessario para sair do prototipo navegavel e chega
 
 User Story:
 
-- Como equipe do produto, quero uma base organizada de app mobile para evoluir sem depender do prototipo estatico.
+- Como equipe do produto, quero uma base organizada de web app para evoluir sem depender do prototipo estatico.
 
 Criterios de aceite:
 
 - projeto com pastas claras para componentes, dados, assets e telas;
-- app roda localmente em ambiente de desenvolvimento;
-- app pode ser testado em Android e iOS via Expo ou fluxo equivalente;
+- app roda localmente em ambiente de desenvolvimento (dev server web);
+- app pode ser testado nos principais navegadores desktop e mobile (Chrome, Firefox, Edge, Safari);
 - README explica como iniciar;
 - estrutura nao mistura dados, UI e regras de negocio em um unico arquivo.
 
 Prioridade: Alta.
 
-### Feature: Compatibilidade Android e iOS
+### Feature: Compatibilidade entre navegadores
 
 User Story:
 
-- Como aluno, quero usar o Atarashii App em Android ou iPhone.
+- Como aluno, quero usar o Atarashii App em qualquer navegador, no computador ou no celular.
 
 Criterios de aceite:
 
-- tecnologia escolhida suporta Android e iOS;
+- tecnologia escolhida (web) funciona nos principais navegadores desktop e mobile;
 - navegacao, botoes e textos funcionam bem em telas pequenas;
-- imagens e videos sao exibidos de forma compativel nos dois sistemas;
-- nao ha recurso exclusivo de uma plataforma no MVP.
+- imagens e videos sao exibidos de forma compativel entre os navegadores suportados;
+- nao ha recurso exclusivo de um navegador especifico no MVP.
 
 Prioridade: Alta.
 
@@ -365,8 +365,8 @@ Prioridade: Baixa no MVP, alta no roadmap futuro.
 
 ## Ordem Recomendada De Execucao
 
-1. Confirmar Expo/React Native como tecnologia do app real.
-2. Criar estrutura do projeto mobile.
+1. Confirmar stack web (ex.: React/Vite ou equivalente) como tecnologia do app real.
+2. Criar estrutura do projeto web.
 3. Migrar dados e assets.
 4. Implementar navegacao.
 5. Implementar telas de conteudo.

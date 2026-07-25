@@ -6,7 +6,7 @@ Criar uma primeira versao simples do Atarashii App para alunos iniciantes de Kar
 
 O MVP deve entregar valor mesmo sem IA, videos, area do instrutor ou recursos avancados.
 
-O MVP real deve ser planejado para Android e iOS. O prototipo web atual serve como validacao de produto e UX, nao como limitacao tecnologica.
+O MVP e o produto real: um web app acessado pelo navegador, hospedado em `/prototype`. Nao ha planos de versao nativa para Android ou iOS; o foco e entregar uma experiencia web completa, responsiva e acessivel via navegador (desktop e mobile).
 
 ## Publico Do MVP
 
@@ -636,7 +636,7 @@ O MVP sera considerado pronto quando:
 - existe quiz funcional com pontuacao;
 - existe progresso simples;
 - as telas funcionam bem em celular;
-- a base tecnica e compativel com Android e iOS;
+- a base tecnica funciona bem nos principais navegadores (desktop e mobile);
 - o app nao depende de internet para conteudos basicos, se for viavel tecnicamente;
 - nao ha promessa de substituir a orientacao do sensei.
 
@@ -652,10 +652,8 @@ O MVP sera considerado pronto quando:
 
 - nome oficial do app: Atarashii App;
 - identidade visual;
-- tecnologia recomendada para o app real: Expo/React Native;
 - uso ou nao das imagens originais da apostila;
-- necessidade de login no MVP;
-- se o prototipo web atual sera mantido apenas como validacao apos inicio do app mobile.
+- necessidade de login no MVP.
 
 ## Recomendacao De Proxima Etapa
 
