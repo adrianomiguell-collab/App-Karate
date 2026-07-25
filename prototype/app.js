@@ -6,6 +6,7 @@
   search: "",
   quizIndex: 0,
   quizAnswers: [],
+  activeQuizSession: null,
 };
 
 const contactInfo = {
@@ -137,6 +138,60 @@ function lockedSessionView(sessionKey) {
       ${button("Voltar para Home", "go:home", "primary-button")}
     </section>
   `;
+}
+
+const SESSION_QUIZ_CONFIG = {
+  aprender: {
+    dataKey: "quiz",
+    categories: [
+      "Historia e Origens", "Sistematizacao e Mestres", "Funakoshi e Shotokan",
+      "Karate no Brasil", "Expansao Mundial", "Esporte e WKF", "Conduta", "Uniforme e Graduacao",
+    ],
+  },
+  treinar: {
+    dataKey: "quiz",
+    categories: ["Fundamentos", "Tecnicas Basicas", "Bases e Termos"],
+  },
+  "kata-iniciante": { dataKey: "quizKataIniciante", categories: null },
+  "kata-intermediario": { dataKey: "quizKataIntermediario", categories: null },
+  "kata-avancado": { dataKey: "quizKataAvancado", categories: null },
+  consultar: {
+    dataKey: "quiz",
+    categories: ["Regras de Kumite", "Regras de Kata"],
+  },
+};
+
+function sessionQuizQuestions(sessionKey) {
+  const config = SESSION_QUIZ_CONFIG[sessionKey];
+  if (!config) return [];
+  const pool = state.data[config.dataKey] || [];
+  if (!config.categories) return pool;
+  return pool.filter((q) => config.categories.includes(q.category));
+}
+
+function quizGateBlock(sessionKey) {
+  if (sessionCompleted(sessionKey)) {
+    const belt = Gamification.beltForSession(sessionKey);
+    return `<p class="quiz-gate quiz-gate-done">Prova concluida! Voce conquistou a ${htmlEscape(Gamification.BELT_LABELS[belt])}.</p>`;
+  }
+  if (!sessionAllStudied(sessionKey)) {
+    return `
+      <div class="quiz-gate">
+        <button class="primary-button" type="button" disabled>Fazer prova</button>
+        <p class="muted">Marque todos os itens desta sessao como estudados para liberar a prova.</p>
+      </div>
+    `;
+  }
+  return `
+    <div class="quiz-gate">
+      ${button("Fazer prova", `start-session-quiz:${sessionKey}`, "primary-button")}
+    </div>
+  `;
+}
+
+function activeQuizQuestions() {
+  if (state.activeQuizSession === "final") return state.data.quiz;
+  return sessionQuizQuestions(state.activeQuizSession);
 }
 
 async function loadData() {
@@ -650,12 +705,13 @@ function reviewView() {
 }
 
 function quizView() {
-  const question = state.data.quiz[state.quizIndex];
+  const questions = activeQuizQuestions();
+  const question = questions[state.quizIndex];
   if (!question) return resultView();
   const currentAnswer = state.quizAnswers[state.quizIndex];
   return `
     <section class="question">
-      <p class="muted">Pergunta ${state.quizIndex + 1} de ${state.data.quiz.length}</p>
+      <p class="muted">Pergunta ${state.quizIndex + 1} de ${questions.length}</p>
       <h2 class="section-title">${htmlEscape(question.question)}</h2>
       ${question.options.map((option, index) => `
         <button class="answer-button ${currentAnswer === index ? "is-selected" : ""}" data-answer="${index}" type="button">
@@ -663,30 +719,45 @@ function quizView() {
         </button>
       `).join("")}
       <div class="toolbar">
-        ${button(state.quizIndex === state.data.quiz.length - 1 ? "Finalizar" : "Proxima", "next-question", "primary-button")}
+        ${button(state.quizIndex === questions.length - 1 ? "Finalizar" : "Proxima", "next-question", "primary-button")}
       </div>
     </section>
   `;
 }
 
 function resultView() {
-  const total = state.data.quiz.length;
-  const score = state.data.quiz.reduce((sum, question, index) => sum + (state.quizAnswers[index] === question.correctOption ? 1 : 0), 0);
+  const questions = activeQuizQuestions();
+  const total = questions.length;
+  const score = questions.reduce((sum, question, index) => sum + (state.quizAnswers[index] === question.correctOption ? 1 : 0), 0);
+  const passed = Gamification.passesThreshold(score, total);
   const progress = getProgress();
-  progress.quiz = { score, total, date: new Date().toISOString() };
+
+  if (state.activeQuizSession === "final") {
+    progress.finalChallenge = { score, total, passed, date: new Date().toISOString() };
+  } else {
+    progress.sessions[state.activeQuizSession] = { completed: passed, score, total, date: new Date().toISOString() };
+  }
   setProgress(progress);
 
-  const wrong = state.data.quiz
+  const wrong = questions
     .map((question, index) => ({ question, index, answer: state.quizAnswers[index] }))
     .filter((entry) => entry.answer !== entry.question.correctOption);
+
+  const beltKey = state.activeQuizSession === "final" ? "preta" : Gamification.beltForSession(state.activeQuizSession);
+  const beltLabel = beltKey ? Gamification.BELT_LABELS[beltKey] : "";
+  const backRoute = state.activeQuizSession === "final" ? "revisar" : state.activeQuizSession;
 
   return `
     <section class="hero">
       <h2>Resultado</h2>
-      <p>Voce acertou ${score} de ${total} perguntas.</p>
+      <p>Voce acertou ${score} de ${total} perguntas (${Gamification.scorePercent(score, total)}%).</p>
+      ${passed
+        ? `<p class="quiz-pass">Parabens! Voce conquistou a ${htmlEscape(beltLabel)}.</p>`
+        : `<p class="quiz-fail">Voce precisa de pelo menos 70% para conquistar a ${htmlEscape(beltLabel)}. Tente novamente.</p>`
+      }
       <div class="toolbar">
-        ${button("Refazer quiz", "start-quiz", "primary-button")}
-        ${button("Voltar para revisar", "go:revisar")}
+        ${button("Tentar novamente", `start-session-quiz:${state.activeQuizSession}`, "primary-button")}
+        ${button("Voltar", `go:${backRoute}`)}
       </div>
     </section>
     <section class="grid">
@@ -726,11 +797,24 @@ function render() {
     return;
   }
 
+  if (SESSION_QUIZ_CONFIG[state.route] && !sessionUnlockedForUI(state.route)) {
+    app.innerHTML = lockedSessionView(state.route);
+    return;
+  }
+
+  if (state.route === "revisar" && !Gamification.isFinalChallengeUnlocked(getProgress().sessions)) {
+    app.innerHTML = lockedFinalChallengeView();
+    return;
+  }
+
   const views = {
     home: homeView,
     aprender: () => sectionView("aprender"),
     treinar: () => sectionView("treinar"),
-    katas: () => sectionView("katas"),
+    katas: kataHubView,
+    "kata-iniciante": () => kataTierView("iniciante"),
+    "kata-intermediario": () => kataTierView("intermediario"),
+    "kata-avancado": () => kataTierView("avancado"),
     consultar: () => sectionView("consultar"),
     revisar: reviewView,
     contato: contactView,
@@ -793,13 +877,15 @@ document.addEventListener("click", (event) => {
     toggleFavorite(action.split(":")[1]);
   } else if (action.startsWith("study:")) {
     markStudied(action.split(":")[1]);
-  } else if (action === "start-quiz") {
+  } else if (action.startsWith("start-session-quiz:")) {
+    state.activeQuizSession = action.split(":")[1];
     state.quizIndex = 0;
     state.quizAnswers = [];
     state.route = "quiz";
     render();
   } else if (action === "next-question") {
-    if (state.quizIndex < state.data.quiz.length - 1) {
+    const questions = activeQuizQuestions();
+    if (state.quizIndex < questions.length - 1) {
       state.quizIndex += 1;
       render();
     } else {
