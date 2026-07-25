@@ -83,6 +83,62 @@ function isFavorite(id) {
   return getProgress().favorites.includes(id);
 }
 
+function kataTierItems(tier) {
+  return state.data.katas.filter((k) => k.nivelJogo === tier);
+}
+
+function sessionItems(sessionKey) {
+  if (sessionKey === "aprender") {
+    return state.data.contents.filter((item) => item.area === "aprender");
+  }
+  if (sessionKey === "treinar") {
+    return [...state.data.techniques, ...state.data.stances];
+  }
+  if (sessionKey === "kata-iniciante") return kataTierItems("iniciante");
+  if (sessionKey === "kata-intermediario") return kataTierItems("intermediario");
+  if (sessionKey === "kata-avancado") return kataTierItems("avancado");
+  if (sessionKey === "consultar") {
+    return [...state.data.glossary, ...state.data.rules];
+  }
+  return [];
+}
+
+function sessionAllStudied(sessionKey) {
+  const items = sessionItems(sessionKey);
+  return items.length > 0 && items.every((item) => isStudied(item.id));
+}
+
+function sessionUnlockedForUI(sessionKey) {
+  return Gamification.isSessionUnlocked(getProgress().sessions, sessionKey);
+}
+
+function sessionCompleted(sessionKey) {
+  return Gamification.isSessionCompleted(getProgress().sessions, sessionKey);
+}
+
+const SESSION_LABELS = {
+  aprender: "Aprender",
+  treinar: "Treinar",
+  "kata-iniciante": "Kata - Iniciante",
+  "kata-intermediario": "Kata - Intermediario",
+  "kata-avancado": "Kata - Avancado",
+  consultar: "Consultar",
+};
+
+function lockedSessionView(sessionKey) {
+  const idx = Gamification.SESSION_ORDER.indexOf(sessionKey);
+  const previousKey = idx > 0 ? Gamification.SESSION_ORDER[idx - 1] : null;
+  const previousLabel = previousKey ? SESSION_LABELS[previousKey] : "";
+  return `
+    <section class="hero locked-session">
+      <p class="eyebrow">Bloqueado</p>
+      <h2>${htmlEscape(SESSION_LABELS[sessionKey] || sessionKey)}</h2>
+      <p>Conclua "${htmlEscape(previousLabel)}" com pelo menos 70% na prova para liberar esta sessao.</p>
+      ${button("Voltar para Home", "go:home", "primary-button")}
+    </section>
+  `;
+}
+
 async function loadData() {
   const entries = await Promise.all(
     Object.entries(dataFiles).map(async ([key, path]) => {
@@ -211,7 +267,6 @@ function sectionView(area) {
   const titles = {
     aprender: ["Aprender", "Conteudos historicos, conceituais e formativos."],
     treinar: ["Treinar", "Kihon, tecnicas basicas e bases para consulta antes ou depois do treino."],
-    katas: ["Kata", "Katas iniciais com ficha tecnica, embusen e videos oficiais quando disponiveis."],
     consultar: ["Consultar", "Referencia rapida de termos, regras e comandos."],
   };
   const [title, subtitle] = titles[area];
@@ -226,10 +281,6 @@ function sectionView(area) {
       ...state.data.techniques.map((item) => ({ ...item, kind: "tecnica" })),
       ...state.data.stances.map((item) => ({ ...item, kind: "base" })),
     ];
-  }
-
-  if (area === "katas") {
-    items = state.data.katas.map((item) => ({ ...item, kind: "kata", name: item.nome || item.name, summary: item.significado || item.summary, category: item.classificacao?.nivel || item.category, level: item.classificacao?.faixa_sugerida || item.level }));
   }
 
   if (area === "consultar") {
@@ -252,6 +303,78 @@ function sectionView(area) {
       <div class="grid three">
         ${visible.map(cardTemplate).join("")}
       </div>
+      ${quizGateBlock(area)}
+    </section>
+  `;
+}
+
+const KATA_TIER_LABELS = { iniciante: "Iniciante", intermediario: "Intermediario", avancado: "Avancado" };
+const KATA_TIER_TO_SESSION = {
+  iniciante: "kata-iniciante",
+  intermediario: "kata-intermediario",
+  avancado: "kata-avancado",
+};
+
+function extraKataNote() {
+  const extra = state.data.katas.find((k) => !k.nivelJogo);
+  if (!extra) return "";
+  return `
+    <p class="muted extra-kata-note">
+      Kata extra (fora da progressao por faixas):
+      <button class="text-link-button" data-open="kata:${extra.id}" type="button">${htmlEscape(extra.nome || extra.name)}</button>
+    </p>
+  `;
+}
+
+function kataHubView() {
+  const tiers = ["iniciante", "intermediario", "avancado"];
+  return `
+    <section>
+      <h2 class="section-title">Kata</h2>
+      <p class="muted">Katas organizados em 3 niveis. Complete um nivel (70% na prova) para liberar o proximo.</p>
+      <div class="grid three">
+        ${tiers.map((tier) => {
+          const sessionKey = KATA_TIER_TO_SESSION[tier];
+          const unlocked = sessionUnlockedForUI(sessionKey);
+          const completed = sessionCompleted(sessionKey);
+          const count = kataTierItems(tier).length;
+          if (!unlocked) {
+            return `
+              <div class="card is-locked" aria-disabled="true">
+                <h3>${KATA_TIER_LABELS[tier]} <span class="lock-icon" aria-hidden="true">&#128274;</span></h3>
+                <p>${count} katas. Bloqueado.</p>
+              </div>
+            `;
+          }
+          return `
+            <button class="card" data-action="go:${sessionKey}" type="button">
+              <h3>${KATA_TIER_LABELS[tier]}</h3>
+              <p>${count} katas. ${completed ? "Concluido" : "Disponivel"}</p>
+            </button>
+          `;
+        }).join("")}
+      </div>
+      ${extraKataNote()}
+    </section>
+  `;
+}
+
+function kataTierView(tier) {
+  const sessionKey = KATA_TIER_TO_SESSION[tier];
+  const items = kataTierItems(tier).map((item) => ({
+    ...item,
+    kind: "kata",
+    name: item.nome || item.name,
+    summary: item.significado || item.summary,
+  }));
+  return `
+    <section>
+      ${button("Voltar para Kata", "go:katas")}
+      <h2 class="section-title">Kata - ${KATA_TIER_LABELS[tier]}</h2>
+      <div class="grid three">
+        ${items.map(cardTemplate).join("")}
+      </div>
+      ${quizGateBlock(sessionKey)}
     </section>
   `;
 }
