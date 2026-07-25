@@ -4,3 +4,4 @@ tmp/
 mobile/node_modules/
 mobile/.expo/
 .DS_Store
+.worktrees/
