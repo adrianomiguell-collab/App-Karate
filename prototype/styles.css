@@ -321,24 +321,6 @@ input {
   width: 100%;
 }
 
-.technique-video {
-  margin: 16px 0;
-}
-
-.technique-video video {
-  background: #111827;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  display: block;
-  max-height: 620px;
-  object-fit: contain;
-  width: 100%;
-}
-
-.technique-video .muted {
-  margin: 8px 0 0;
-}
-
 .video-player {
   background: #111827;
   border: 1px solid var(--line);
