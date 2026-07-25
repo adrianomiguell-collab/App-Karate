@@ -126,7 +126,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Opcional em algumas associacoes; nao aparece na lista dos 26 katas da apostila.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": null
     },
     {
       "id": "heian-shodan",
@@ -246,7 +247,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 5 e 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "iniciante"
     },
     {
       "id": "heian-nidan",
@@ -366,7 +368,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 5 e 6. Grafia da apostila: Hein Nidan.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "iniciante"
     },
     {
       "id": "heian-sandan",
@@ -488,7 +491,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 5 e 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "iniciante"
     },
     {
       "id": "heian-yondan",
@@ -612,7 +616,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 5 e 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "iniciante"
     },
     {
       "id": "heian-godan",
@@ -732,7 +737,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 5 e 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "iniciante"
     },
     {
       "id": "tekki-shodan",
@@ -846,7 +852,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "bassai-dai",
@@ -969,7 +976,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 7.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "kanku-dai",
@@ -1092,7 +1100,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 7.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "empi",
@@ -1215,7 +1224,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 8. Variante grafica: Enpi.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "jion",
@@ -1336,7 +1346,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 9.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "hangetsu",
@@ -1457,7 +1468,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 8.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "jitte",
@@ -1578,7 +1590,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 8.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "gankaku",
@@ -1699,7 +1712,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 8 e 9.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "tekki-nidan",
@@ -1813,7 +1827,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 6.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "tekki-sandan",
@@ -1929,7 +1944,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 6. Grafia da apostila: Teki Sandan.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "bassai-sho",
@@ -2052,7 +2068,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 7.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "kanku-sho",
@@ -2175,7 +2192,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 7.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     },
     {
       "id": "nijushiho",
@@ -2296,7 +2314,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 10.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "chinte",
@@ -2416,7 +2435,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 9. Pontos de kiai nao informados.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "sochin",
@@ -2537,7 +2557,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 9 e 10.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "meikyo",
@@ -2658,7 +2679,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 10 e 11.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "wankan",
@@ -2778,7 +2800,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 11.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "unsu",
@@ -2899,7 +2922,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, paginas 9 e 10.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "gojushiho-dai",
@@ -3020,7 +3044,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "gojushiho-sho",
@@ -3141,7 +3166,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 10. Validar ordem/nome com a associacao.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "avancado"
     },
     {
       "id": "jiin",
@@ -3262,7 +3288,8 @@
         "fonte_principal": "apostila karate.pdf",
         "observacao_divergencia": "Apostila, pagina 11.",
         "status_validacao": "Pendente de revisao final da Associacao Atarashii"
-      }
+      },
+      "nivelJogo": "intermediario"
     }
   ]
 }
