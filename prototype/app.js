@@ -687,17 +687,31 @@ function contactView() {
     </section>
   `;
 }
+function lockedFinalChallengeView() {
+  return `
+    <section class="hero locked-session">
+      <p class="eyebrow">Bloqueado</p>
+      <h2>Revisar - Desafio Final</h2>
+      <p>Conquiste as 6 faixas de estudo (Amarela ate Marrom) para liberar o desafio final e a Faixa Preta.</p>
+      ${button("Voltar para Home", "go:home", "primary-button")}
+    </section>
+  `;
+}
+
 function reviewView() {
   const progress = getProgress();
-  const last = progress.quiz ? `Ultimo resultado: ${progress.quiz.score}/${progress.quiz.total}` : "Voce ainda nao respondeu o quiz.";
+  const challenge = progress.finalChallenge;
+  const last = challenge
+    ? `Ultimo resultado: ${challenge.score}/${challenge.total}${challenge.passed ? " - Faixa Preta conquistada!" : ""}`
+    : "Voce ainda nao tentou o desafio final.";
   return `
     <section class="hero">
-      <h2>Revisar</h2>
+      <h2>Revisar - Desafio Final</h2>
       <p>${last}</p>
       <div class="grid">
-        <button class="card" data-action="start-quiz" type="button">
+        <button class="card" data-action="start-session-quiz:final" type="button">
           <h3>Quiz da apostila</h3>
-          <p>50 perguntas para revisar historia, fundamentos, regras, tecnicas e termos.</p>
+          <p>50 perguntas para revisar historia, fundamentos, regras, tecnicas e termos. Acerte 70% para conquistar a Faixa de Estudos Preta.</p>
         </button>
       </div>
     </section>
