@@ -42,7 +42,7 @@
   const PASS_THRESHOLD = 0.7;
 
   function isSessionCompleted(sessionsCompleted, sessionKey) {
-    return Boolean(sessionsCompleted && sessionsCompleted[sessionKey]);
+    return Boolean(sessionsCompleted && sessionsCompleted[sessionKey] && sessionsCompleted[sessionKey].completed);
   }
 
   function isSessionUnlocked(sessionsCompleted, sessionKey) {

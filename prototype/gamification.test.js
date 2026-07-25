@@ -7,32 +7,39 @@ test("faixa inicial e branca quando nenhuma sessao concluida", () => {
 });
 
 test("cada sessao concluida avanca a faixa na ordem certa", () => {
-  const completed = { aprender: true, treinar: true };
+  const completed = { aprender: { completed: true }, treinar: { completed: true } };
   assert.equal(Gamification.currentBeltKey(completed), "vermelha");
 });
 
 test("sequencia quebrada nao pula faixa", () => {
-  const completed = { treinar: true };
+  const completed = { treinar: { completed: true } };
   assert.equal(Gamification.currentBeltKey(completed), "branca");
 });
 
 test("sessao so desbloqueia se a anterior estiver completa", () => {
   assert.equal(Gamification.isSessionUnlocked({}, "aprender"), true);
   assert.equal(Gamification.isSessionUnlocked({}, "treinar"), false);
-  assert.equal(Gamification.isSessionUnlocked({ aprender: true }, "treinar"), true);
-  assert.equal(Gamification.isSessionUnlocked({ aprender: true }, "kata-iniciante"), false);
+  assert.equal(Gamification.isSessionUnlocked({ aprender: { completed: true } }, "treinar"), true);
+  assert.equal(Gamification.isSessionUnlocked({ aprender: { completed: true } }, "kata-iniciante"), false);
+});
+
+test("uma sessao com completed:false nao conta como concluida nem destrava a proxima", () => {
+  const sessions = { aprender: { completed: false, score: 3, total: 10 } };
+  assert.equal(Gamification.isSessionCompleted(sessions, "aprender"), false);
+  assert.equal(Gamification.isSessionUnlocked(sessions, "treinar"), false);
+  assert.equal(Gamification.currentBeltKey(sessions), "branca");
 });
 
 test("desafio final so desbloqueia com todas as 6 sessoes completas", () => {
   const almostAll = {
-    aprender: true,
-    treinar: true,
-    "kata-iniciante": true,
-    "kata-intermediario": true,
-    "kata-avancado": true,
+    aprender: { completed: true },
+    treinar: { completed: true },
+    "kata-iniciante": { completed: true },
+    "kata-intermediario": { completed: true },
+    "kata-avancado": { completed: true },
   };
   assert.equal(Gamification.isFinalChallengeUnlocked(almostAll), false);
-  const all = { ...almostAll, consultar: true };
+  const all = { ...almostAll, consultar: { completed: true } };
   assert.equal(Gamification.isFinalChallengeUnlocked(all), true);
 });
 
