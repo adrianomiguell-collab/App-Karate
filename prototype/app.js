@@ -28,6 +28,9 @@ const dataFiles = {
   glossary: "../data/glossary.json",
   rules: "../data/rules.json",
   quiz: "../data/quiz.json",
+  quizKataIniciante: "../data/quiz-kata-iniciante.json",
+  quizKataIntermediario: "../data/quiz-kata-intermediario.json",
+  quizKataAvancado: "../data/quiz-kata-avancado.json",
 };
 
 function normalizeProgress(progress) {
@@ -35,6 +38,8 @@ function normalizeProgress(progress) {
     studied: Array.isArray(progress?.studied) ? progress.studied : [],
     favorites: Array.isArray(progress?.favorites) ? progress.favorites : [],
     quiz: progress?.quiz || null,
+    sessions: progress?.sessions && typeof progress.sessions === "object" ? progress.sessions : {},
+    finalChallenge: progress?.finalChallenge || null,
   };
 }
 
