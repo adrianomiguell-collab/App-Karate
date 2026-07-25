@@ -17,6 +17,8 @@ const contactInfo = {
   instagramUrl: "https://www.instagram.com/associacao_atarashii_karate/",
   whatsappNumber: "5511965512234",
 };
+// CONFIGURACAO PENDENTE: substituir pelo link real do "App do Aluno" antes de publicar.
+const STUDENT_APP_URL = "https://SUBSTITUIR-PELO-LINK-DO-APP-DO-ALUNO.exemplo.com";
 const storeKey = "karate-shotokan-progress";
 const app = document.querySelector("#app");
 const tabs = [...document.querySelectorAll(".tab")];
@@ -269,9 +271,48 @@ function progressBlock() {
   `;
 }
 
-function homeView() {
+function moduleCard(sessionKey, label, description, routeOverride) {
+  const route = routeOverride || sessionKey;
+  const locked = !sessionUnlockedForUI(sessionKey);
+  if (locked) {
+    return `
+      <div class="card module-card is-locked" aria-disabled="true">
+        <h3>${htmlEscape(label)} <span class="lock-icon" aria-hidden="true">&#128274;</span></h3>
+        <p>${htmlEscape(description)}</p>
+      </div>
+    `;
+  }
+  return `
+    <button class="card module-card" data-action="go:${route}" type="button">
+      <h3>${htmlEscape(label)}</h3>
+      <p>${htmlEscape(description)}</p>
+    </button>
+  `;
+}
+
+function finalChallengeCard() {
   const progress = getProgress();
-  const lastQuiz = progress.quiz ? `${progress.quiz.score}/${progress.quiz.total} no ultimo quiz` : "Quiz ainda nao iniciado";
+  const unlocked = Gamification.isFinalChallengeUnlocked(progress.sessions);
+  const lastQuiz = progress.finalChallenge
+    ? `${progress.finalChallenge.score}/${progress.finalChallenge.total} no desafio final`
+    : "Desafio final ainda nao tentado";
+  if (!unlocked) {
+    return `
+      <div class="card module-card is-locked" aria-disabled="true">
+        <h3>Revisar <span class="lock-icon" aria-hidden="true">&#128274;</span></h3>
+        <p>Conquiste todas as faixas de estudo para liberar.</p>
+      </div>
+    `;
+  }
+  return `
+    <button class="card module-card" data-action="go:revisar" type="button">
+      <h3>Revisar</h3>
+      <p>${htmlEscape(lastQuiz)}</p>
+    </button>
+  `;
+}
+
+function homeView() {
   return `
     <section class="hero">
       <div class="hero-brand">
@@ -290,26 +331,11 @@ function homeView() {
     </section>
 
     <section class="grid two">
-      <button class="card module-card" data-action="go:aprender" type="button">
-        <h3>Aprender</h3>
-        <p>Historia, fundamentos, conduta e graduacao.</p>
-      </button>
-      <button class="card module-card" data-action="go:treinar" type="button">
-        <h3>Treinar</h3>
-        <p>Kihon, tecnicas basicas e bases principais.</p>
-      </button>
-      <button class="card module-card" data-action="go:katas" type="button">
-        <h3>Kata</h3>
-        <p>Katas iniciais, embusen e videos oficiais.</p>
-      </button>
-      <button class="card module-card" data-action="go:consultar" type="button">
-        <h3>Consultar</h3>
-        <p>Glossario, regras, pontuacao e termos.</p>
-      </button>
-      <button class="card module-card" data-action="go:revisar" type="button">
-        <h3>Revisar</h3>
-        <p>${lastQuiz}</p>
-      </button>
+      ${moduleCard("aprender", "Aprender", "Historia, fundamentos, conduta e graduacao.")}
+      ${moduleCard("treinar", "Treinar", "Kihon, tecnicas basicas e bases principais.")}
+      ${moduleCard("kata-iniciante", "Kata", "Katas organizados em 3 niveis, embusen e videos oficiais.", "katas")}
+      ${moduleCard("consultar", "Consultar", "Glossario, regras, pontuacao e termos.")}
+      ${finalChallengeCard()}
       <button class="card module-card" data-action="go:contato" type="button">
         <h3>Contato</h3>
         <p>Endereco, mapa e redes da associacao.</p>
@@ -789,12 +815,45 @@ function resultView() {
 
 function progressView() {
   const progress = getProgress();
+  const beltOrder = ["branca", ...Gamification.SESSION_ORDER.map((key) => Gamification.BELT_BY_SESSION[key])];
+  const currentBelt = Gamification.currentBeltKey(progress.sessions);
+  const currentIndex = beltOrder.indexOf(currentBelt);
+  const finalUnlocked = Gamification.isFinalChallengeUnlocked(progress.sessions);
+  const blackBeltEarned = Boolean(progress.finalChallenge?.passed);
+
+  const beltRows = beltOrder.map((beltKey, index) => {
+    const earned = currentIndex >= index;
+    return `
+      <li class="belt-row ${earned ? "is-earned" : "is-locked"}">
+        <span class="belt-swatch" style="background:${Gamification.BELT_COLORS[beltKey]}"></span>
+        <span>${htmlEscape(Gamification.BELT_LABELS[beltKey])}</span>
+        <span class="muted">${earned ? "Conquistada" : "Bloqueada"}</span>
+      </li>
+    `;
+  }).join("");
+
+  const blackBeltRow = `
+    <li class="belt-row ${blackBeltEarned ? "is-earned" : "is-locked"}">
+      <span class="belt-swatch" style="background:${Gamification.BELT_COLORS.preta}"></span>
+      <span>${htmlEscape(Gamification.BELT_LABELS.preta)}</span>
+      <span class="muted">${blackBeltEarned ? "Conquistada" : finalUnlocked ? "Disponivel no desafio final" : "Bloqueada"}</span>
+    </li>
+  `;
+
   return `
     <section class="hero">
-      <h2>Progresso</h2>
+      <h2>Meu Progresso de Estudos</h2>
       ${progressBlock()}
       <p class="muted">Itens estudados: ${progress.studied.length}</p>
-      <p class="muted">${progress.quiz ? `Ultimo quiz: ${progress.quiz.score}/${progress.quiz.total}` : "Quiz ainda nao iniciado"}</p>
+      <p class="belt-current">Faixa de Estudos atual: <strong>${htmlEscape(Gamification.BELT_LABELS[currentBelt])}</strong></p>
+      <ul class="belt-list">
+        ${beltRows}
+        ${blackBeltRow}
+      </ul>
+      <div class="belt-disclaimer">
+        <p><strong>Isso e a sua Faixa de Estudos no app.</strong> Ela representa seu progresso estudando aqui e nao substitui sua graduacao oficial na associacao.</p>
+        <a class="secondary-button contact-link" href="${htmlEscape(STUDENT_APP_URL)}" target="_blank" rel="noreferrer">Abrir App do Aluno</a>
+      </div>
     </section>
   `;
 }
