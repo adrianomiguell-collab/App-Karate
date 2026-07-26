@@ -157,10 +157,10 @@ const SESSION_LABELS = {
 const SESSION_QUIZ_CONFIG = {
   aprender: {
     dataKey: "quiz",
-    categories: [
-      "Historia e Origens", "Sistematizacao e Mestres", "Funakoshi e Shotokan",
-      "Karate no Brasil", "Expansao Mundial", "Esporte e WKF", "Conduta", "Uniforme e Graduacao",
-    ],
+    // Subconjunto de 10 perguntas (de um banco de 23 nessas categorias) para
+    // nao sobrecarregar a primeira prova do jogo -- mantem pelo menos 1
+    // pergunta de cada uma das 8 categorias de Aprender.
+    ids: ["q001", "q005", "q008", "q011", "q012", "q014", "q016", "q036", "q039", "q045"],
   },
   treinar: {
     dataKey: "quiz",
@@ -179,6 +179,7 @@ function sessionQuizQuestions(sessionKey) {
   const config = SESSION_QUIZ_CONFIG[sessionKey];
   if (!config) return [];
   const pool = state.data[config.dataKey] || [];
+  if (config.ids) return config.ids.map((id) => pool.find((q) => q.id === id)).filter(Boolean);
   if (!config.categories) return pool;
   return pool.filter((q) => config.categories.includes(q.category));
 }
