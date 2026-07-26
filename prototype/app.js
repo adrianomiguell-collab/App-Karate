@@ -171,10 +171,24 @@ function sessionQuizQuestions(sessionKey) {
   return pool.filter((q) => config.categories.includes(q.category));
 }
 
+function beltDisclaimer() {
+  return `
+    <div class="belt-disclaimer">
+      <p><strong>Isso e a sua Faixa de Estudos no app.</strong> Ela representa seu progresso estudando aqui e nao substitui sua graduacao oficial na associacao.</p>
+      <a class="secondary-button contact-link" href="${htmlEscape(STUDENT_APP_URL)}" target="_blank" rel="noreferrer">Abrir App do Aluno</a>
+    </div>
+  `;
+}
+
 function quizGateBlock(sessionKey) {
   if (sessionCompleted(sessionKey)) {
     const belt = Gamification.beltForSession(sessionKey);
-    return `<p class="quiz-gate quiz-gate-done">Prova concluida! Voce conquistou a ${htmlEscape(Gamification.BELT_LABELS[belt])}.</p>`;
+    return `
+      <div class="quiz-gate quiz-gate-done">
+        <p>Prova concluida! Voce conquistou a ${htmlEscape(Gamification.BELT_LABELS[belt])}.</p>
+        ${beltDisclaimer()}
+      </div>
+    `;
   }
   if (!sessionAllStudied(sessionKey)) {
     return `
@@ -772,10 +786,15 @@ function resultView() {
   const passed = Gamification.passesThreshold(score, total);
   const progress = getProgress();
 
-  if (state.activeQuizSession === "final") {
-    progress.finalChallenge = { score, total, passed, date: new Date().toISOString() };
+  const isFinal = state.activeQuizSession === "final";
+  const previous = isFinal ? progress.finalChallenge : progress.sessions[state.activeQuizSession];
+  const alreadyEarned = isFinal ? Boolean(previous?.passed) : Boolean(previous?.completed);
+  const sticky = passed || alreadyEarned;
+
+  if (isFinal) {
+    progress.finalChallenge = { score, total, passed: sticky, date: new Date().toISOString() };
   } else {
-    progress.sessions[state.activeQuizSession] = { completed: passed, score, total, date: new Date().toISOString() };
+    progress.sessions[state.activeQuizSession] = { completed: sticky, score, total, date: new Date().toISOString() };
   }
   setProgress(progress);
 
@@ -783,21 +802,28 @@ function resultView() {
     .map((question, index) => ({ question, index, answer: state.quizAnswers[index] }))
     .filter((entry) => entry.answer !== entry.question.correctOption);
 
-  const beltKey = state.activeQuizSession === "final" ? "preta" : Gamification.beltForSession(state.activeQuizSession);
+  const beltKey = isFinal ? "preta" : Gamification.beltForSession(state.activeQuizSession);
   const beltLabel = beltKey ? Gamification.BELT_LABELS[beltKey] : "";
-  const backRoute = state.activeQuizSession === "final" ? "revisar" : state.activeQuizSession;
+  const backRoute = isFinal ? "revisar" : state.activeQuizSession;
+
+  let message;
+  if (passed) {
+    message = `<p class="quiz-pass">Parabens! Voce conquistou a ${htmlEscape(beltLabel)}.</p>`;
+  } else if (alreadyEarned) {
+    message = `<p class="quiz-fail">Voce nao atingiu 70% nesta tentativa, mas sua ${htmlEscape(beltLabel)} continua conquistada.</p>`;
+  } else {
+    message = `<p class="quiz-fail">Voce precisa de pelo menos 70% para conquistar a ${htmlEscape(beltLabel)}. Tente novamente.</p>`;
+  }
 
   return `
     <section class="hero">
       <h2>Resultado</h2>
       <p>Voce acertou ${score} de ${total} perguntas (${Gamification.scorePercent(score, total)}%).</p>
-      ${passed
-        ? `<p class="quiz-pass">Parabens! Voce conquistou a ${htmlEscape(beltLabel)}.</p>`
-        : `<p class="quiz-fail">Voce precisa de pelo menos 70% para conquistar a ${htmlEscape(beltLabel)}. Tente novamente.</p>`
-      }
+      ${message}
+      ${sticky ? beltDisclaimer() : ""}
       <div class="toolbar">
-        ${button("Tentar novamente", `start-session-quiz:${state.activeQuizSession}`, "primary-button")}
-        ${button("Voltar", `go:${backRoute}`)}
+        ${passed ? "" : button("Tentar novamente", `start-session-quiz:${state.activeQuizSession}`, "primary-button")}
+        ${button("Voltar", `go:${backRoute}`, passed ? "primary-button" : "secondary-button")}
       </div>
     </section>
     <section class="grid">
@@ -850,10 +876,7 @@ function progressView() {
         ${beltRows}
         ${blackBeltRow}
       </ul>
-      <div class="belt-disclaimer">
-        <p><strong>Isso e a sua Faixa de Estudos no app.</strong> Ela representa seu progresso estudando aqui e nao substitui sua graduacao oficial na associacao.</p>
-        <a class="secondary-button contact-link" href="${htmlEscape(STUDENT_APP_URL)}" target="_blank" rel="noreferrer">Abrir App do Aluno</a>
-      </div>
+      ${beltDisclaimer()}
     </section>
   `;
 }
