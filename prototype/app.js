@@ -285,6 +285,20 @@ function progressBlock() {
   `;
 }
 
+function currentBeltBlock() {
+  const progress = getProgress();
+  const beltKey = Gamification.currentBeltKey(progress.sessions);
+  return `
+    <button class="belt-home-badge" data-action="go:progresso" type="button">
+      <span class="belt-home-badge-main">
+        <span class="belt-swatch" style="background:${Gamification.BELT_COLORS[beltKey]}"></span>
+        <span>Faixa de Estudos atual: <strong>${htmlEscape(Gamification.BELT_LABELS[beltKey])}</strong></span>
+      </span>
+      <span class="muted belt-home-badge-link">Ver progresso &rsaquo;</span>
+    </button>
+  `;
+}
+
 function moduleCard(sessionKey, label, description, routeOverride) {
   const route = routeOverride || sessionKey;
   const locked = !sessionUnlockedForUI(sessionKey);
@@ -338,6 +352,7 @@ function homeView() {
       </div>
       <p>Estude e consulte Karate Shotokan em uma primeira versao focada em iniciantes, com fundamentos, tecnicas, katas, glossario, regras e revisao.</p>
       ${progressBlock()}
+      ${currentBeltBlock()}
       <div class="search-row">
         <input class="search-input" id="homeSearch" placeholder="Buscar OSS, Kiai, Heian, Yuko..." />
         ${button("Buscar", "home-search", "primary-button")}
