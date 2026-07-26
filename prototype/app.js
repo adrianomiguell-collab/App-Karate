@@ -154,20 +154,6 @@ const SESSION_LABELS = {
   consultar: "Consultar",
 };
 
-function lockedSessionView(sessionKey) {
-  const idx = Gamification.SESSION_ORDER.indexOf(sessionKey);
-  const previousKey = idx > 0 ? Gamification.SESSION_ORDER[idx - 1] : null;
-  const previousLabel = previousKey ? SESSION_LABELS[previousKey] : "";
-  return `
-    <section class="hero locked-session">
-      <p class="eyebrow">Bloqueado</p>
-      <h2>${htmlEscape(SESSION_LABELS[sessionKey] || sessionKey)}</h2>
-      <p>Conclua "${htmlEscape(previousLabel)}" com pelo menos 70% na prova para liberar esta sessao.</p>
-      ${button("Voltar para Home", "go:home", "primary-button")}
-    </section>
-  `;
-}
-
 const SESSION_QUIZ_CONFIG = {
   aprender: {
     dataKey: "quiz",
@@ -213,6 +199,17 @@ function quizGateBlock(sessionKey) {
       <div class="quiz-gate quiz-gate-done">
         <p>Prova concluida! Voce conquistou a ${htmlEscape(Gamification.BELT_LABELS[belt])}.</p>
         ${beltDisclaimer()}
+      </div>
+    `;
+  }
+  if (!sessionUnlockedForUI(sessionKey)) {
+    const idx = Gamification.SESSION_ORDER.indexOf(sessionKey);
+    const previousKey = idx > 0 ? Gamification.SESSION_ORDER[idx - 1] : null;
+    const previousLabel = previousKey ? SESSION_LABELS[previousKey] : "";
+    return `
+      <div class="quiz-gate quiz-gate-locked">
+        <button class="primary-button" type="button" disabled>Fazer prova</button>
+        <p class="muted">Voce pode estudar este conteudo livremente. A prova so libera depois de conquistar a faixa de "${htmlEscape(previousLabel)}".</p>
       </div>
     `;
   }
@@ -328,17 +325,9 @@ function currentBeltBlock() {
 function moduleCard(sessionKey, label, description, routeOverride) {
   const route = routeOverride || sessionKey;
   const locked = !sessionUnlockedForUI(sessionKey);
-  if (locked) {
-    return `
-      <div class="card module-card is-locked" aria-disabled="true">
-        <h3>${htmlEscape(label)} <span class="lock-icon" aria-hidden="true">&#128274;</span></h3>
-        <p>${htmlEscape(description)}</p>
-      </div>
-    `;
-  }
   return `
     <button class="card module-card" data-action="go:${route}" type="button">
-      <h3>${htmlEscape(label)}</h3>
+      <h3>${htmlEscape(label)}${locked ? ' <span class="lock-icon" aria-hidden="true" title="Prova ainda bloqueada">&#128274;</span>' : ""}</h3>
       <p>${htmlEscape(description)}</p>
     </button>
   `;
@@ -467,25 +456,18 @@ function kataHubView() {
   return `
     <section>
       <h2 class="section-title">Kata</h2>
-      <p class="muted">Katas organizados em 3 niveis. Complete um nivel (70% na prova) para liberar o proximo.</p>
+      <p class="muted">Katas organizados em 3 niveis. Voce pode estudar qualquer nivel a qualquer momento -- a prova de cada nivel libera na sequencia.</p>
       <div class="grid three">
         ${tiers.map((tier) => {
           const sessionKey = KATA_TIER_TO_SESSION[tier];
           const unlocked = sessionUnlockedForUI(sessionKey);
           const completed = sessionCompleted(sessionKey);
           const count = kataTierItems(tier).length;
-          if (!unlocked) {
-            return `
-              <div class="card is-locked" aria-disabled="true">
-                <h3>${KATA_TIER_LABELS[tier]} <span class="lock-icon" aria-hidden="true">&#128274;</span></h3>
-                <p>${count} katas. Bloqueado.</p>
-              </div>
-            `;
-          }
+          const status = completed ? "Concluido" : unlocked ? "Prova disponivel" : "Prova bloqueada";
           return `
             <button class="card" data-action="go:${sessionKey}" type="button">
-              <h3>${KATA_TIER_LABELS[tier]}</h3>
-              <p>${count} katas. ${completed ? "Concluido" : "Disponivel"}</p>
+              <h3>${KATA_TIER_LABELS[tier]}${unlocked ? "" : ' <span class="lock-icon" aria-hidden="true" title="Prova ainda bloqueada">&#128274;</span>'}</h3>
+              <p>${count} katas. ${status}</p>
             </button>
           `;
         }).join("")}
@@ -946,11 +928,6 @@ function render() {
   if (state.route.startsWith("detail:")) {
     const [, kind, id] = state.route.split(":");
     app.innerHTML = detailView(kind, id);
-    return;
-  }
-
-  if (SESSION_QUIZ_CONFIG[state.route] && !sessionUnlockedForUI(state.route)) {
-    app.innerHTML = lockedSessionView(state.route);
     return;
   }
 
