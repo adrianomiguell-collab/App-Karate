@@ -87,7 +87,7 @@ input {
   border-top: 1px solid var(--line);
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   left: 0;
   position: fixed;
   right: 0;
@@ -505,6 +505,31 @@ input {
 
 .contact-view h2 {
   margin-top: 8px;
+}
+
+.atarashii-view h2 {
+  margin-top: 8px;
+}
+
+.atarashii-author {
+  background: var(--surface-strong);
+  border-left: 4px solid var(--red);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 14px 0 20px;
+  padding: 14px 16px;
+}
+
+.atarashii-author strong {
+  font-size: 17px;
+}
+
+.atarashii-signature {
+  font-style: italic;
+  margin-top: 20px;
 }
 
 .contact-list {

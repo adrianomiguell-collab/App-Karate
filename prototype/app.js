@@ -19,6 +19,32 @@ const contactInfo = {
 };
 // CONFIGURACAO PENDENTE: substituir pelo link real do "App do Aluno" antes de publicar.
 const STUDENT_APP_URL = "https://SUBSTITUIR-PELO-LINK-DO-APP-DO-ALUNO.exemplo.com";
+
+const atarashiiStory = {
+  author: "Sensei Luiz",
+  authorRole: "Fundador da Associacao Atarashii Karate-Do Shotokan",
+  paragraphs: [
+    "Tudo comecou no final do ano de 2002, eu tinha 12 anos, quando meu tio Deci me chamou um dia para participar de uma aula de Jiu-Jitsu na academia onde ele treinava.",
+    "Chegamos na academia, mas o professor de Jiu-Jitsu faltou. Entao a recepcionista da academia informou que iria comecar a aula de Karate (Estilo Shotokan), que o professor ja estava na sala e que, se eu quisesse participar para nao perder a viagem, eu poderia.",
+    "Fiz a aula de Karate e meu tio ficou esperando do lado de fora a aula acabar. Assim que acabou, ele me perguntou:",
+    "— E ai, gostou da aula de Karate?",
+    "Eu respondi:",
+    "— Tio, infelizmente voce perdeu um \"Jiujiteiro\", mas ganhou um Karateca.",
+    "Ele entendeu, e iamos juntos toda semana para a academia: ele fazia o treino dele de Jiu-Jitsu e eu fazia o de Karate.",
+    "Em 2003 conquistei a minha primeira faixa (amarela), participei do meu primeiro campeonato e fui vice-campeao paulista.",
+    "Dai para a frente nao parei mais de treinar, participar de campeonatos e conquistar as minhas graduacoes.",
+    "Entao continuei treinando com o meu Sensei Julio Cesar e me formei Faixa Preta em 2009, aos 18 anos.",
+    "Continuei me dedicando, treinando, participando de campeonatos, ate que em 2014 surgiu a oportunidade de ministrar as aulas no lugar do Sensei durante um curto periodo. Me dediquei ao maximo nas aulas, e todos os pais e alunos me elogiaram durante este periodo como substituto.",
+    "Foi ai que nasceu a vontade de querer ministrar aulas de Karate.",
+    "Em janeiro de 2015 surgiu uma oportunidade de mostrar o meu trabalho na academia onde ministro aulas ate hoje. Em janeiro de 2024 fez 15 anos que sou Faixa Preta e ha 9 anos que sou professor de Karate.",
+    "Em 2017 foi criada a Associacao Atarashii Karate-Do Shotokan, onde ministro aulas para todas as idades e sexos. Tenho alunos a partir de 5 anos, adolescentes, adultos e idosos.",
+    "Sempre digo a todos que me procuram que nao ha idade para comecar a fazer esporte, e que o Karate nao e so colocar a luva e ficar dando porrada: tem todo um contexto e uma historia por tras, que so quem treina sabe a forca que tem.",
+    "Saber que tenho a responsabilidade, principalmente com as criancas, de poder participar ativamente na educacao e na construcao do carater — e que tudo isso elas vao poder levar para a vida inteira — e, para mim, muito gratificante.",
+    "A essencia dessa arte marcial esta no esforcar-se na formacao do bom carater, na fidelidade ao caminho da razao, no criar e fixar um intuito de esforco, no respeito acima de tudo e no dominar o espirito de agressao.",
+    "O Karate hoje faz parte da minha vida. Sao mais de 20 anos me dedicando nao apenas a arte marcial e a defesa pessoal, mas tambem a uma filosofia de vida.",
+    "Centenas de alunos passaram por mim, e pude deixar em cada um deles um pouco desta licao de vida: o desejo de ser um cidadao melhor, um pai melhor, um filho melhor. Nao ha preco que pague isso.",
+  ],
+};
 const storeKey = "karate-shotokan-progress";
 const app = document.querySelector("#app");
 const tabs = [...document.querySelectorAll(".tab")];
@@ -710,6 +736,21 @@ function searchView() {
   `;
 }
 
+function atarashiiView() {
+  return `
+    <section class="detail atarashii-view">
+      <p class="eyebrow">A Atarashii</p>
+      <h2>A historia por tras da Associacao</h2>
+      <div class="atarashii-author">
+        <strong>${htmlEscape(atarashiiStory.author)}</strong>
+        <span class="muted">${htmlEscape(atarashiiStory.authorRole)}</span>
+      </div>
+      ${atarashiiStory.paragraphs.map((paragraph) => `<p>${htmlEscape(paragraph)}</p>`).join("")}
+      <p class="atarashii-signature">— ${htmlEscape(atarashiiStory.author)}, ${htmlEscape(atarashiiStory.authorRole)}</p>
+    </section>
+  `;
+}
+
 function contactView() {
   const whatsappUrl = contactInfo.whatsappNumber ? `https://wa.me/${contactInfo.whatsappNumber}` : "";
   return `
@@ -928,6 +969,7 @@ function render() {
     "kata-avancado": () => kataTierView("avancado"),
     consultar: () => sectionView("consultar"),
     revisar: reviewView,
+    atarashii: atarashiiView,
     contato: contactView,
     busca: searchView,
     quiz: quizView,
