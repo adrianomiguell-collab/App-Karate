@@ -309,13 +309,21 @@ function progressBlock() {
   `;
 }
 
+function beltSwatchHtml(beltKey) {
+  const image = Gamification.BELT_IMAGES[beltKey];
+  if (image) {
+    return `<img class="belt-swatch" src="../${htmlEscape(image)}" alt="${htmlEscape(Gamification.BELT_LABELS[beltKey])}" />`;
+  }
+  return `<span class="belt-swatch" style="background:${Gamification.BELT_COLORS[beltKey]}"></span>`;
+}
+
 function currentBeltBlock() {
   const progress = getProgress();
   const beltKey = Gamification.currentBeltKey(progress.sessions);
   return `
     <button class="belt-home-badge" data-action="go:progresso" type="button">
       <span class="belt-home-badge-main">
-        <span class="belt-swatch" style="background:${Gamification.BELT_COLORS[beltKey]}"></span>
+        ${beltSwatchHtml(beltKey)}
         <span>Faixa de Estudos atual: <strong>${htmlEscape(Gamification.BELT_LABELS[beltKey])}</strong></span>
       </span>
       <span class="muted belt-home-badge-link">Ver progresso &rsaquo;</span>
@@ -890,7 +898,7 @@ function progressView() {
     const earned = currentIndex >= index;
     return `
       <li class="belt-row ${earned ? "is-earned" : "is-locked"}">
-        <span class="belt-swatch" style="background:${Gamification.BELT_COLORS[beltKey]}"></span>
+        ${beltSwatchHtml(beltKey)}
         <span>${htmlEscape(Gamification.BELT_LABELS[beltKey])}</span>
         <span class="muted">${earned ? "Conquistada" : "Bloqueada"}</span>
       </li>
@@ -899,7 +907,7 @@ function progressView() {
 
   const blackBeltRow = `
     <li class="belt-row ${blackBeltEarned ? "is-earned" : "is-locked"}">
-      <span class="belt-swatch" style="background:${Gamification.BELT_COLORS.preta}"></span>
+      ${beltSwatchHtml("preta")}
       <span>${htmlEscape(Gamification.BELT_LABELS.preta)}</span>
       <span class="muted">${blackBeltEarned ? "Conquistada" : finalUnlocked ? "Disponivel no desafio final" : "Bloqueada"}</span>
     </li>

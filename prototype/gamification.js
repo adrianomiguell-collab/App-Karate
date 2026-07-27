@@ -39,6 +39,20 @@
     preta: "#111111",
   };
 
+  // Caminhos relativos a raiz do repositorio (o chamador no navegador
+  // prefixa com o "../" necessario a partir de prototype/). null = ainda
+  // sem gif enviado, usa BELT_COLORS como fallback.
+  const BELT_IMAGES = {
+    branca: "assets/faixas/branca.gif",
+    amarela: "assets/faixas/amarela.gif",
+    vermelha: "assets/faixas/vermelha.gif",
+    laranja: "assets/faixas/laranja.gif",
+    verde: null,
+    roxa: "assets/faixas/roxa.gif",
+    marrom: "assets/faixas/marrom.gif",
+    preta: "assets/faixas/preta.gif",
+  };
+
   const PASS_THRESHOLD = 0.7;
 
   function isSessionCompleted(sessionsCompleted, sessionKey) {
@@ -86,6 +100,7 @@
     BELT_BY_SESSION,
     BELT_LABELS,
     BELT_COLORS,
+    BELT_IMAGES,
     PASS_THRESHOLD,
     isSessionCompleted,
     isSessionUnlocked,

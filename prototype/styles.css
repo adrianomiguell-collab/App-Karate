@@ -694,10 +694,11 @@ button:disabled {
 
 .belt-swatch {
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 6px;
   flex-shrink: 0;
-  height: 18px;
-  width: 18px;
+  height: 26px;
+  object-fit: cover;
+  width: 44px;
 }
 
 .belt-disclaimer {
