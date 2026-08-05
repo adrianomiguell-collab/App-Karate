@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f7f4ef;
   --surface: #fffdf9;
   --surface-strong: #ffffff;
@@ -87,7 +87,7 @@ input {
   border-top: 1px solid var(--line);
   bottom: 0;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   left: 0;
   position: fixed;
   right: 0;

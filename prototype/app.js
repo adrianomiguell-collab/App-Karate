@@ -1,4 +1,4 @@
-﻿const state = {
+const state = {
   route: "home",
   detailReturnRoute: "home",
   data: null,
@@ -389,6 +389,10 @@ function homeView() {
       ${moduleCard("kata-iniciante", "Kata", "Katas organizados em 3 niveis, embusen e videos oficiais.", "katas")}
       ${moduleCard("consultar", "Consultar", "Glossario, regras, pontuacao e termos.")}
       ${finalChallengeCard()}
+      <button class="card module-card" data-action="go:atarashii" type="button">
+        <h3>A Atarashii</h3>
+        <p>A historia da nossa Associacao e do fundador.</p>
+      </button>
       <button class="card module-card" data-action="go:contato" type="button">
         <h3>Contato</h3>
         <p>Endereco, mapa e redes da associacao.</p>
@@ -826,7 +830,7 @@ function quizView() {
   `;
 }
 
-function resultView() {
+function saveQuizResult() {
   const questions = activeQuizQuestions();
   const total = questions.length;
   const score = questions.reduce((sum, question, index) => sum + (state.quizAnswers[index] === question.correctOption ? 1 : 0), 0);
@@ -844,6 +848,18 @@ function resultView() {
     progress.sessions[state.activeQuizSession] = { completed: sticky, score, total, date: new Date().toISOString() };
   }
   setProgress(progress);
+}
+
+function resultView() {
+  const questions = activeQuizQuestions();
+  const total = questions.length;
+  const score = questions.reduce((sum, question, index) => sum + (state.quizAnswers[index] === question.correctOption ? 1 : 0), 0);
+  const passed = Gamification.passesThreshold(score, total);
+  const progress = getProgress();
+
+  const isFinal = state.activeQuizSession === "final";
+  const previous = isFinal ? progress.finalChallenge : progress.sessions[state.activeQuizSession];
+  const alreadyEarned = isFinal ? Boolean(previous?.passed) : Boolean(previous?.completed);
 
   const wrong = questions
     .map((question, index) => ({ question, index, answer: state.quizAnswers[index] }))
@@ -867,7 +883,7 @@ function resultView() {
       <h2>Resultado</h2>
       <p>Voce acertou ${score} de ${total} perguntas (${Gamification.scorePercent(score, total)}%).</p>
       ${message}
-      ${sticky ? beltDisclaimer() : ""}
+      ${alreadyEarned ? beltDisclaimer() : ""}
       <div class="toolbar">
         ${passed ? "" : button("Tentar novamente", `start-session-quiz:${state.activeQuizSession}`, "primary-button")}
         ${button("Voltar", `go:${backRoute}`, passed ? "primary-button" : "secondary-button")}
@@ -1028,6 +1044,7 @@ document.addEventListener("click", (event) => {
       state.quizIndex += 1;
       render();
     } else {
+      saveQuizResult();
       state.route = "resultado";
       render();
     }

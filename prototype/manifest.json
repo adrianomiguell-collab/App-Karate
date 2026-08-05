@@ -1,0 +1,17 @@
+{
+  "short_name": "Atarashii App",
+  "name": "Atarashii App - Karate-do Shotokan",
+  "icons": [
+    {
+      "src": "../assets/brand/atarashii-logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#f7f4ef",
+  "theme_color": "#b32222",
+  "display": "standalone",
+  "orientation": "portrait"
+}
