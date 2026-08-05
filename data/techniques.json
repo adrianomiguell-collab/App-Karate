@@ -1,398 +1,647 @@
-﻿[
+[
     {
-        "id":  "oi-zuki",
-        "name":  "Oi-Zuki",
-        "slug":  "oi-zuki",
-        "type":  "soco",
-        "description":  "Soco direto executado com o punho da perna da frente.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "oi-zuki",
+        "name": "Oi-Zuki",
+        "slug": "oi-zuki",
+        "type": "soco",
+        "description": "Soco direto executado avançando com o mesmo braço e perna da frente.",
+        "longDescription": "O Oi-Zuki (soco direto avançando) é uma das técnicas de ataque mais fundamentais e potentes do Karate Shotokan. Ele combina o avanço de uma base (geralmente Zenkutsu-Dachi) com o soco simultâneo da mão correspondente à perna da frente, gerando uma força tremenda através da energia cinética gerada pelo avanço do quadril e peso corporal.",
+        "executionSteps": [
+            {
+                "title": "Preparação e Guarda",
+                "text": "Parta de uma base estável, como Zenkutsu-Dachi. O quadril deve estar na diagonal (Hanmi). O braço da frente estende-se na guarda/bloqueio enquanto a outra mão fica no quadril (Hikite)."
+            },
+            {
+                "title": "Avanço e Deslocamento",
+                "text": "Deslize o pé de trás rente ao chão em um movimento semicircular suave passando pelo centro. Mantenha a perna de trás flexionada no início para empurrar o solo e impulsionar o quadril."
+            },
+            {
+                "title": "Rotação do Quadril",
+                "text": "À medida que o pé avança e toca o chão estabelecendo a nova base, gire o quadril explosivamente de frente (Shomen). Essa rotação é a principal fonte de força do soco."
+            },
+            {
+                "title": "Extensão do Braço e Hikite",
+                "text": "Ligue o soco no centro do corpo em linha reta. Ao mesmo tempo, puxe a outra mão fortemente em direção ao quadril (Hikite), promovendo um efeito de alavanca rotacional."
+            },
+            {
+                "title": "Foco e Kime",
+                "text": "No último instante antes do impacto, rotacione o punho em 180° (deixando a palma para baixo) e contraia todo o corpo de forma explosiva, fixando a força no alvo com o Seiken."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=JA0Ym97vjLg",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "gyaku-zuki",
-        "name":  "Gyaku-Zuki",
-        "slug":  "gyaku-zuki",
-        "type":  "soco",
-        "description":  "Soco reverso executado com o punho da perna de tras.",
-        "longDescription":  "A eficiência do Gyaku-Zuki não depende apenas da força do braço, mas da sincronia de todo o corpo.",
-        "executionSteps":  [
-                               {
-                                   "title":  "Posição inicial (guarda)",
-                                   "text":  "Normalmente executado a partir de uma base sólida avançada, como a Zenkutsu-Dachi. O braço da frente faz o papel de guarda ou puxada, enquanto o braço de trás inicia recolhido na linha da costela, com a palma voltada para cima."
-                               },
-                               {
-                                   "title":  "Rotação do quadril",
-                                   "text":  "O movimento começa com o giro explosivo do quadril e do tronco para a frente. Essa rotação transfere a energia gerada pelas pernas e pelo solo diretamente para o soco."
-                               },
-                               {
-                                   "title":  "Trajetória em linha reta",
-                                   "text":  "O braço que golpeia estende-se em linha reta em direção ao centro do alvo. O cotovelo deve permanecer próximo ao corpo durante a extensão para não abrir o golpe nem perder velocidade."
-                               },
-                               {
-                                   "title":  "Hikite (puxada)",
-                                   "text":  "Simultaneamente ao avanço do soco, o braço que estava à frente é puxado fortemente de volta para a costela. Essa ação oposta aumenta a velocidade de rotação do tronco."
-                               },
-                               {
-                                   "title":  "Impacto e rotação do punho",
-                                   "text":  "Nos últimos centímetros antes do impacto, o punho gira em 180°, deixando a palma voltada para baixo. O contato é feito estritamente com o Seiken: as articulações dos dedos indicador e médio."
-                               },
-                               {
-                                   "title":  "Kime (contração final)",
-                                   "text":  "No instante do impacto, ocorre uma contração muscular total e abrupta do abdômen, das pernas e do braço para travar o movimento e descarregar no alvo toda a energia acumulada."
-                               }
-                           ],
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "gyaku-zuki",
+        "name": "Gyaku-Zuki",
+        "slug": "gyaku-zuki",
+        "type": "soco",
+        "description": "Soco reverso executado com o punho da perna de tras.",
+        "longDescription": "A eficiência do Gyaku-Zuki (soco reverso) não depende apenas da força do braço, mas da sincronia de todo o corpo. O soco é disparado do lado oposto à perna que está à frente, aproveitando a forte torção do quadril no eixo central.",
+        "executionSteps": [
+            {
+                "title": "Posição inicial (guarda)",
+                "text": "Normalmente executado a partir de uma base sólida avançada, como a Zenkutsu-Dachi. O braço da frente faz o papel de guarda ou puxada, enquanto o braço de trás inicia recolhido na linha da costela, com a palma voltada para cima."
+            },
+            {
+                "title": "Rotação do quadril",
+                "text": "O movimento começa com o giro explosivo do quadril e do tronco para a frente. Essa rotação transfere a energia gerada pelas pernas e pelo solo diretamente para o soco."
+            },
+            {
+                "title": "Trajetória em linha reta",
+                "text": "O braço que golpeia estende-se em linha reta em direção ao centro do alvo. O cotovelo deve permanecer próximo ao corpo durante a extensão para não abrir o golpe nem perder velocidade."
+            },
+            {
+                "title": "Hikite (puxada)",
+                "text": "Simultaneamente ao avanço do soco, o braço que estava à frente é puxado fortemente de volta para a costela. Essa ação oposta aumenta a velocidade de rotação do tronco."
+            },
+            {
+                "title": "Impacto e rotação do punho",
+                "text": "Nos últimos centímetros antes do impacto, o punho gira em 180°, deixando a palma voltada para baixo. O contato é feito estritamente com o Seiken: as articulações dos dedos indicador e médio."
+            },
+            {
+                "title": "Kime (contração final)",
+                "text": "No instante do impacto, ocorre uma contração muscular total e abrupta do abdômen, das pernas e do braço para travar o movimento e descarregar no alvo toda a energia acumulada."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=N3KSQQ--LB0",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "mae-geri",
-        "name":  "Mae-Geri",
-        "slug":  "mae-geri",
-        "type":  "chute",
-        "description":  "Chute frontal direcionado a regioes como abdomen ou rosto.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ],
-        "imageUrl":  "assets/training/mae_geri.png"
+        "id": "mae-geri",
+        "name": "Mae-Geri",
+        "slug": "mae-geri",
+        "type": "chute",
+        "description": "Chute frontal direcionado a regioes como abdomen ou rosto.",
+        "longDescription": "O Mae-Geri (chute frontal) é o golpe de perna mais fundamental e versátil do Karate. Ele preza pela velocidade, controle e precisão, utilizando o movimento sanfonado da perna para golpear de forma percussiva (Keage) ou penetrante (Kekomi). A superfície de impacto padrão é o Koshi (bola do pé).",
+        "executionSteps": [
+            {
+                "title": "Elevação do Joelho",
+                "text": "Com a perna de trás, eleve o joelho em linha reta à frente do corpo o mais alto possível. Mantenha o pé firme e os dedos flexionados para cima."
+            },
+            {
+                "title": "Abertura e Disparo",
+                "text": "Empurre o quadril levemente para a frente e estenda a perna explosivamente em direção ao alvo, mantendo o pé de apoio firme e apontando ligeiramente para fora para equilíbrio."
+            },
+            {
+                "title": "Ponto de Impacto",
+                "text": "Atingir o alvo usando o Koshi (bola do pé), garantindo que os dedos estejam bem puxados para trás para evitar lesões."
+            },
+            {
+                "title": "Hiki-Ashi (Recolhimento)",
+                "text": "Imediatamente após atingir o alvo, recolha a perna flexionando o joelho de volta na mesma velocidade do chute. O Hiki-Ashi rápido é crucial para evitar contra-ataques."
+            },
+            {
+                "title": "Retorno à Base",
+                "text": "Desça a perna de forma controlada, retornando à base de guarda original ou estabelecendo uma nova base à frente."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=vOP8dAalfms",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": [],
+        "imageUrl": "assets/training/mae_geri.png"
     },
     {
-        "id":  "yoko-geri",
-        "name":  "Yoko-Geri",
-        "slug":  "yoko-geri",
-        "type":  "chute",
-        "description":  "Chute lateral usado para atingir o flanco do oponente.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "yoko-geri",
+        "name": "Yoko-Geri",
+        "slug": "yoko-geri",
+        "type": "chute",
+        "description": "Chute lateral usado para atingir o flanco do oponente.",
+        "longDescription": "O Yoko-Geri (chute lateral) é executado lateralmente em relação ao corpo, utilizando a borda externa do pé (Sokuto) como arma principal. Pode ser executado em formato de estalo rápido (Keage) ou com poder de empurrão penetrante (Kekomi), exigindo grande mobilidade de quadril.",
+        "executionSteps": [
+            {
+                "title": "Elevação e Giro",
+                "text": "Eleve o joelho da perna que chuta à frente do peito, enquanto gira o pé de apoio em cerca de 180° para abrir o quadril e posicionar o corpo de lado para o alvo."
+            },
+            {
+                "title": "Carregamento",
+                "text": "Mantenha o pé que golpeia próximo ao joelho da perna de apoio, com a sola voltada para dentro e os dedos bem flexionados."
+            },
+            {
+                "title": "Extensão e Quadril",
+                "text": "Estenda a perna lateralmente em linha reta em direção ao alvo (torso ou cabeça). Gire e empurre o quadril para maximizar o alcance do golpe."
+            },
+            {
+                "title": "Impacto (Sokuto)",
+                "text": "Atingir o alvo usando estritamente o Sokuto (borda externa do pé), mantendo o calcanhar da perna que chuta levemente mais alto que os dedos do pé."
+            },
+            {
+                "title": "Hiki-Ashi e Queda",
+                "text": "Recolha a perna rapidamente em direção ao joelho de apoio antes de descer o pé, restabelecendo a guarda e o equilíbrio."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=k72E1u962Qg",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "mawashi-geri",
-        "name":  "Mawashi-Geri",
-        "slug":  "mawashi-geri",
-        "type":  "chute",
-        "description":  "Chute circular direcionado a cabeca ou torso.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "mawashi-geri",
+        "name": "Mawashi-Geri",
+        "slug": "mawashi-geri",
+        "type": "chute",
+        "description": "Chute circular direcionado a cabeca ou torso.",
+        "longDescription": "O Mawashi-Geri (chute circular) é uma das técnicas de perna mais versáteis do Karate competitivo e de defesa pessoal. Por possuir uma trajetória em arco, ele penetra nas laterais da guarda do adversário. A superfície de impacto pode ser o peito do pé (Haisoku) ou a bola do pé (Koshi).",
+        "executionSteps": [
+            {
+                "title": "Elevação Lateral",
+                "text": "Eleve o joelho lateralmente em um ângulo paralelo ao chão, mantendo a coxa apontada na direção geral do alvo e o pé recolhido próximo ao glúteo."
+            },
+            {
+                "title": "Abertura do Quadril",
+                "text": "Gire o pé de apoio em cerca de 90° a 180° para permitir a rotação livre do quadril e alinhar a bacia horizontalmente ao solo."
+            },
+            {
+                "title": "Extensão em Arco",
+                "text": "Desdobre a perna em um chicote circular horizontal rápido em direção às costelas, braço ou têmpora do adversário."
+            },
+            {
+                "title": "Superfície de Contato",
+                "text": "Atinja o alvo com o Haisoku (peito do pé) para obter alcance em lutas esportivas, ou com o Koshi (bola do pé) para fins de quebra tradicional."
+            },
+            {
+                "title": "Recolhimento e Retorno",
+                "text": "Puxe o pé de volta explosivamente (Hiki-Ashi) na mesma trajetória circular para evitar contragolpes e desça de forma controlada à base."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=wMImmRw1_bs",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "ushiro-geri",
-        "name":  "Ushiro-Geri",
-        "slug":  "ushiro-geri",
-        "type":  "chute",
-        "description":  "Chute para tras usado quando o oponente esta atras.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "ushiro-geri",
+        "name": "Ushiro-Geri",
+        "slug": "ushiro-geri",
+        "type": "chute",
+        "description": "Chute para tras usado quando o oponente esta atras.",
+        "longDescription": "O Ushiro-Geri (chute para trás) é uma técnica de perna devastadora que atinge alvos na retaguarda. Ele aproveita a força da musculatura glútea e das pernas através de um coice linear para trás, utilizando o calcanhar (Kakato) para transmitir o impacto.",
+        "executionSteps": [
+            {
+                "title": "Giro do Tronco e Visão",
+                "text": "Gire a cabeça e o tronco por cima do ombro para enxergar o alvo por trás de você. Os joelhos devem permanecer próximos e o corpo ligeiramente agrupado."
+            },
+            {
+                "title": "Agrupamento e Elevação",
+                "text": "Eleve o joelho da perna de ataque em direção ao seu próprio peito, carregando a perna para disparar em linha reta."
+            },
+            {
+                "title": "Coice Linear",
+                "text": "Estenda a perna diretamente para trás em linha reta. O pé deve estar com os dedos apontados para baixo e o calcanhar apontado para o alvo."
+            },
+            {
+                "title": "Impacto (Kakato)",
+                "text": "Atingir o alvo com o Kakato (calcanhar). Flexione o quadril e o abdômen no momento do Kime para estruturar e absorver a energia do golpe."
+            },
+            {
+                "title": "Hiki-Ashi",
+                "text": "Recolha a perna rapidamente em linha reta em direção ao peito e depois gire o tronco de volta para reassumir a postura de guarda."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=N3KSQQ--LB0",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "age-uke",
-        "name":  "Age-Uke",
-        "slug":  "age-uke",
-        "type":  "defesa",
-        "description":  "Bloqueio ascendente usado contra golpes direcionados a cabeca.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "age-uke",
+        "name": "Age-Uke",
+        "slug": "age-uke",
+        "type": "defesa",
+        "description": "Bloqueio ascendente usado contra golpes direcionados a cabeca.",
+        "longDescription": "O Age-Uke (bloqueio ascendente) é a defesa alta tradicional do Karate Shotokan. Ele é projetado para interceptar e desviar socos ou golpes descendentes direcionados ao rosto ou à cabeça (nível Jodan), empurrando a força do adversário para cima e abrindo a guarda dele.",
+        "executionSteps": [
+            {
+                "title": "Cruzamento de Braços",
+                "text": "Cruze o braço que vai defender por baixo do braço que está à frente, alinhando os punhos fechados no centro do peito."
+            },
+            {
+                "title": "Movimento Ascendente",
+                "text": "Suba o braço de bloqueio em uma linha reta rente ao rosto, elevando o cotovelo de forma que a parte de trás do antebraço faça o contato."
+            },
+            {
+                "title": "Ação do Hikite",
+                "text": "Simultaneamente à subida do bloqueio, puxe o braço oposto de forma enérgica para trás no quadril (Hikite) rotacionando o tronco."
+            },
+            {
+                "title": "Rotação Final",
+                "text": "Gire o antebraço defensor no último milésimo de segundo, deixando a palma do punho voltada para fora e o osso do antebraço exposto para a defesa."
+            },
+            {
+                "title": "Posicionamento Superior",
+                "text": "A defesa deve terminar a cerca de um punho de distância da testa, com o antebraço inclinado em aproximadamente 45° para que os ataques deslizem para fora."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=1MrRmimBJoA",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "soto-uke",
-        "name":  "Soto-Uke",
-        "slug":  "soto-uke",
-        "type":  "defesa",
-        "description":  "Bloqueio usado para desviar golpes vindos de fora para dentro.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "soto-uke",
+        "name": "Soto-Uke",
+        "slug": "soto-uke",
+        "type": "defesa",
+        "description": "Bloqueio usado para desviar golpes vindos de fora para dentro.",
+        "longDescription": "O Soto-Uke (bloqueio de fora para dentro) é uma técnica Chudan (altura média) que utiliza a parte externa do antebraço para defletir socos ou golpes direcionados ao peito ou plexo solar. O braço descreve um arco lateral semicircular, varrendo o golpe para fora da linha central.",
+        "executionSteps": [
+            {
+                "title": "Carregamento e Preparação",
+                "text": "Leve a mão defensora até a altura da orelha (atrás da cabeça), com a palma virada para fora. O braço oposto fica estendido à frente como guia."
+            },
+            {
+                "title": "Varredura Circular",
+                "text": "Lance o braço defensor de fora para dentro em um arco semicircular à frente do peito, mantendo o cotovelo flexionado."
+            },
+            {
+                "title": "Sincronia com o Hikite",
+                "text": "Puxe o braço guia de volta para a costela (Hikite) no momento exato em que o antebraço de bloqueio cruza a linha média."
+            },
+            {
+                "title": "Giro do Punho",
+                "text": "Rotacione o punho defensor de modo que a palma termine voltada para você e as articulações do punho fiquem firmes."
+            },
+            {
+                "title": "Estabilização e Ângulo",
+                "text": "O cotovelo do braço defensor deve formar um ângulo de 90° e terminar posicionado a um punho de distância das costelas."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=VRtD-9_hNdw",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "uchi-uke",
-        "name":  "Uchi-Uke",
-        "slug":  "uchi-uke",
-        "type":  "defesa",
-        "description":  "Bloqueio usado para defender golpes vindos de dentro para fora.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "uchi-uke",
+        "name": "Uchi-Uke",
+        "slug": "uchi-uke",
+        "type": "defesa",
+        "description": "Bloqueio usado para defender golpes vindos de dentro para fora.",
+        "longDescription": "O Uchi-Uke (bloqueio de dentro para fora) funciona como a contrapartida do Soto-Uke. Ele protege a linha central do corpo contra socos nível Chudan, varrendo os ataques de dentro para fora com a borda externa do antebraço.",
+        "executionSteps": [
+            {
+                "title": "Carregamento Inferior",
+                "text": "Posicione o punho da mão defensora abaixo da axila do braço oposto, com a palma voltada para baixo. O braço oposto fica estendido à frente."
+            },
+            {
+                "title": "Deslocamento de dentro para fora",
+                "text": "Puxe o braço defensor em uma linha diagonal ascendente e para fora à frente do corpo."
+            },
+            {
+                "title": "Puxada do Hikite",
+                "text": "Puxe o braço oposto fortemente em direção ao quadril (Hikite), promovendo a torção do quadril que dá firmeza à defesa."
+            },
+            {
+                "title": "Rotação Final",
+                "text": "Sincronize a rotação do punho defensor de modo que a palma termine virada para dentro (em sua direção)."
+            },
+            {
+                "title": "Posicionamento Final",
+                "text": "O antebraço deve estar alinhado com o ombro lateral e o cotovelo a um punho de distância da costela lateral para evitar quebra de estrutura."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=p9YKYbCrBaY",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "gedan-barai",
-        "name":  "Gedan-Barai",
-        "slug":  "gedan-barai",
-        "type":  "defesa",
-        "description":  "Bloqueio baixo usado para defender chutes ou golpes na regiao inferior.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "gedan-barai",
+        "name": "Gedan-Barai",
+        "slug": "gedan-barai",
+        "type": "defesa",
+        "description": "Bloqueio baixo usado para defender chutes ou golpes na regiao inferior.",
+        "longDescription": "O Gedan-Barai (varredura baixa) é a defesa inferior primária do Karate Shotokan. Seu foco é desviar chutes diretos (como o Mae-Geri) ou socos de nível Gedan (baixo) com um movimento de varredura diagonal descendente do antebraço.",
+        "executionSteps": [
+            {
+                "title": "Carregamento Superior",
+                "text": "Leve o punho do braço de defesa até o pescoço ou ombro oposto. O outro braço fica estendido à frente, cruzando e apontando para a virilha."
+            },
+            {
+                "title": "Varredura Descendente",
+                "text": "Deslize o antebraço defensor para baixo em uma linha diagonal rente ao outro braço, estendendo-o na direção da coxa da perna da frente."
+            },
+            {
+                "title": "Ação do Hikite",
+                "text": "Puxe a mão guia para trás no quadril (Hikite) de forma sincronizada com o Kime da defesa."
+            },
+            {
+                "title": "Rotação e Trava",
+                "text": "Gire o punho de defesa no final do movimento para travar o golpe adversário com a lateral óssea do antebraço."
+            },
+            {
+                "title": "Alinhamento e Distância",
+                "text": "A mão defensora deve terminar posicionada a cerca de dois punhos de distância acima da coxa frontal, mantendo as costas retas."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=ceXktpHeLzk",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "shuto-uke",
-        "name":  "Shuto-Uke",
-        "slug":  "shuto-uke",
-        "type":  "defesa",
-        "description":  "Bloqueio com a mao em faca, frequente em katas.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "shuto-uke",
+        "name": "Shuto-Uke",
+        "slug": "shuto-uke",
+        "type": "defesa",
+        "description": "Bloqueio com a mao em faca, frequente em katas.",
+        "longDescription": "O Shuto-Uke (bloqueio com a mão em faca) utiliza a borda lateral da mão aberta (Shuto) para desviar ataques Chudan. Praticada predominantemente na base Kokutsu-Dachi, esta defesa permite desviar o golpe de forma suave, preparando o praticante para agarrar o braço do oponente ou contra-atacar rapidamente.",
+        "executionSteps": [
+            {
+                "title": "Abertura das Mãos",
+                "text": "Abra as duas mãos, enrijecendo os dedos. Leve a mão de defesa até a orelha oposta com a palma voltada para dentro. A outra mão aberta aponta à frente."
+            },
+            {
+                "title": "Movimento Diagonal",
+                "text": "Desça o braço de bloqueio diagonalmente pelo centro do tronco, utilizando o antebraço e a lateral da mão aberta para desviar o ataque."
+            },
+            {
+                "title": "Hikite Aberto (Plexo)",
+                "text": "Puxe a mão guia de volta de modo que ela termine posicionada aberta rente ao plexo solar, com a palma voltada para cima."
+            },
+            {
+                "title": "Alinhamento do Cotovelo",
+                "text": "O cotovelo do braço defensor fica flexionado a cerca de 90° e apoiado logo acima do quadril frontal, sem afastar do corpo."
+            },
+            {
+                "title": "Sincronia de Base",
+                "text": "Conecte o final da defesa com a entrada na base estável Kokutsu-Dachi, distribuindo 70% do peso na perna traseira."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=wMImmRw1_bs",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "empi-uchi",
-        "name":  "Empi-Uchi",
-        "slug":  "empi-uchi",
-        "type":  "golpe",
-        "description":  "Golpe de cotovelo usado em curta distancia.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "empi-uchi",
+        "name": "Empi-Uchi",
+        "slug": "empi-uchi",
+        "type": "golpe",
+        "description": "Golpe de cotovelo usado em curta distancia.",
+        "longDescription": "O Empi-Uchi (golpe de cotovelo) é uma arma extremamente contundente e perigosa para distâncias curtas. O uso da estrutura óssea do cotovelo concentra grande energia cinética, podendo ser aplicado lateralmente (Yoko), para cima (Mae/Age) ou para baixo (Otoshi).",
+        "executionSteps": [
+            {
+                "title": "Aproximação do Alvo",
+                "text": "Mova-se rapidamente para encurtar a distância em relação ao oponente, estabelecendo uma base firme (ex: Kiba-Dachi ou Zenkutsu-Dachi)."
+            },
+            {
+                "title": "Fechamento do Punho",
+                "text": "Feche firmemente o punho da mão que golpeia e coloque a mão próxima ao peito ou ombro para manter o cotovelo rígido."
+            },
+            {
+                "title": "Movimento de Rotação",
+                "text": "Gire o quadril e o ombro com velocidade, guiando a ponta do cotovelo em uma trajetória semicircular ou vertical em direção ao alvo."
+            },
+            {
+                "title": "Puxada Guia (Alavanca)",
+                "text": "Geralmente executado batendo o cotovelo contra a palma aberta da outra mão à frente do peito, garantindo estabilidade e Kime."
+            },
+            {
+                "title": "Kime e Trava",
+                "text": "Rotacione a base e contraia os músculos dorsal e peitoral no instante do contato para travar o golpe sem perder a postura."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=vOP8dAalfms",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "kizami-zuki",
-        "name":  "Kizami-Zuki",
-        "slug":  "kizami-zuki",
-        "type":  "soco",
-        "description":  "Soco rapido e curto executado com a mao da perna da frente.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "kizami-zuki",
+        "name": "Kizami-Zuki",
+        "slug": "kizami-zuki",
+        "type": "soco",
+        "description": "Soco rápido e curto executado com a mão da perna da frente.",
+        "longDescription": "O Kizami-Zuki (soco com a mão da frente) é equivalente ao jab do boxe. Lançado com velocidade instantânea, ele aproveita o relaxamento inicial e a projeção explosiva do ombro frontal para surpreender o oponente, sendo ideal para quebrar a guarda ou iniciar combinações de golpes.",
+        "executionSteps": [
+            {
+                "title": "Base e Guarda",
+                "text": "Parta de uma postura flexível e ativa (Kumite-Dachi). O braço frontal deve estar relaxado na guarda padrão e apontado para o oponente."
+            },
+            {
+                "title": "Projeção do Ombro",
+                "text": "Empurre levemente com a perna de trás e projete o ombro do braço frontal à frente, aumentando instantaneamente o alcance do soco."
+            },
+            {
+                "title": "Extensão Direta",
+                "text": "Dispare o punho em linha reta em direção ao queixo ou nariz do oponente, mantendo a trajetória alinhada pela linha central."
+            },
+            {
+                "title": "Giro do Punho (Seiken)",
+                "text": "Gire o punho em 180° no final da trajetória para descarregar o impacto nos nós do indicador e médio (Seiken)."
+            },
+            {
+                "title": "Retorno e Recuperação",
+                "text": "Puxe o punho de volta com a máxima velocidade para recuperar a guarda ativa antes que o adversário inicie o contra-ataque."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=IWZOQd6dvww",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "tate-zuki",
-        "name":  "Tate-Zuki",
-        "slug":  "tate-zuki",
-        "type":  "soco",
-        "description":  "Soco executado com o punho na posicao vertical.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "tate-zuki",
+        "name": "Tate-Zuki",
+        "slug": "tate-zuki",
+        "type": "soco",
+        "description": "Soco executado com o punho na posicao vertical.",
+        "longDescription": "O Tate-Zuki (soco vertical) caracteriza-se pela rotação parcial do punho (de apenas 90°), atingindo o alvo com a palma voltada para a lateral interna e o polegar para cima. Esta técnica é altamente eficiente em curtas distâncias para furar a guarda estreita do oponente.",
+        "executionSteps": [
+            {
+                "title": "Posicionamento Inicial",
+                "text": "Fique em uma base de combate média ou curta. O punho de soco inicia fechado na costela com a palma voltada para cima."
+            },
+            {
+                "title": "Deslocamento Linear",
+                "text": "Estenda o braço ao longo do centro da linha de ataque corporal, minimizando movimentos laterais."
+            },
+            {
+                "title": "Giro Vertical de 90°",
+                "text": "Rotacione o punho em apenas 90° durante a extensão. O punho termina perpendicular ao solo (vertical)."
+            },
+            {
+                "title": "Puxada Oposta (Hikite)",
+                "text": "Puxe a mão oposta no quadril com força proporcional para contra-balançar e acelerar o soco."
+            },
+            {
+                "title": "Impacto e Kime",
+                "text": "Conecte o soco com os nós principais, garantindo o alinhamento reto do punho com o antebraço para evitar lesões no pulso."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=OJi3lwnx0jI",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "uraken-uchi",
-        "name":  "Uraken-Uchi",
-        "slug":  "uraken-uchi",
-        "type":  "golpe",
-        "description":  "Golpe rapido executado com o dorso da mao.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "uraken-uchi",
+        "name": "Uraken-Uchi",
+        "slug": "uraken-uchi",
+        "type": "golpe",
+        "description": "Golpe rápido executado com o dorso da mão.",
+        "longDescription": "O Uraken-Uchi (golpe com o dorso do punho) baseia-se em um movimento de chicote do antebraço tendo o cotovelo como ponto de articulação. Ele atinge alvos laterais (como a têmpora ou costelas) com extrema velocidade e flexibilidade de trajetória.",
+        "executionSteps": [
+            {
+                "title": "Apontar o Cotovelo",
+                "text": "Eleve o braço com o punho fechado e aponte o cotovelo na direção geral do alvo. O cotovelo servirá como pivô do chicote."
+            },
+            {
+                "title": "Movimento de Chicote",
+                "text": "Desdobre o antebraço em um movimento rápido circular, mantendo o punho e os ombros relaxados para ganhar velocidade."
+            },
+            {
+                "title": "Impacto (Dorso)",
+                "text": "Atingir o alvo de forma percussiva com o dorso do punho (Seiken posterior), aproveitando a flexão de punho no final."
+            },
+            {
+                "title": "Recolhimento Rápido",
+                "text": "Puxe o punho de volta na mesma trajetória de forma instantânea após o contato (efeito de rebote), restabelecendo a guarda."
+            },
+            {
+                "title": "Conexão de Quadril",
+                "text": "Acompanhe o movimento com uma rotação rápida de quadril para aumentar a potência e torque do golpe."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=eMyXJBsTnCk",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     },
     {
-        "id":  "nukite",
-        "name":  "Nukite",
-        "slug":  "nukite",
-        "type":  "golpe",
-        "description":  "Golpe com a ponta dos dedos, usado com precisao e controle.",
-        "level":  "iniciante",
-        "safetyNote":  "Pratique com orientacao do sensei.",
-        "videoUrl":  null,
-        "videoProvider":  null,
-        "associationVideoUrl":  null,
-        "instructorNotes":  null,
-        "practiceChecklist":  [
-
-                              ],
-        "gifUrl":  null,
-        "attentionPoints":  [
-
-                            ],
-        "commonMistakes":  [
-
-                           ]
+        "id": "nukite",
+        "name": "Nukite",
+        "slug": "nukite",
+        "type": "golpe",
+        "description": "Golpe com a ponta dos dedos, usado com precisao e controle.",
+        "longDescription": "O Nukite (mão em lança) é uma das técnicas mais letais do Karate tradicional, usando a ponta dos dedos abertos e tensionados como área de impacto. Por focar a energia em uma área minúscula, é usado contra áreas moles (garganta, olhos ou plexo solar). Requer calejamento e enrijecimento muscular rígido.",
+        "executionSteps": [
+            {
+                "title": "Enrijecimento dos Dedos",
+                "text": "Abra as mãos e una os dedos indicador, médio e anelar firmemente. Flexione o dedo médio levemente para alinhar sua altura com os demais, formando uma lança uniforme."
+            },
+            {
+                "title": "Posicionamento do Apoio",
+                "text": "Geralmente o ataque é apoiado pelo braço oposto, cuja mão fica posicionada aberta com a palma para baixo sob o cotovelo do braço de ataque."
+            },
+            {
+                "title": "Disparo Perfurante",
+                "text": "Dispare a mão defensora plana em linha reta à frente, estendendo o braço em direção à traqueia ou plexo solar do oponente."
+            },
+            {
+                "title": "Kime Articular",
+                "text": "Mantenha toda a mão, dedos e articulações extremamente rígidos no instante do contato para transmitir a energia sem lesionar as pontas dos dedos."
+            },
+            {
+                "title": "Retorno à Guarda",
+                "text": "Feche o punho rapidamente e recolha o braço de volta para a base de guarda fechada protetiva."
+            }
+        ],
+        "level": "iniciante",
+        "safetyNote": "Pratique com orientacao do sensei.",
+        "videoUrl": "https://www.youtube.com/watch?v=4I_F2bOvzV8",
+        "videoProvider": "youtube",
+        "associationVideoUrl": null,
+        "instructorNotes": null,
+        "practiceChecklist": [],
+        "gifUrl": null,
+        "attentionPoints": [],
+        "commonMistakes": []
     }
 ]
