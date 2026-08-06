@@ -118,7 +118,11 @@ function kataTierItems(tier) {
 
 function sessionItems(sessionKey) {
   if (sessionKey === "aprender") {
-    return state.data.contents.filter((item) => item.area === "aprender");
+    return [
+      ...state.data.contents.filter((item) => item.area === "aprender"),
+      ...state.data.glossary,
+      ...state.data.rules,
+    ];
   }
   if (sessionKey === "treinar") {
     return [...state.data.techniques, ...state.data.stances];
@@ -126,9 +130,6 @@ function sessionItems(sessionKey) {
   if (sessionKey === "kata-iniciante") return kataTierItems("iniciante");
   if (sessionKey === "kata-intermediario") return kataTierItems("intermediario");
   if (sessionKey === "kata-avancado") return kataTierItems("avancado");
-  if (sessionKey === "consultar") {
-    return [...state.data.glossary, ...state.data.rules];
-  }
   return [];
 }
 
@@ -151,7 +152,6 @@ const SESSION_LABELS = {
   "kata-iniciante": "Kata - Iniciante",
   "kata-intermediario": "Kata - Intermediario",
   "kata-avancado": "Kata - Avancado",
-  consultar: "Consultar",
 };
 
 const SESSION_QUIZ_CONFIG = {
@@ -169,10 +169,6 @@ const SESSION_QUIZ_CONFIG = {
   "kata-iniciante": { dataKey: "quizKataIniciante", categories: null },
   "kata-intermediario": { dataKey: "quizKataIntermediario", categories: null },
   "kata-avancado": { dataKey: "quizKataAvancado", categories: null },
-  consultar: {
-    dataKey: "quiz",
-    categories: ["Regras de Kumite", "Regras de Kata"],
-  },
 };
 
 function sessionQuizQuestions(sessionKey) {
@@ -384,15 +380,11 @@ function homeView() {
     </section>
 
     <section class="grid two">
-      ${moduleCard("aprender", "Aprender", "Historia, fundamentos, conduta e graduacao.")}
+      ${moduleCard("aprender", "Aprender", "Historia, fundamentos, regras e glossario.")}
       ${moduleCard("treinar", "Treinar", "Kihon, tecnicas basicas e bases principais.")}
       ${moduleCard("kata-iniciante", "Kata", "Katas organizados em 3 niveis, embusen e videos oficiais.", "katas")}
-      ${moduleCard("consultar", "Consultar", "Glossario, regras, pontuacao e termos.")}
+      ${moduleCard("atarashii", "A Atarashii", "A historia da nossa Associacao e do fundador.", "atarashii")}
       ${finalChallengeCard()}
-      <button class="card module-card" data-action="go:atarashii" type="button">
-        <h3>A Atarashii</h3>
-        <p>A historia da nossa Associacao e do fundador.</p>
-      </button>
       <button class="card module-card" data-action="go:contato" type="button">
         <h3>Contato</h3>
         <p>Endereco, mapa e redes da associacao.</p>
@@ -403,28 +395,24 @@ function homeView() {
 
 function sectionView(area) {
   const titles = {
-    aprender: ["Aprender", "Conteudos historicos, conceituais e formativos."],
+    aprender: ["Aprender", "Conteudos historicos, conceituais, regras e glossario."],
     treinar: ["Treinar", "Kihon, tecnicas basicas e bases para consulta antes ou depois do treino."],
-    consultar: ["Consultar", "Referencia rapida de termos, regras e comandos."],
   };
   const [title, subtitle] = titles[area];
   let items = [];
 
   if (area === "aprender") {
-    items = state.data.contents.filter((item) => item.area === "aprender").map((item) => ({ ...item, kind: "conteudo", name: item.title }));
+    items = [
+      ...state.data.contents.filter((item) => item.area === "aprender").map((item) => ({ ...item, kind: "conteudo", name: item.title })),
+      ...state.data.glossary.map((item) => ({ ...item, kind: "termo", name: item.term, summary: item.meaning })),
+      ...state.data.rules.map((item) => ({ ...item, kind: "regra", name: item.title, summary: item.description })),
+    ];
   }
 
   if (area === "treinar") {
     items = [
       ...state.data.techniques.map((item) => ({ ...item, kind: "tecnica" })),
       ...state.data.stances.map((item) => ({ ...item, kind: "base" })),
-    ];
-  }
-
-  if (area === "consultar") {
-    items = [
-      ...state.data.glossary.map((item) => ({ ...item, kind: "termo", name: item.term, summary: item.meaning })),
-      ...state.data.rules.map((item) => ({ ...item, kind: "regra", name: item.title, summary: item.description })),
     ];
   }
 

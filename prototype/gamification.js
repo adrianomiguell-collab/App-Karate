@@ -5,7 +5,6 @@
     "kata-iniciante",
     "kata-intermediario",
     "kata-avancado",
-    "consultar",
   ];
 
   const BELT_BY_SESSION = {
@@ -13,8 +12,7 @@
     treinar: "vermelha",
     "kata-iniciante": "laranja",
     "kata-intermediario": "verde",
-    "kata-avancado": "roxa",
-    consultar: "marrom",
+    "kata-avancado": "marrom",
   };
 
   const BELT_LABELS = {

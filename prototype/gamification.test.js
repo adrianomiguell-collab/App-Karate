@@ -30,16 +30,15 @@ test("uma sessao com completed:false nao conta como concluida nem destrava a pro
   assert.equal(Gamification.currentBeltKey(sessions), "branca");
 });
 
-test("desafio final so desbloqueia com todas as 6 sessoes completas", () => {
+test("desafio final so desbloqueia com todas as 5 sessoes completas", () => {
   const almostAll = {
     aprender: { completed: true },
     treinar: { completed: true },
     "kata-iniciante": { completed: true },
     "kata-intermediario": { completed: true },
-    "kata-avancado": { completed: true },
   };
   assert.equal(Gamification.isFinalChallengeUnlocked(almostAll), false);
-  const all = { ...almostAll, consultar: { completed: true } };
+  const all = { ...almostAll, "kata-avancado": { completed: true } };
   assert.equal(Gamification.isFinalChallengeUnlocked(all), true);
 });
 
@@ -56,6 +55,5 @@ test("scorePercent arredonda corretamente", () => {
 
 test("beltForSession retorna a faixa certa para cada sessao", () => {
   assert.equal(Gamification.beltForSession("aprender"), "amarela");
-  assert.equal(Gamification.beltForSession("kata-avancado"), "roxa");
-  assert.equal(Gamification.beltForSession("consultar"), "marrom");
+  assert.equal(Gamification.beltForSession("kata-avancado"), "marrom");
 });
