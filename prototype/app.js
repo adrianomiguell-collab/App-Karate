@@ -734,6 +734,7 @@ function searchView() {
 function atarashiiView() {
   return `
     <section class="detail atarashii-view">
+      ${button("Voltar", "back")}
       <p class="eyebrow">A Atarashii</p>
       <h2>A historia por tras da Associacao</h2>
       <div class="atarashii-author">
