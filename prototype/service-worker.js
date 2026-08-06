@@ -1,4 +1,4 @@
-const CACHE_NAME = "atarashii-app-v3";
+const CACHE_NAME = "atarashii-app-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -67,24 +67,26 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Estrutura Network-First para garantir atualizações imediatas quando houver rede ativa
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).then((response) => {
-        // Opcional: Adiciona novas requisições dinâmicas ao cache
-        if (response && response.status === 200) {
-          const responseToCache = response.clone();
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseToCache);
           });
         }
-        return response;
-      }).catch(() => {
-        // Fallback caso a rede falhe e o recurso não esteja no cache
-        console.log("[Service Worker] Resource not found in cache and network failed");
-      });
-    })
+        return networkResponse;
+      })
+      .catch(() => {
+        // Fallback para cache offline caso a rede falhe
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          console.log("[Service Worker] Resource not found in cache and network failed");
+        });
+      })
   );
 });
