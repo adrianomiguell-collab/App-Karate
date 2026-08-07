@@ -90,3 +90,5 @@ self.addEventListener("fetch", (event) => {
       })
   );
 });
+
+// Force deploy trigger 2026-08-07
